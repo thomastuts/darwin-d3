@@ -7,14 +7,14 @@
 <div class="row">
   <div class="large-6 columns" ng-controller="FacebookPerDayCtrl">
     <h2>Facebook stats per day</h2>
-    <h3>Stats for {{ currentDay | date:'d MMMM yyyy' }}</h3>
+    <h3>Stats for {{ selectedDay.date | date:'d MMMM yyyy' }}</h3>
     <div id="facebook-per-day"></div>
     <select name="date" id="facebook-per-day-date" ng-model="selectedDay" ng-options="datapoint.date for datapoint in fixtureData"></select>
     <p>Selected day: {{ selectedDay }}</p>
   </div>
   <div class="large-6 columns">
     <h2>Facebook stats per period</h2>
-    <h3>Stats for {{ currentDay | date:'d MMMM yyyy' }}</h3>
+    <h3>Stats for {{ selectedDay.date | date:'d MMMM yyyy' }}</h3>
     <div id="facebook-per-period"></div>
   </div>
 </div>
