@@ -1,10 +1,6 @@
 'use strict';
 
 angular.module('darwinD3App')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, Fixtures, Layout) {
+    $scope.fixtureData = Fixtures.timeline;
   });

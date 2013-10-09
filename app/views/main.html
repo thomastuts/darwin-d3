@@ -1,9 +1,20 @@
-<div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Stats for {{ fixtureData.companyName }}</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 columns" ng-controller="FacebookPerDayCtrl">
+    <h2>Facebook stats per day</h2>
+    <h3>Stats for {{ currentDay | date:'d MMMM yyyy' }}</h3>
+    <div id="facebook-per-day"></div>
+    <select name="date" id="facebook-per-day-date" ng-model="selectedDay" ng-options="datapoint.date for datapoint in fixtureData"></select>
+    <p>Selected day: {{ selectedDay }}</p>
+  </div>
+  <div class="large-6 columns">
+    <h2>Facebook stats per period</h2>
+    <h3>Stats for {{ currentDay | date:'d MMMM yyyy' }}</h3>
+    <div id="facebook-per-period"></div>
+  </div>
 </div>
