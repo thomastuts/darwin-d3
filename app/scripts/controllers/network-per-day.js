@@ -1,11 +1,15 @@
 'use strict';
 
 angular.module('darwinD3App')
-  .controller('FacebookPerDayCtrl', function ($scope, Fixtures, Layout, Dazzle) {
-    $scope.network = 'facebook';
-    $scope.fixtureData = Fixtures.timeline.data;
+  .controller('NetworkPerDayCtrl', function ($scope, Fixtures, Layout, Dazzle) {
+
+    $scope.availableNetworks = Fixtures.networks;
+    $scope.selectedNetwork = 'facebook';
+
+    $scope.fixtureData = Fixtures.dummyData.timeline.data;
     $scope.selectedDay = $scope.fixtureData[0];
-    $scope.dataset = $scope.fixtureData[0].sources[$scope.network].stats;
+
+    $scope.dataset = $scope.fixtureData[0].sources[$scope.selectedNetwork].stats;
 
     var w = Layout.width;
     var h = Layout.height;
@@ -28,7 +32,7 @@ angular.module('darwinD3App')
       .scale(xScale)
       .orient('bottom');
 
-    var svg = d3.select('#facebook-per-day')
+    var svg = d3.select('#network-per-day')
       .append('svg')
       .attr({
         width: w,
@@ -53,15 +57,44 @@ angular.module('darwinD3App')
         fill: 'teal'
       });
 
+    svg.selectAll('text')
+      .data($scope.dataset)
+      .enter()
+      .append('text')
+      .attr({
+        x: function (d) {
+          return xScale(d.type) + (xScale.rangeBand() / 2);
+        },
+        y: function () {
+          return h - padding - 15;
+        },
+        fill: 'white',
+        'text-anchor': 'middle'
+      })
+      .text(function (d) {
+        return d.amount;
+      });
+
     svg.append('g')
       .attr({
         'class': 'axis',
-        transform: 'translate(0,' + (h - padding) + ')'
+        transform: 'translate(0,' + (h - padding) + ')',
+        fill: 'white'
       })
       .call(xAxis);
 
-    $scope.$watch('selectedDay', function (selectedDay) {
-      $scope.dataset = selectedDay.sources[$scope.network].stats;
+    $scope.$watch('selectedDay', function () {
+      $scope.updateGraph();
+    });
+
+    $scope.$watch('selectedNetwork', function () {
+      $scope.updateGraph();
+    });
+
+    $scope.updateGraph = function () {
+      // TODO: update scale
+
+      $scope.dataset = $scope.selectedDay.sources[$scope.selectedNetwork].stats;
       svg.selectAll('rect')
         .data($scope.dataset)
         .transition()
@@ -75,6 +108,12 @@ angular.module('darwinD3App')
             return yScale(d.amount);
           }
         });
-    });
+
+      svg.selectAll('text')
+        .data($scope.dataset)
+        .text(function (d) {
+          return d.amount;
+        });
+    };
   });
 

@@ -4,8 +4,8 @@ angular.module('darwinD3App')
   .service('Dazzle', function Dazzle() {
     return {
       animation: {
-        easing: 'elastic',
-        updateDuration: 1500,
+        easing: 'cubic-in-out',
+        updateDuration: 700,
         delayFactor: 100
       }
     }

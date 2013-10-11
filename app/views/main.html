@@ -1,20 +1,50 @@
 <div class="row">
   <div class="small-12 columns">
-    <h1>Stats for {{ fixtureData.companyName }}</h1>
+    <h1>Stats for Foobar Analytics</h1>
   </div>
 </div>
 
 <div class="row">
-  <div class="large-6 columns" ng-controller="FacebookPerDayCtrl">
-    <h2>Facebook stats per day</h2>
+  <div class="large-6 columns" ng-controller="NetworkPerDayCtrl">
+    <select name="date" id="network-selector" ng-model="selectedNetwork" ng-options="network for network in availableNetworks"></select>
+    <h2>{{ selectedNetwork | capitalize }} stats per day</h2>
     <h3>Stats for {{ selectedDay.date | date:'d MMMM yyyy' }}</h3>
-    <div id="facebook-per-day"></div>
-    <select name="date" id="facebook-per-day-date" ng-model="selectedDay" ng-options="datapoint.date for datapoint in fixtureData"></select>
-    <p>Selected day: {{ selectedDay }}</p>
+    <div id="network-per-day"></div>
+    <select name="date" id="network-per-day-date" ng-model="selectedDay" ng-options="datapoint.date for datapoint in fixtureData"></select>
+
+    <h2>Debug info</h2>
+
+    <h3>Selected network</h3>
+    <pre>{{ selectedNetwork }}</pre>
+
+    <h3>Selected day</h3>
+    <pre>{{ selectedDay | json }}</pre>
+
   </div>
-  <div class="large-6 columns">
-    <h2>Facebook stats per period</h2>
-    <h3>Stats for {{ selectedDay.date | date:'d MMMM yyyy' }}</h3>
-    <div id="facebook-per-period"></div>
+  <div class="large-6 columns" ng-controller="ComparisonPerPeriodCtrl">
+    <h2>Comparison acrosss networks</h2>
+    <h3>Conversions from {{ startDate | date:'d-MM-yyyy' }} to {{ endDate | date:'d-MM-yyyy' }}</h3>
+    <div id="comparison-per-period"></div>
+
+    <div>
+      <p>Start date</p>
+      <select name="date" ng-model="startDate" ng-options="date for date in availableDates"></select>
+    </div>
+
+    <div>
+      <p>End date</p>
+      <select name="date" ng-model="endDate" ng-options="date for date in availableDates"></select>
+    </div>
+
+    <h2>Debug info</h2>
+
+    <h3>Selected stat</h3>
+    <pre>{{ selectedType }}</pre>
+
+    <h3>Start date</h3>
+    <pre>{{ startDate }}</pre>
+
+    <h3>End date</h3>
+    <pre>{{ endDate }}</pre>
   </div>
 </div>
