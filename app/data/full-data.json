@@ -1,0 +1,6257 @@
+[
+  {
+    "id": 27468,
+    "acc_id": 1,
+    "awareness": 1104,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-09-30"
+  },
+  {
+    "id": 27497,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-30"
+  },
+  {
+    "id": 27408,
+    "acc_id": 1,
+    "awareness": 234,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-29"
+  },
+  {
+    "id": 27437,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-29"
+  },
+  {
+    "id": 27346,
+    "acc_id": 1,
+    "awareness": 917,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 6,
+    "period": "2013-09-28"
+  },
+  {
+    "id": 27375,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-09-28"
+  },
+  {
+    "id": 27288,
+    "acc_id": 1,
+    "awareness": 2521,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 9,
+    "period": "2013-09-27"
+  },
+  {
+    "id": 27317,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-27"
+  },
+  {
+    "id": 27208,
+    "acc_id": 1,
+    "awareness": 1691,
+    "appreciation": 2,
+    "action": 1,
+    "advocacy": 5,
+    "period": "2013-09-26"
+  },
+  {
+    "id": 27238,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-26"
+  },
+  {
+    "id": 27109,
+    "acc_id": 1,
+    "awareness": 2103,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 6,
+    "period": "2013-09-25"
+  },
+  {
+    "id": 27139,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-25"
+  },
+  {
+    "id": 27010,
+    "acc_id": 1,
+    "awareness": 8097,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 48,
+    "period": "2013-09-24"
+  },
+  {
+    "id": 27040,
+    "acc_id": 2,
+    "awareness": 6,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-24"
+  },
+  {
+    "id": 26893,
+    "acc_id": 1,
+    "awareness": 1128,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-23"
+  },
+  {
+    "id": 26923,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-09-23"
+  },
+  {
+    "id": 26812,
+    "acc_id": 1,
+    "awareness": 460,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 2,
+    "period": "2013-09-22"
+  },
+  {
+    "id": 26842,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-22"
+  },
+  {
+    "id": 26713,
+    "acc_id": 1,
+    "awareness": 411,
+    "appreciation": 4,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-09-21"
+  },
+  {
+    "id": 26743,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-21"
+  },
+  {
+    "id": 26614,
+    "acc_id": 1,
+    "awareness": 1317,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-09-20"
+  },
+  {
+    "id": 26644,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-09-20"
+  },
+  {
+    "id": 26515,
+    "acc_id": 1,
+    "awareness": 514,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-09-19"
+  },
+  {
+    "id": 26545,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-09-19"
+  },
+  {
+    "id": 26414,
+    "acc_id": 1,
+    "awareness": 2183,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 9,
+    "period": "2013-09-18"
+  },
+  {
+    "id": 26444,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-09-18"
+  },
+  {
+    "id": 26315,
+    "acc_id": 1,
+    "awareness": 1476,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 10,
+    "period": "2013-09-17"
+  },
+  {
+    "id": 26345,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-09-17"
+  },
+  {
+    "id": 25319,
+    "acc_id": 1,
+    "awareness": 2100,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-09-16"
+  },
+  {
+    "id": 25349,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-09-16"
+  },
+  {
+    "id": 25222,
+    "acc_id": 1,
+    "awareness": 252,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-15"
+  },
+  {
+    "id": 25252,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-15"
+  },
+  {
+    "id": 25115,
+    "acc_id": 1,
+    "awareness": 421,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-09-14"
+  },
+  {
+    "id": 25151,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-14"
+  },
+  {
+    "id": 25003,
+    "acc_id": 1,
+    "awareness": 1101,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-09-13"
+  },
+  {
+    "id": 25031,
+    "acc_id": 2,
+    "awareness": 8,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-09-13"
+  },
+  {
+    "id": 24869,
+    "acc_id": 1,
+    "awareness": 1886,
+    "appreciation": 3,
+    "action": 0,
+    "advocacy": 14,
+    "period": "2013-09-12"
+  },
+  {
+    "id": 24897,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-09-12"
+  },
+  {
+    "id": 24777,
+    "acc_id": 1,
+    "awareness": 2961,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 13,
+    "period": "2013-09-11"
+  },
+  {
+    "id": 24779,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-11"
+  },
+  {
+    "id": 23231,
+    "acc_id": 1,
+    "awareness": 4740,
+    "appreciation": 5,
+    "action": 0,
+    "advocacy": 70,
+    "period": "2013-09-10"
+  },
+  {
+    "id": 23255,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-10"
+  },
+  {
+    "id": 23139,
+    "acc_id": 1,
+    "awareness": 983,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-09-09"
+  },
+  {
+    "id": 23147,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-09-09"
+  },
+  {
+    "id": 23066,
+    "acc_id": 1,
+    "awareness": 484,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-09-08"
+  },
+  {
+    "id": 23064,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-08"
+  },
+  {
+    "id": 22976,
+    "acc_id": 1,
+    "awareness": 168,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-07"
+  },
+  {
+    "id": 22978,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-07"
+  },
+  {
+    "id": 22873,
+    "acc_id": 1,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-06"
+  },
+  {
+    "id": 22889,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-06"
+  },
+  {
+    "id": 22859,
+    "acc_id": 1,
+    "awareness": 2401,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 49,
+    "period": "2013-09-05"
+  },
+  {
+    "id": 22801,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-09-05"
+  },
+  {
+    "id": 22695,
+    "acc_id": 1,
+    "awareness": 1117,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-09-04"
+  },
+  {
+    "id": 22707,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-04"
+  },
+  {
+    "id": 22641,
+    "acc_id": 1,
+    "awareness": 12,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-03"
+  },
+  {
+    "id": 22706,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-09-03"
+  },
+  {
+    "id": 22533,
+    "acc_id": 1,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-02"
+  },
+  {
+    "id": 22557,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-02"
+  },
+  {
+    "id": 22465,
+    "acc_id": 1,
+    "awareness": 8,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-01"
+  },
+  {
+    "id": 22556,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-09-01"
+  },
+  {
+    "id": 22386,
+    "acc_id": 1,
+    "awareness": 4,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-31"
+  },
+  {
+    "id": 22398,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-31"
+  },
+  {
+    "id": 22284,
+    "acc_id": 1,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-30"
+  },
+  {
+    "id": 22288,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-30"
+  },
+  {
+    "id": 22193,
+    "acc_id": 1,
+    "awareness": 5,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-29"
+  },
+  {
+    "id": 22221,
+    "acc_id": 2,
+    "awareness": 8,
+    "appreciation": -2,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-29"
+  },
+  {
+    "id": 22131,
+    "acc_id": 1,
+    "awareness": 4,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-28"
+  },
+  {
+    "id": 22220,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-28"
+  },
+  {
+    "id": 21141,
+    "acc_id": 1,
+    "awareness": 12,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-27"
+  },
+  {
+    "id": 21139,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-27"
+  },
+  {
+    "id": 21058,
+    "acc_id": 1,
+    "awareness": 1841,
+    "appreciation": 3,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-08-26"
+  },
+  {
+    "id": 21066,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-26"
+  },
+  {
+    "id": 20983,
+    "acc_id": 1,
+    "awareness": 100,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-25"
+  },
+  {
+    "id": 20979,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-25"
+  },
+  {
+    "id": 20903,
+    "acc_id": 1,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-24"
+  },
+  {
+    "id": 20899,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-08-24"
+  },
+  {
+    "id": 20820,
+    "acc_id": 1,
+    "awareness": 4,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-23"
+  },
+  {
+    "id": 20819,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-23"
+  },
+  {
+    "id": 19832,
+    "acc_id": 1,
+    "awareness": 13,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-22"
+  },
+  {
+    "id": 19831,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-08-22"
+  },
+  {
+    "id": 19738,
+    "acc_id": 1,
+    "awareness": 2975,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 15,
+    "period": "2013-08-21"
+  },
+  {
+    "id": 19735,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-21"
+  },
+  {
+    "id": 19659,
+    "acc_id": 1,
+    "awareness": 941,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 9,
+    "period": "2013-08-20"
+  },
+  {
+    "id": 19682,
+    "acc_id": 2,
+    "awareness": 9,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-08-20"
+  },
+  {
+    "id": 19584,
+    "acc_id": 1,
+    "awareness": 1076,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-08-19"
+  },
+  {
+    "id": 19607,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-19"
+  },
+  {
+    "id": 19509,
+    "acc_id": 1,
+    "awareness": 381,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-08-18"
+  },
+  {
+    "id": 19532,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-18"
+  },
+  {
+    "id": 19434,
+    "acc_id": 1,
+    "awareness": 195,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-17"
+  },
+  {
+    "id": 19444,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-17"
+  },
+  {
+    "id": 19359,
+    "acc_id": 1,
+    "awareness": 1353,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 6,
+    "period": "2013-08-16"
+  },
+  {
+    "id": 19382,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-16"
+  },
+  {
+    "id": 19284,
+    "acc_id": 1,
+    "awareness": 1361,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 67,
+    "period": "2013-08-15"
+  },
+  {
+    "id": 19307,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-15"
+  },
+  {
+    "id": 19209,
+    "acc_id": 1,
+    "awareness": 789,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-08-14"
+  },
+  {
+    "id": 19232,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-14"
+  },
+  {
+    "id": 19134,
+    "acc_id": 1,
+    "awareness": 1365,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 12,
+    "period": "2013-08-13"
+  },
+  {
+    "id": 19157,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-13"
+  },
+  {
+    "id": 18670,
+    "acc_id": 1,
+    "awareness": 1138,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-08-12"
+  },
+  {
+    "id": 18693,
+    "acc_id": 2,
+    "awareness": 5,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-12"
+  },
+  {
+    "id": 18596,
+    "acc_id": 1,
+    "awareness": 447,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 0,
+    "period": "2013-08-11"
+  },
+  {
+    "id": 18619,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-11"
+  },
+  {
+    "id": 18516,
+    "acc_id": 1,
+    "awareness": 306,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 0,
+    "period": "2013-08-10"
+  },
+  {
+    "id": 18539,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-10"
+  },
+  {
+    "id": 18448,
+    "acc_id": 1,
+    "awareness": 399,
+    "appreciation": 2,
+    "action": 1,
+    "advocacy": 6,
+    "period": "2013-08-09"
+  },
+  {
+    "id": 18471,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-08-09"
+  },
+  {
+    "id": 18207,
+    "acc_id": 1,
+    "awareness": 1333,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 6,
+    "period": "2013-08-08"
+  },
+  {
+    "id": 18234,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-08"
+  },
+  {
+    "id": 18021,
+    "acc_id": 1,
+    "awareness": 507,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-08-07"
+  },
+  {
+    "id": 18233,
+    "acc_id": 2,
+    "awareness": 5,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-07"
+  },
+  {
+    "id": 17946,
+    "acc_id": 1,
+    "awareness": 1869,
+    "appreciation": 0,
+    "action": 2,
+    "advocacy": 10,
+    "period": "2013-08-06"
+  },
+  {
+    "id": 18286,
+    "acc_id": 2,
+    "awareness": 16,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-08-06"
+  },
+  {
+    "id": 17902,
+    "acc_id": 1,
+    "awareness": 32,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-05"
+  },
+  {
+    "id": 18285,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-05"
+  },
+  {
+    "id": 17858,
+    "acc_id": 1,
+    "awareness": 284,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-08-04"
+  },
+  {
+    "id": 18284,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-04"
+  },
+  {
+    "id": 17814,
+    "acc_id": 1,
+    "awareness": 273,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-03"
+  },
+  {
+    "id": 18283,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-03"
+  },
+  {
+    "id": 17770,
+    "acc_id": 1,
+    "awareness": 1792,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-08-02"
+  },
+  {
+    "id": 18282,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-02"
+  },
+  {
+    "id": 17726,
+    "acc_id": 1,
+    "awareness": 1069,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-01"
+  },
+  {
+    "id": 18281,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-08-01"
+  },
+  {
+    "id": 17682,
+    "acc_id": 1,
+    "awareness": 979,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-31"
+  },
+  {
+    "id": 18280,
+    "acc_id": 2,
+    "awareness": 13,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-31"
+  },
+  {
+    "id": 17618,
+    "acc_id": 1,
+    "awareness": 2702,
+    "appreciation": 3,
+    "action": 0,
+    "advocacy": 9,
+    "period": "2013-07-30"
+  },
+  {
+    "id": 17640,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-30"
+  },
+  {
+    "id": 17554,
+    "acc_id": 1,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-29"
+  },
+  {
+    "id": 17576,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-29"
+  },
+  {
+    "id": 17490,
+    "acc_id": 1,
+    "awareness": 235,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-28"
+  },
+  {
+    "id": 17512,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-28"
+  },
+  {
+    "id": 17426,
+    "acc_id": 1,
+    "awareness": 113,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-27"
+  },
+  {
+    "id": 17448,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-27"
+  },
+  {
+    "id": 17362,
+    "acc_id": 1,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-26"
+  },
+  {
+    "id": 17384,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-26"
+  },
+  {
+    "id": 17296,
+    "acc_id": 1,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-25"
+  },
+  {
+    "id": 17318,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-25"
+  },
+  {
+    "id": 17227,
+    "acc_id": 1,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-24"
+  },
+  {
+    "id": 17255,
+    "acc_id": 2,
+    "awareness": 8,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-24"
+  },
+  {
+    "id": 17166,
+    "acc_id": 1,
+    "awareness": 1532,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-07-23"
+  },
+  {
+    "id": 17186,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-23"
+  },
+  {
+    "id": 17105,
+    "acc_id": 1,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-22"
+  },
+  {
+    "id": 17125,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-07-22"
+  },
+  {
+    "id": 17044,
+    "acc_id": 1,
+    "awareness": 221,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-21"
+  },
+  {
+    "id": 17064,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-21"
+  },
+  {
+    "id": 16983,
+    "acc_id": 1,
+    "awareness": 545,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-07-20"
+  },
+  {
+    "id": 17003,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-20"
+  },
+  {
+    "id": 16922,
+    "acc_id": 1,
+    "awareness": 1554,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-07-19"
+  },
+  {
+    "id": 16942,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-07-19"
+  },
+  {
+    "id": 16534,
+    "acc_id": 1,
+    "awareness": 1763,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-07-18"
+  },
+  {
+    "id": 16557,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-18"
+  },
+  {
+    "id": 16476,
+    "acc_id": 1,
+    "awareness": 1110,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-07-17"
+  },
+  {
+    "id": 16495,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-17"
+  },
+  {
+    "id": 15679,
+    "acc_id": 1,
+    "awareness": 1837,
+    "appreciation": 3,
+    "action": 0,
+    "advocacy": 5,
+    "period": "2013-07-16"
+  },
+  {
+    "id": 15703,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-07-16"
+  },
+  {
+    "id": 15622,
+    "acc_id": 1,
+    "awareness": 1955,
+    "appreciation": 3,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-07-15"
+  },
+  {
+    "id": 15640,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-15"
+  },
+  {
+    "id": 15551,
+    "acc_id": 1,
+    "awareness": 298,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-14"
+  },
+  {
+    "id": 15575,
+    "acc_id": 2,
+    "awareness": 5,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-14"
+  },
+  {
+    "id": 15495,
+    "acc_id": 1,
+    "awareness": 327,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-07-13"
+  },
+  {
+    "id": 15514,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-13"
+  },
+  {
+    "id": 15433,
+    "acc_id": 1,
+    "awareness": 1672,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 12,
+    "period": "2013-07-12"
+  },
+  {
+    "id": 15451,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-12"
+  },
+  {
+    "id": 15370,
+    "acc_id": 1,
+    "awareness": 959,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 8,
+    "period": "2013-07-11"
+  },
+  {
+    "id": 15388,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-11"
+  },
+  {
+    "id": 15304,
+    "acc_id": 1,
+    "awareness": 2614,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 32,
+    "period": "2013-07-10"
+  },
+  {
+    "id": 15325,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-10"
+  },
+  {
+    "id": 15236,
+    "acc_id": 1,
+    "awareness": 1293,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 5,
+    "period": "2013-07-09"
+  },
+  {
+    "id": 15259,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-07-09"
+  },
+  {
+    "id": 15174,
+    "acc_id": 1,
+    "awareness": 3151,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 21,
+    "period": "2013-07-08"
+  },
+  {
+    "id": 15197,
+    "acc_id": 2,
+    "awareness": 5,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-07-08"
+  },
+  {
+    "id": 15094,
+    "acc_id": 1,
+    "awareness": 486,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-07"
+  },
+  {
+    "id": 15119,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-07"
+  },
+  {
+    "id": 15052,
+    "acc_id": 1,
+    "awareness": 182,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-07-06"
+  },
+  {
+    "id": 15118,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-06"
+  },
+  {
+    "id": 14726,
+    "acc_id": 1,
+    "awareness": 1118,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-05"
+  },
+  {
+    "id": 14681,
+    "acc_id": 1,
+    "awareness": 2094,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 9,
+    "period": "2013-07-04"
+  },
+  {
+    "id": 14698,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-04"
+  },
+  {
+    "id": 14589,
+    "acc_id": 1,
+    "awareness": 1149,
+    "appreciation": 3,
+    "action": 1,
+    "advocacy": 3,
+    "period": "2013-07-03"
+  },
+  {
+    "id": 14606,
+    "acc_id": 2,
+    "awareness": 5,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-03"
+  },
+  {
+    "id": 14527,
+    "acc_id": 1,
+    "awareness": 2210,
+    "appreciation": 2,
+    "action": 1,
+    "advocacy": 4,
+    "period": "2013-07-02"
+  },
+  {
+    "id": 14544,
+    "acc_id": 2,
+    "awareness": 9,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-07-02"
+  },
+  {
+    "id": 14459,
+    "acc_id": 1,
+    "awareness": 1002,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-07-01"
+  },
+  {
+    "id": 14482,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-07-01"
+  },
+  {
+    "id": 14381,
+    "acc_id": 1,
+    "awareness": 218,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-06-30"
+  },
+  {
+    "id": 14404,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-30"
+  },
+  {
+    "id": 14338,
+    "acc_id": 1,
+    "awareness": 155,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-29"
+  },
+  {
+    "id": 14403,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-29"
+  },
+  {
+    "id": 14272,
+    "acc_id": 1,
+    "awareness": 1427,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 9,
+    "period": "2013-06-28"
+  },
+  {
+    "id": 14294,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-28"
+  },
+  {
+    "id": 14218,
+    "acc_id": 1,
+    "awareness": 1031,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 6,
+    "period": "2013-06-27"
+  },
+  {
+    "id": 14234,
+    "acc_id": 2,
+    "awareness": 5,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-06-27"
+  },
+  {
+    "id": 14152,
+    "acc_id": 1,
+    "awareness": 9,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 0,
+    "period": "2013-06-26"
+  },
+  {
+    "id": 14174,
+    "acc_id": 2,
+    "awareness": 23,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-26"
+  },
+  {
+    "id": 14094,
+    "acc_id": 1,
+    "awareness": 6,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-25"
+  },
+  {
+    "id": 14114,
+    "acc_id": 2,
+    "awareness": 5,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-06-25"
+  },
+  {
+    "id": 14032,
+    "acc_id": 1,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-24"
+  },
+  {
+    "id": 14054,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-24"
+  },
+  {
+    "id": 13978,
+    "acc_id": 1,
+    "awareness": 363,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-23"
+  },
+  {
+    "id": 13994,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-23"
+  },
+  {
+    "id": 13918,
+    "acc_id": 1,
+    "awareness": 976,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 19,
+    "period": "2013-06-22"
+  },
+  {
+    "id": 13934,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-22"
+  },
+  {
+    "id": 13858,
+    "acc_id": 1,
+    "awareness": 3096,
+    "appreciation": 4,
+    "action": 1,
+    "advocacy": 85,
+    "period": "2013-06-21"
+  },
+  {
+    "id": 13874,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-21"
+  },
+  {
+    "id": 13798,
+    "acc_id": 1,
+    "awareness": 2322,
+    "appreciation": 6,
+    "action": 1,
+    "advocacy": 12,
+    "period": "2013-06-20"
+  },
+  {
+    "id": 13814,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-20"
+  },
+  {
+    "id": 13738,
+    "acc_id": 1,
+    "awareness": 4,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-19"
+  },
+  {
+    "id": 13754,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-19"
+  },
+  {
+    "id": 13678,
+    "acc_id": 1,
+    "awareness": 7,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 0,
+    "period": "2013-06-18"
+  },
+  {
+    "id": 13694,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-18"
+  },
+  {
+    "id": 13618,
+    "acc_id": 1,
+    "awareness": 4,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-17"
+  },
+  {
+    "id": 13634,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-17"
+  },
+  {
+    "id": 13558,
+    "acc_id": 1,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-16"
+  },
+  {
+    "id": 13574,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-16"
+  },
+  {
+    "id": 13498,
+    "acc_id": 1,
+    "awareness": 145,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-15"
+  },
+  {
+    "id": 13514,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-15"
+  },
+  {
+    "id": 13444,
+    "acc_id": 1,
+    "awareness": 7,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-14"
+  },
+  {
+    "id": 13426,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-14"
+  },
+  {
+    "id": 13378,
+    "acc_id": 1,
+    "awareness": 24,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-13"
+  },
+  {
+    "id": 13394,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-06-13"
+  },
+  {
+    "id": 13318,
+    "acc_id": 1,
+    "awareness": 13,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-12"
+  },
+  {
+    "id": 13334,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-12"
+  },
+  {
+    "id": 13258,
+    "acc_id": 1,
+    "awareness": 15,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-11"
+  },
+  {
+    "id": 13274,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-06-11"
+  },
+  {
+    "id": 13155,
+    "acc_id": 1,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-10"
+  },
+  {
+    "id": 13172,
+    "acc_id": 2,
+    "awareness": 15,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-10"
+  },
+  {
+    "id": 13093,
+    "acc_id": 1,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-09"
+  },
+  {
+    "id": 13110,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-09"
+  },
+  {
+    "id": 13023,
+    "acc_id": 1,
+    "awareness": 791,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-06-08"
+  },
+  {
+    "id": 13046,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-08"
+  },
+  {
+    "id": 12962,
+    "acc_id": 1,
+    "awareness": 2418,
+    "appreciation": 4,
+    "action": 0,
+    "advocacy": 31,
+    "period": "2013-06-07"
+  },
+  {
+    "id": 12986,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-06-07"
+  },
+  {
+    "id": 12899,
+    "acc_id": 1,
+    "awareness": 1830,
+    "appreciation": 2,
+    "action": 1,
+    "advocacy": 11,
+    "period": "2013-06-06"
+  },
+  {
+    "id": 12923,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-06-06"
+  },
+  {
+    "id": 12842,
+    "acc_id": 1,
+    "awareness": 4317,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 14,
+    "period": "2013-06-05"
+  },
+  {
+    "id": 12860,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-06-05"
+  },
+  {
+    "id": 12779,
+    "acc_id": 1,
+    "awareness": 978,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-06-04"
+  },
+  {
+    "id": 12797,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-04"
+  },
+  {
+    "id": 12716,
+    "acc_id": 1,
+    "awareness": 2411,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-06-03"
+  },
+  {
+    "id": 12734,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-03"
+  },
+  {
+    "id": 12622,
+    "acc_id": 1,
+    "awareness": 309,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 29,
+    "period": "2013-06-02"
+  },
+  {
+    "id": 12640,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-02"
+  },
+  {
+    "id": 12557,
+    "acc_id": 1,
+    "awareness": 277,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-06-01"
+  },
+  {
+    "id": 12575,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-06-01"
+  },
+  {
+    "id": 12479,
+    "acc_id": 1,
+    "awareness": 669,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 1,
+    "period": "2013-05-31"
+  },
+  {
+    "id": 12498,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-05-31"
+  },
+  {
+    "id": 11640,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-31"
+  },
+  {
+    "id": 12425,
+    "acc_id": 1,
+    "awareness": 2599,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 18,
+    "period": "2013-05-30"
+  },
+  {
+    "id": 12449,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 3,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-30"
+  },
+  {
+    "id": 11639,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-30"
+  },
+  {
+    "id": 12363,
+    "acc_id": 1,
+    "awareness": 1524,
+    "appreciation": 1,
+    "action": 1,
+    "advocacy": 5,
+    "period": "2013-05-29"
+  },
+  {
+    "id": 12387,
+    "acc_id": 2,
+    "awareness": 5,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-29"
+  },
+  {
+    "id": 11638,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-29"
+  },
+  {
+    "id": 12301,
+    "acc_id": 1,
+    "awareness": 973,
+    "appreciation": 1,
+    "action": 2,
+    "advocacy": 2,
+    "period": "2013-05-28"
+  },
+  {
+    "id": 12325,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-28"
+  },
+  {
+    "id": 11637,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-28"
+  },
+  {
+    "id": 12239,
+    "acc_id": 1,
+    "awareness": 1159,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-05-27"
+  },
+  {
+    "id": 12263,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-27"
+  },
+  {
+    "id": 11636,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-27"
+  },
+  {
+    "id": 12183,
+    "acc_id": 1,
+    "awareness": 381,
+    "appreciation": 2,
+    "action": 1,
+    "advocacy": 2,
+    "period": "2013-05-26"
+  },
+  {
+    "id": 12201,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-26"
+  },
+  {
+    "id": 11635,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-26"
+  },
+  {
+    "id": 12103,
+    "acc_id": 1,
+    "awareness": 248,
+    "appreciation": 0,
+    "action": 2,
+    "advocacy": 0,
+    "period": "2013-05-25"
+  },
+  {
+    "id": 12121,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-25"
+  },
+  {
+    "id": 11634,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-25"
+  },
+  {
+    "id": 12053,
+    "acc_id": 1,
+    "awareness": 1247,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 11,
+    "period": "2013-05-24"
+  },
+  {
+    "id": 12077,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-24"
+  },
+  {
+    "id": 11633,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-24"
+  },
+  {
+    "id": 11863,
+    "acc_id": 1,
+    "awareness": 4129,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 6,
+    "period": "2013-05-23"
+  },
+  {
+    "id": 11881,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-23"
+  },
+  {
+    "id": 11632,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-23"
+  },
+  {
+    "id": 11820,
+    "acc_id": 1,
+    "awareness": 1584,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 0,
+    "period": "2013-05-22"
+  },
+  {
+    "id": 11838,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-22"
+  },
+  {
+    "id": 11631,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-22"
+  },
+  {
+    "id": 11777,
+    "acc_id": 1,
+    "awareness": 1744,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 6,
+    "period": "2013-05-21"
+  },
+  {
+    "id": 11795,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-21"
+  },
+  {
+    "id": 11630,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-21"
+  },
+  {
+    "id": 11734,
+    "acc_id": 1,
+    "awareness": 360,
+    "appreciation": 1,
+    "action": 1,
+    "advocacy": 1,
+    "period": "2013-05-20"
+  },
+  {
+    "id": 11752,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-20"
+  },
+  {
+    "id": 11629,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-20"
+  },
+  {
+    "id": 11691,
+    "acc_id": 1,
+    "awareness": 493,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 21,
+    "period": "2013-05-19"
+  },
+  {
+    "id": 11709,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-19"
+  },
+  {
+    "id": 11628,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-19"
+  },
+  {
+    "id": 11648,
+    "acc_id": 1,
+    "awareness": 1190,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-05-18"
+  },
+  {
+    "id": 11666,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-18"
+  },
+  {
+    "id": 11627,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-18"
+  },
+  {
+    "id": 11485,
+    "acc_id": 1,
+    "awareness": 3534,
+    "appreciation": 1,
+    "action": 2,
+    "advocacy": 36,
+    "period": "2013-05-17"
+  },
+  {
+    "id": 11503,
+    "acc_id": 2,
+    "awareness": 11,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-17"
+  },
+  {
+    "id": 11521,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-17"
+  },
+  {
+    "id": 11442,
+    "acc_id": 1,
+    "awareness": 3029,
+    "appreciation": 4,
+    "action": 2,
+    "advocacy": 7,
+    "period": "2013-05-16"
+  },
+  {
+    "id": 11460,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-16"
+  },
+  {
+    "id": 11626,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-16"
+  },
+  {
+    "id": 11381,
+    "acc_id": 1,
+    "awareness": 3793,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 16,
+    "period": "2013-05-15"
+  },
+  {
+    "id": 11399,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-15"
+  },
+  {
+    "id": 11625,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-15"
+  },
+  {
+    "id": 11320,
+    "acc_id": 1,
+    "awareness": 2926,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 16,
+    "period": "2013-05-14"
+  },
+  {
+    "id": 11338,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-14"
+  },
+  {
+    "id": 11624,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-14"
+  },
+  {
+    "id": 11259,
+    "acc_id": 1,
+    "awareness": 1317,
+    "appreciation": 3,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-05-13"
+  },
+  {
+    "id": 11277,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-13"
+  },
+  {
+    "id": 11623,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-13"
+  },
+  {
+    "id": 11198,
+    "acc_id": 1,
+    "awareness": 135,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-05-12"
+  },
+  {
+    "id": 11216,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-12"
+  },
+  {
+    "id": 11622,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-12"
+  },
+  {
+    "id": 11137,
+    "acc_id": 1,
+    "awareness": 186,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-05-11"
+  },
+  {
+    "id": 11155,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": -2,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-11"
+  },
+  {
+    "id": 11621,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-11"
+  },
+  {
+    "id": 11076,
+    "acc_id": 1,
+    "awareness": 279,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-10"
+  },
+  {
+    "id": 11094,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-10"
+  },
+  {
+    "id": 11620,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-10"
+  },
+  {
+    "id": 11015,
+    "acc_id": 1,
+    "awareness": 555,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-05-09"
+  },
+  {
+    "id": 11033,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-09"
+  },
+  {
+    "id": 11619,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-09"
+  },
+  {
+    "id": 10954,
+    "acc_id": 1,
+    "awareness": 5175,
+    "appreciation": 4,
+    "action": 0,
+    "advocacy": 65,
+    "period": "2013-05-08"
+  },
+  {
+    "id": 10972,
+    "acc_id": 2,
+    "awareness": 6,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-08"
+  },
+  {
+    "id": 11618,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-08"
+  },
+  {
+    "id": 10734,
+    "acc_id": 1,
+    "awareness": 2229,
+    "appreciation": 3,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-05-07"
+  },
+  {
+    "id": 10755,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-05-07"
+  },
+  {
+    "id": 11617,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-07"
+  },
+  {
+    "id": 10674,
+    "acc_id": 1,
+    "awareness": 1826,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 8,
+    "period": "2013-05-06"
+  },
+  {
+    "id": 10691,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-05-06"
+  },
+  {
+    "id": 11616,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-06"
+  },
+  {
+    "id": 10618,
+    "acc_id": 1,
+    "awareness": 266,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 6,
+    "period": "2013-05-05"
+  },
+  {
+    "id": 10635,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-05"
+  },
+  {
+    "id": 11615,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-05"
+  },
+  {
+    "id": 10562,
+    "acc_id": 1,
+    "awareness": 121,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-04"
+  },
+  {
+    "id": 10579,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-04"
+  },
+  {
+    "id": 11614,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-04"
+  },
+  {
+    "id": 10497,
+    "acc_id": 1,
+    "awareness": 1412,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 6,
+    "period": "2013-05-03"
+  },
+  {
+    "id": 10514,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-03"
+  },
+  {
+    "id": 11613,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-03"
+  },
+  {
+    "id": 10441,
+    "acc_id": 1,
+    "awareness": 383,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-05-02"
+  },
+  {
+    "id": 10458,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-02"
+  },
+  {
+    "id": 11612,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-02"
+  },
+  {
+    "id": 10385,
+    "acc_id": 1,
+    "awareness": 1298,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 17,
+    "period": "2013-05-01"
+  },
+  {
+    "id": 10402,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-05-01"
+  },
+  {
+    "id": 11611,
+    "acc_id": 3,
+    "awareness": 1736,
+    "appreciation": 7,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-05-01"
+  },
+  {
+    "id": 10324,
+    "acc_id": 1,
+    "awareness": 350,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-04-30"
+  },
+  {
+    "id": 10341,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-30"
+  },
+  {
+    "id": 11610,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-30"
+  },
+  {
+    "id": 9040,
+    "acc_id": 1,
+    "awareness": 1343,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-04-29"
+  },
+  {
+    "id": 9057,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-04-29"
+  },
+  {
+    "id": 11609,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-29"
+  },
+  {
+    "id": 8985,
+    "acc_id": 1,
+    "awareness": 77,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-28"
+  },
+  {
+    "id": 9002,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-04-28"
+  },
+  {
+    "id": 11608,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-28"
+  },
+  {
+    "id": 8912,
+    "acc_id": 1,
+    "awareness": 216,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-04-27"
+  },
+  {
+    "id": 8944,
+    "acc_id": 2,
+    "awareness": 12,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-27"
+  },
+  {
+    "id": 11607,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-27"
+  },
+  {
+    "id": 8858,
+    "acc_id": 1,
+    "awareness": 1053,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 6,
+    "period": "2013-04-26"
+  },
+  {
+    "id": 8873,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-26"
+  },
+  {
+    "id": 11606,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-26"
+  },
+  {
+    "id": 8781,
+    "acc_id": 1,
+    "awareness": 2210,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 18,
+    "period": "2013-04-25"
+  },
+  {
+    "id": 8757,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-04-25"
+  },
+  {
+    "id": 11605,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-25"
+  },
+  {
+    "id": 8780,
+    "acc_id": 1,
+    "awareness": 1174,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-04-24"
+  },
+  {
+    "id": 8722,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-04-24"
+  },
+  {
+    "id": 11604,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-24"
+  },
+  {
+    "id": 8779,
+    "acc_id": 1,
+    "awareness": 940,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-04-23"
+  },
+  {
+    "id": 8687,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-23"
+  },
+  {
+    "id": 11603,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-23"
+  },
+  {
+    "id": 8527,
+    "acc_id": 1,
+    "awareness": 902,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-04-22"
+  },
+  {
+    "id": 8474,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-22"
+  },
+  {
+    "id": 8528,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-22"
+  },
+  {
+    "id": 8778,
+    "acc_id": 1,
+    "awareness": 1305,
+    "appreciation": 4,
+    "action": 0,
+    "advocacy": 32,
+    "period": "2013-04-21"
+  },
+  {
+    "id": 8439,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-21"
+  },
+  {
+    "id": 11602,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-21"
+  },
+  {
+    "id": 8777,
+    "acc_id": 1,
+    "awareness": 828,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-04-20"
+  },
+  {
+    "id": 8404,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-20"
+  },
+  {
+    "id": 11601,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-20"
+  },
+  {
+    "id": 7957,
+    "acc_id": 1,
+    "awareness": 5607,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 29,
+    "period": "2013-04-19"
+  },
+  {
+    "id": 7945,
+    "acc_id": 2,
+    "awareness": 5,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-19"
+  },
+  {
+    "id": 11600,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-19"
+  },
+  {
+    "id": 7880,
+    "acc_id": 1,
+    "awareness": 2544,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-18"
+  },
+  {
+    "id": 7912,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-18"
+  },
+  {
+    "id": 11599,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-18"
+  },
+  {
+    "id": 7839,
+    "acc_id": 1,
+    "awareness": 4301,
+    "appreciation": 3,
+    "action": 0,
+    "advocacy": 12,
+    "period": "2013-04-17"
+  },
+  {
+    "id": 7816,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-17"
+  },
+  {
+    "id": 7846,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-17"
+  },
+  {
+    "id": 7838,
+    "acc_id": 1,
+    "awareness": 2574,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 12,
+    "period": "2013-04-16"
+  },
+  {
+    "id": 7783,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-16"
+  },
+  {
+    "id": 7849,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-16"
+  },
+  {
+    "id": 7837,
+    "acc_id": 1,
+    "awareness": 3414,
+    "appreciation": 4,
+    "action": 0,
+    "advocacy": 28,
+    "period": "2013-04-15"
+  },
+  {
+    "id": 7751,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-15"
+  },
+  {
+    "id": 7852,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-15"
+  },
+  {
+    "id": 7836,
+    "acc_id": 1,
+    "awareness": 177,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-04-14"
+  },
+  {
+    "id": 7717,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-14"
+  },
+  {
+    "id": 11598,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-14"
+  },
+  {
+    "id": 7835,
+    "acc_id": 1,
+    "awareness": 278,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-13"
+  },
+  {
+    "id": 7684,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-13"
+  },
+  {
+    "id": 11597,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-13"
+  },
+  {
+    "id": 7640,
+    "acc_id": 1,
+    "awareness": 2750,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 15,
+    "period": "2013-04-12"
+  },
+  {
+    "id": 7651,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-12"
+  },
+  {
+    "id": 11596,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-12"
+  },
+  {
+    "id": 7589,
+    "acc_id": 1,
+    "awareness": 4382,
+    "appreciation": 4,
+    "action": 0,
+    "advocacy": 26,
+    "period": "2013-04-11"
+  },
+  {
+    "id": 7603,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-11"
+  },
+  {
+    "id": 11595,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-11"
+  },
+  {
+    "id": 7544,
+    "acc_id": 1,
+    "awareness": 4097,
+    "appreciation": 4,
+    "action": 0,
+    "advocacy": 25,
+    "period": "2013-04-10"
+  },
+  {
+    "id": 7558,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-04-10"
+  },
+  {
+    "id": 11594,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-10"
+  },
+  {
+    "id": 7502,
+    "acc_id": 1,
+    "awareness": 2279,
+    "appreciation": 2,
+    "action": 1,
+    "advocacy": 7,
+    "period": "2013-04-09"
+  },
+  {
+    "id": 7516,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-09"
+  },
+  {
+    "id": 11593,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-09"
+  },
+  {
+    "id": 7460,
+    "acc_id": 1,
+    "awareness": 3876,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 13,
+    "period": "2013-04-08"
+  },
+  {
+    "id": 7474,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-08"
+  },
+  {
+    "id": 11592,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-08"
+  },
+  {
+    "id": 7418,
+    "acc_id": 1,
+    "awareness": 379,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-04-07"
+  },
+  {
+    "id": 7432,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-07"
+  },
+  {
+    "id": 11591,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-07"
+  },
+  {
+    "id": 7376,
+    "acc_id": 1,
+    "awareness": 644,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-04-06"
+  },
+  {
+    "id": 7390,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-04-06"
+  },
+  {
+    "id": 11590,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-06"
+  },
+  {
+    "id": 7333,
+    "acc_id": 1,
+    "awareness": 4507,
+    "appreciation": 3,
+    "action": 0,
+    "advocacy": 18,
+    "period": "2013-04-05"
+  },
+  {
+    "id": 7347,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-04-05"
+  },
+  {
+    "id": 11589,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-05"
+  },
+  {
+    "id": 7292,
+    "acc_id": 1,
+    "awareness": 8159,
+    "appreciation": 1,
+    "action": 2,
+    "advocacy": 67,
+    "period": "2013-04-04"
+  },
+  {
+    "id": 7306,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-04"
+  },
+  {
+    "id": 11588,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-04"
+  },
+  {
+    "id": 7251,
+    "acc_id": 1,
+    "awareness": 2294,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-04-03"
+  },
+  {
+    "id": 7265,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-03"
+  },
+  {
+    "id": 11587,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-03"
+  },
+  {
+    "id": 7210,
+    "acc_id": 1,
+    "awareness": 1998,
+    "appreciation": 0,
+    "action": 2,
+    "advocacy": 10,
+    "period": "2013-04-02"
+  },
+  {
+    "id": 7224,
+    "acc_id": 2,
+    "awareness": 15,
+    "appreciation": -2,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-02"
+  },
+  {
+    "id": 11586,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-02"
+  },
+  {
+    "id": 7169,
+    "acc_id": 1,
+    "awareness": 822,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 19,
+    "period": "2013-04-01"
+  },
+  {
+    "id": 7183,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-04-01"
+  },
+  {
+    "id": 11585,
+    "acc_id": 3,
+    "awareness": 6313,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 7,
+    "period": "2013-04-01"
+  },
+  {
+    "id": 7128,
+    "acc_id": 1,
+    "awareness": 1854,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 11,
+    "period": "2013-03-31"
+  },
+  {
+    "id": 7142,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-31"
+  },
+  {
+    "id": 11584,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-31"
+  },
+  {
+    "id": 7090,
+    "acc_id": 1,
+    "awareness": 5689,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 78,
+    "period": "2013-03-30"
+  },
+  {
+    "id": 7101,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-30"
+  },
+  {
+    "id": 11583,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-30"
+  },
+  {
+    "id": 7050,
+    "acc_id": 1,
+    "awareness": 13913,
+    "appreciation": 3,
+    "action": 0,
+    "advocacy": 144,
+    "period": ""
+  },
+  {
+    "id": 7060,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-29"
+  },
+  {
+    "id": 11582,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-29"
+  },
+  {
+    "id": 7009,
+    "acc_id": 1,
+    "awareness": 5340,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 32,
+    "period": "2013-03-28"
+  },
+  {
+    "id": 7022,
+    "acc_id": 2,
+    "awareness": 7,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-28"
+  },
+  {
+    "id": 11581,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-28"
+  },
+  {
+    "id": 6969,
+    "acc_id": 1,
+    "awareness": 2232,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-03-27"
+  },
+  {
+    "id": 6978,
+    "acc_id": 2,
+    "awareness": 10,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-27"
+  },
+  {
+    "id": 11580,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-27"
+  },
+  {
+    "id": 6937,
+    "acc_id": 1,
+    "awareness": 760,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-03-26"
+  },
+  {
+    "id": 6946,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-03-26"
+  },
+  {
+    "id": 11579,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-26"
+  },
+  {
+    "id": 6888,
+    "acc_id": 1,
+    "awareness": 3383,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-25"
+  },
+  {
+    "id": 6898,
+    "acc_id": 2,
+    "awareness": 5,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-25"
+  },
+  {
+    "id": 11578,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-25"
+  },
+  {
+    "id": 6653,
+    "acc_id": 1,
+    "awareness": 480,
+    "appreciation": 6,
+    "action": 1,
+    "advocacy": 7,
+    "period": "2013-03-24"
+  },
+  {
+    "id": 6654,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-24"
+  },
+  {
+    "id": 6657,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-24"
+  },
+  {
+    "id": 6821,
+    "acc_id": 1,
+    "awareness": 453,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-03-23"
+  },
+  {
+    "id": 6831,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-23"
+  },
+  {
+    "id": 11577,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-23"
+  },
+  {
+    "id": 6783,
+    "acc_id": 1,
+    "awareness": 2104,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 9,
+    "period": "2013-03-22"
+  },
+  {
+    "id": 6793,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-22"
+  },
+  {
+    "id": 11576,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-22"
+  },
+  {
+    "id": 6749,
+    "acc_id": 1,
+    "awareness": 5480,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 73,
+    "period": "2013-03-21"
+  },
+  {
+    "id": 6759,
+    "acc_id": 2,
+    "awareness": 15,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-03-21"
+  },
+  {
+    "id": 11575,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-21"
+  },
+  {
+    "id": 6712,
+    "acc_id": 1,
+    "awareness": 1124,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 6,
+    "period": "2013-03-20"
+  },
+  {
+    "id": 6722,
+    "acc_id": 2,
+    "awareness": 5,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-20"
+  },
+  {
+    "id": 11574,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-20"
+  },
+  {
+    "id": 6677,
+    "acc_id": 1,
+    "awareness": 82,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-19"
+  },
+  {
+    "id": 6687,
+    "acc_id": 2,
+    "awareness": 8,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-19"
+  },
+  {
+    "id": 11573,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-19"
+  },
+  {
+    "id": 6621,
+    "acc_id": 1,
+    "awareness": 238,
+    "appreciation": 1,
+    "action": 1,
+    "advocacy": 1,
+    "period": "2013-03-18"
+  },
+  {
+    "id": 6631,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-18"
+  },
+  {
+    "id": 6641,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-18"
+  },
+  {
+    "id": 6583,
+    "acc_id": 1,
+    "awareness": 173,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-03-17"
+  },
+  {
+    "id": 6593,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-17"
+  },
+  {
+    "id": 11572,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-17"
+  },
+  {
+    "id": 6541,
+    "acc_id": 1,
+    "awareness": 264,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-16"
+  },
+  {
+    "id": 6551,
+    "acc_id": 2,
+    "awareness": 6,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-16"
+  },
+  {
+    "id": 11571,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-16"
+  },
+  {
+    "id": 6513,
+    "acc_id": 1,
+    "awareness": 1421,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-03-15"
+  },
+  {
+    "id": 6523,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-15"
+  },
+  {
+    "id": 11570,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-15"
+  },
+  {
+    "id": 6477,
+    "acc_id": 1,
+    "awareness": 629,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-14"
+  },
+  {
+    "id": 6487,
+    "acc_id": 2,
+    "awareness": 7,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-14"
+  },
+  {
+    "id": 11569,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-14"
+  },
+  {
+    "id": 6439,
+    "acc_id": 1,
+    "awareness": 3572,
+    "appreciation": 2,
+    "action": 2,
+    "advocacy": 19,
+    "period": "2013-03-13"
+  },
+  {
+    "id": 6449,
+    "acc_id": 2,
+    "awareness": 7,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-03-13"
+  },
+  {
+    "id": 6650,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-13"
+  },
+  {
+    "id": 6404,
+    "acc_id": 1,
+    "awareness": 1028,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 1,
+    "period": "2013-03-12"
+  },
+  {
+    "id": 6414,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-12"
+  },
+  {
+    "id": 6644,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-12"
+  },
+  {
+    "id": 6369,
+    "acc_id": 1,
+    "awareness": 1500,
+    "appreciation": 0,
+    "action": 2,
+    "advocacy": 3,
+    "period": "2013-03-11"
+  },
+  {
+    "id": 6379,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-11"
+  },
+  {
+    "id": 6647,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-11"
+  },
+  {
+    "id": 6334,
+    "acc_id": 1,
+    "awareness": 485,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-03-10"
+  },
+  {
+    "id": 6344,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-10"
+  },
+  {
+    "id": 11568,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-10"
+  },
+  {
+    "id": 6299,
+    "acc_id": 1,
+    "awareness": 739,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-03-09"
+  },
+  {
+    "id": 6309,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-09"
+  },
+  {
+    "id": 11567,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-09"
+  },
+  {
+    "id": 6264,
+    "acc_id": 1,
+    "awareness": 2873,
+    "appreciation": 2,
+    "action": 2,
+    "advocacy": 10,
+    "period": "2013-03-08"
+  },
+  {
+    "id": 6274,
+    "acc_id": 2,
+    "awareness": 8,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-03-08"
+  },
+  {
+    "id": 11566,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-08"
+  },
+  {
+    "id": 6229,
+    "acc_id": 1,
+    "awareness": 13559,
+    "appreciation": 18,
+    "action": 144,
+    "advocacy": null,
+    "period": ""
+  },
+  {
+    "id": 6239,
+    "acc_id": 2,
+    "awareness": 5,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-07"
+  },
+  {
+    "id": 11565,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-07"
+  },
+  {
+    "id": 6194,
+    "acc_id": 1,
+    "awareness": 418,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 0,
+    "period": "2013-03-06"
+  },
+  {
+    "id": 6204,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-06"
+  },
+  {
+    "id": 11564,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-06"
+  },
+  {
+    "id": 6156,
+    "acc_id": 1,
+    "awareness": 2229,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-05"
+  },
+  {
+    "id": 6169,
+    "acc_id": 2,
+    "awareness": 9,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-03-05"
+  },
+  {
+    "id": 11563,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-05"
+  },
+  {
+    "id": 6124,
+    "acc_id": 1,
+    "awareness": 1685,
+    "appreciation": 2,
+    "action": 1,
+    "advocacy": 4,
+    "period": "2013-03-04"
+  },
+  {
+    "id": 6134,
+    "acc_id": 2,
+    "awareness": 13,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-03-04"
+  },
+  {
+    "id": 11562,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-04"
+  },
+  {
+    "id": 6086,
+    "acc_id": 1,
+    "awareness": 305,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-03-03"
+  },
+  {
+    "id": 6099,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-03"
+  },
+  {
+    "id": 11561,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-03"
+  },
+  {
+    "id": 6054,
+    "acc_id": 1,
+    "awareness": 465,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-03-02"
+  },
+  {
+    "id": 6064,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-02"
+  },
+  {
+    "id": 11560,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-02"
+  },
+  {
+    "id": 6016,
+    "acc_id": 1,
+    "awareness": 3987,
+    "appreciation": 3,
+    "action": 2,
+    "advocacy": 49,
+    "period": "2013-03-01"
+  },
+  {
+    "id": 6029,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-03-01"
+  },
+  {
+    "id": 11559,
+    "acc_id": 3,
+    "awareness": 3841,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-03-01"
+  },
+  {
+    "id": 5969,
+    "acc_id": 1,
+    "awareness": 1033,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 0,
+    "period": "2013-02-28"
+  },
+  {
+    "id": 5982,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-28"
+  },
+  {
+    "id": 5991,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-28"
+  },
+  {
+    "id": 5937,
+    "acc_id": 1,
+    "awareness": 1638,
+    "appreciation": 3,
+    "action": 1,
+    "advocacy": 5,
+    "period": "2013-02-27"
+  },
+  {
+    "id": 5947,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-27"
+  },
+  {
+    "id": 6000,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-27"
+  },
+  {
+    "id": 5902,
+    "acc_id": 1,
+    "awareness": 706,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-02-26"
+  },
+  {
+    "id": 5912,
+    "acc_id": 2,
+    "awareness": 7,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-26"
+  },
+  {
+    "id": 5997,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-26"
+  },
+  {
+    "id": 5855,
+    "acc_id": 1,
+    "awareness": 18,
+    "appreciation": 0,
+    "action": 5,
+    "advocacy": 0,
+    "period": "2013-02-25"
+  },
+  {
+    "id": 5865,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-25"
+  },
+  {
+    "id": 5874,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-25"
+  },
+  {
+    "id": 5809,
+    "acc_id": 1,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-24"
+  },
+  {
+    "id": 5822,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-24"
+  },
+  {
+    "id": 5880,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-24"
+  },
+  {
+    "id": 5785,
+    "acc_id": 1,
+    "awareness": 893,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-02-23"
+  },
+  {
+    "id": 5821,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-23"
+  },
+  {
+    "id": 5877,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-23"
+  },
+  {
+    "id": 5751,
+    "acc_id": 1,
+    "awareness": 4056,
+    "appreciation": 4,
+    "action": 3,
+    "advocacy": 26,
+    "period": "2013-02-22"
+  },
+  {
+    "id": 5760,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-22"
+  },
+  {
+    "id": 11558,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-22"
+  },
+  {
+    "id": 5717,
+    "acc_id": 1,
+    "awareness": 7987,
+    "appreciation": 14,
+    "action": 1,
+    "advocacy": 132,
+    "period": "2013-02-21"
+  },
+  {
+    "id": 5726,
+    "acc_id": 2,
+    "awareness": 6,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-21"
+  },
+  {
+    "id": 5883,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-21"
+  },
+  {
+    "id": 5683,
+    "acc_id": 1,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 0,
+    "period": "2013-02-20"
+  },
+  {
+    "id": 5692,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-20"
+  },
+  {
+    "id": 5994,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-20"
+  },
+  {
+    "id": 5643,
+    "acc_id": 1,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-19"
+  },
+  {
+    "id": 5652,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-19"
+  },
+  {
+    "id": 5661,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-19"
+  },
+  {
+    "id": 5599,
+    "acc_id": 1,
+    "awareness": 869,
+    "appreciation": 2,
+    "action": 1,
+    "advocacy": 3,
+    "period": "2013-02-18"
+  },
+  {
+    "id": 5610,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-18"
+  },
+  {
+    "id": 11557,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-18"
+  },
+  {
+    "id": 5575,
+    "acc_id": 1,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-17"
+  },
+  {
+    "id": 5609,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-17"
+  },
+  {
+    "id": 11556,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-17"
+  },
+  {
+    "id": 5541,
+    "acc_id": 1,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 0,
+    "period": "2013-02-16"
+  },
+  {
+    "id": 5550,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-16"
+  },
+  {
+    "id": 11555,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-16"
+  },
+  {
+    "id": 5507,
+    "acc_id": 1,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 8,
+    "advocacy": 0,
+    "period": "2013-02-15"
+  },
+  {
+    "id": 5516,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-15"
+  },
+  {
+    "id": 11554,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-15"
+  },
+  {
+    "id": 5473,
+    "acc_id": 1,
+    "awareness": 1162,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 4,
+    "period": "2013-02-14"
+  },
+  {
+    "id": 5482,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-14"
+  },
+  {
+    "id": 11553,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-14"
+  },
+  {
+    "id": 5439,
+    "acc_id": 1,
+    "awareness": 801,
+    "appreciation": 1,
+    "action": 1,
+    "advocacy": 3,
+    "period": "2013-02-13"
+  },
+  {
+    "id": 5448,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-13"
+  },
+  {
+    "id": 5664,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-13"
+  },
+  {
+    "id": 5415,
+    "acc_id": 1,
+    "awareness": 987,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-12"
+  },
+  {
+    "id": 5406,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-12"
+  },
+  {
+    "id": 11552,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-12"
+  },
+  {
+    "id": 5371,
+    "acc_id": 1,
+    "awareness": 2289,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 9,
+    "period": "2013-02-11"
+  },
+  {
+    "id": 5380,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-11"
+  },
+  {
+    "id": 11551,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-11"
+  },
+  {
+    "id": 5337,
+    "acc_id": 1,
+    "awareness": 404,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-02-10"
+  },
+  {
+    "id": 5346,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-10"
+  },
+  {
+    "id": 11550,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-10"
+  },
+  {
+    "id": 5303,
+    "acc_id": 1,
+    "awareness": 357,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 6,
+    "period": "2013-02-09"
+  },
+  {
+    "id": 5312,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-09"
+  },
+  {
+    "id": 11549,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-09"
+  },
+  {
+    "id": 5269,
+    "acc_id": 1,
+    "awareness": 2196,
+    "appreciation": 1,
+    "action": 2,
+    "advocacy": 17,
+    "period": "2013-02-08"
+  },
+  {
+    "id": 5278,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-08"
+  },
+  {
+    "id": 11548,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-08"
+  },
+  {
+    "id": 5235,
+    "acc_id": 1,
+    "awareness": 935,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 9,
+    "period": "2013-02-07"
+  },
+  {
+    "id": 5244,
+    "acc_id": 2,
+    "awareness": 9,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-02-07"
+  },
+  {
+    "id": 11547,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-07"
+  },
+  {
+    "id": 5160,
+    "acc_id": 1,
+    "awareness": 1728,
+    "appreciation": 4,
+    "action": 0,
+    "advocacy": 8,
+    "period": "2013-02-06"
+  },
+  {
+    "id": 5169,
+    "acc_id": 2,
+    "awareness": 11,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-06"
+  },
+  {
+    "id": 11546,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-06"
+  },
+  {
+    "id": 5126,
+    "acc_id": 1,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-05"
+  },
+  {
+    "id": 5135,
+    "acc_id": 2,
+    "awareness": 6,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-02-05"
+  },
+  {
+    "id": 11545,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-05"
+  },
+  {
+    "id": 5092,
+    "acc_id": 1,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-04"
+  },
+  {
+    "id": 5101,
+    "acc_id": 2,
+    "awareness": 9,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-04"
+  },
+  {
+    "id": 11544,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-04"
+  },
+  {
+    "id": 5058,
+    "acc_id": 1,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-03"
+  },
+  {
+    "id": 5067,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-03"
+  },
+  {
+    "id": 11543,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-03"
+  },
+  {
+    "id": 5024,
+    "acc_id": 1,
+    "awareness": 649,
+    "appreciation": 4,
+    "action": 0,
+    "advocacy": 5,
+    "period": "2013-02-02"
+  },
+  {
+    "id": 5033,
+    "acc_id": 2,
+    "awareness": 13,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-02"
+  },
+  {
+    "id": 11542,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-02"
+  },
+  {
+    "id": 4990,
+    "acc_id": 1,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-02-01"
+  },
+  {
+    "id": 4999,
+    "acc_id": 2,
+    "awareness": 25,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 3,
+    "period": "2013-02-01"
+  },
+  {
+    "id": 11541,
+    "acc_id": 3,
+    "awareness": 2971,
+    "appreciation": 15,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-02-01"
+  },
+  {
+    "id": 4956,
+    "acc_id": 1,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-31"
+  },
+  {
+    "id": 4965,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-01-31"
+  },
+  {
+    "id": 11540,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-31"
+  },
+  {
+    "id": 4820,
+    "acc_id": 1,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-30"
+  },
+  {
+    "id": 4829,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-01-30"
+  },
+  {
+    "id": 4926,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-30"
+  },
+  {
+    "id": 4776,
+    "acc_id": 1,
+    "awareness": 698,
+    "appreciation": 5,
+    "action": 0,
+    "advocacy": 6,
+    "period": "2013-01-29"
+  },
+  {
+    "id": 4764,
+    "acc_id": 2,
+    "awareness": 6,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-01-29"
+  },
+  {
+    "id": 4935,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-29"
+  },
+  {
+    "id": 4775,
+    "acc_id": 1,
+    "awareness": 2684,
+    "appreciation": 5,
+    "action": 0,
+    "advocacy": 12,
+    "period": "2013-01-28"
+  },
+  {
+    "id": 4739,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-28"
+  },
+  {
+    "id": 11539,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-28"
+  },
+  {
+    "id": 4774,
+    "acc_id": 1,
+    "awareness": 2321,
+    "appreciation": 12,
+    "action": 0,
+    "advocacy": 12,
+    "period": "2013-01-27"
+  },
+  {
+    "id": 4714,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-27"
+  },
+  {
+    "id": 11538,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-27"
+  },
+  {
+    "id": 4773,
+    "acc_id": 1,
+    "awareness": 484,
+    "appreciation": 2,
+    "action": 0,
+    "advocacy": 5,
+    "period": "2013-01-26"
+  },
+  {
+    "id": 4689,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-26"
+  },
+  {
+    "id": 4932,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-26"
+  },
+  {
+    "id": 4655,
+    "acc_id": 1,
+    "awareness": 1787,
+    "appreciation": 5,
+    "action": 0,
+    "advocacy": 12,
+    "period": "2013-01-25"
+  },
+  {
+    "id": 4664,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-25"
+  },
+  {
+    "id": 4929,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-25"
+  },
+  {
+    "id": 4601,
+    "acc_id": 1,
+    "awareness": 1206,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 6,
+    "period": "2013-01-24"
+  },
+  {
+    "id": 4610,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-24"
+  },
+  {
+    "id": 4619,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-24"
+  },
+  {
+    "id": 4568,
+    "acc_id": 1,
+    "awareness": 975,
+    "appreciation": 2,
+    "action": 3,
+    "advocacy": 11,
+    "period": "2013-01-23"
+  },
+  {
+    "id": 4577,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-01-23"
+  },
+  {
+    "id": 4637,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-23"
+  },
+  {
+    "id": 4529,
+    "acc_id": 1,
+    "awareness": 820,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-01-22"
+  },
+  {
+    "id": 4538,
+    "acc_id": 2,
+    "awareness": 6,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-22"
+  },
+  {
+    "id": 4547,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-22"
+  },
+  {
+    "id": 4491,
+    "acc_id": 1,
+    "awareness": 540,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-21"
+  },
+  {
+    "id": 4500,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-21"
+  },
+  {
+    "id": 4509,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-21"
+  },
+  {
+    "id": 4459,
+    "acc_id": 1,
+    "awareness": 393,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-20"
+  },
+  {
+    "id": 4468,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-20"
+  },
+  {
+    "id": 4634,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-20"
+  },
+  {
+    "id": 4427,
+    "acc_id": 1,
+    "awareness": 208,
+    "appreciation": 1,
+    "action": 1,
+    "advocacy": 3,
+    "period": "2013-01-19"
+  },
+  {
+    "id": 4436,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-19"
+  },
+  {
+    "id": 4631,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-19"
+  },
+  {
+    "id": 4395,
+    "acc_id": 1,
+    "awareness": 1173,
+    "appreciation": 4,
+    "action": 0,
+    "advocacy": 20,
+    "period": "2013-01-18"
+  },
+  {
+    "id": 4404,
+    "acc_id": 2,
+    "awareness": 4,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-01-18"
+  },
+  {
+    "id": 4625,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-18"
+  },
+  {
+    "id": 4363,
+    "acc_id": 1,
+    "awareness": 1422,
+    "appreciation": 3,
+    "action": 0,
+    "advocacy": 5,
+    "period": "2013-01-17"
+  },
+  {
+    "id": 4372,
+    "acc_id": 2,
+    "awareness": 5,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-17"
+  },
+  {
+    "id": 4628,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-17"
+  },
+  {
+    "id": 4331,
+    "acc_id": 1,
+    "awareness": 471,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-01-16"
+  },
+  {
+    "id": 4340,
+    "acc_id": 2,
+    "awareness": 8,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-16"
+  },
+  {
+    "id": 4622,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-16"
+  },
+  {
+    "id": 4299,
+    "acc_id": 1,
+    "awareness": 460,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-01-15"
+  },
+  {
+    "id": 4308,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-15"
+  },
+  {
+    "id": 4512,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-15"
+  },
+  {
+    "id": 4267,
+    "acc_id": 1,
+    "awareness": 113,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-14"
+  },
+  {
+    "id": 4276,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-14"
+  },
+  {
+    "id": 11537,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-14"
+  },
+  {
+    "id": 4235,
+    "acc_id": 1,
+    "awareness": 385,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-13"
+  },
+  {
+    "id": 4244,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-13"
+  },
+  {
+    "id": 11536,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-13"
+  },
+  {
+    "id": 4203,
+    "acc_id": 1,
+    "awareness": 457,
+    "appreciation": 3,
+    "action": 0,
+    "advocacy": 3,
+    "period": "2013-01-12"
+  },
+  {
+    "id": 4212,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-12"
+  },
+  {
+    "id": 11535,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-12"
+  },
+  {
+    "id": 4167,
+    "acc_id": 1,
+    "awareness": 671,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 1,
+    "period": "2013-01-11"
+  },
+  {
+    "id": 4177,
+    "acc_id": 2,
+    "awareness": 6,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-11"
+  },
+  {
+    "id": 4186,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-11"
+  },
+  {
+    "id": 4135,
+    "acc_id": 1,
+    "awareness": 752,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-01-10"
+  },
+  {
+    "id": 4143,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-10"
+  },
+  {
+    "id": 11534,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-10"
+  },
+  {
+    "id": 4105,
+    "acc_id": 1,
+    "awareness": 547,
+    "appreciation": 1,
+    "action": 1,
+    "advocacy": 2,
+    "period": "2013-01-09"
+  },
+  {
+    "id": 4113,
+    "acc_id": 2,
+    "awareness": 3,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-09"
+  },
+  {
+    "id": 11533,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-09"
+  },
+  {
+    "id": 4075,
+    "acc_id": 1,
+    "awareness": 625,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-08"
+  },
+  {
+    "id": 4083,
+    "acc_id": 2,
+    "awareness": 7,
+    "appreciation": 1,
+    "action": 1,
+    "advocacy": 0,
+    "period": "2013-01-08"
+  },
+  {
+    "id": 11532,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-08"
+  },
+  {
+    "id": 4019,
+    "acc_id": 1,
+    "awareness": 293,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-07"
+  },
+  {
+    "id": 4027,
+    "acc_id": 2,
+    "awareness": 11,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-07"
+  },
+  {
+    "id": 4036,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-07"
+  },
+  {
+    "id": 3989,
+    "acc_id": 1,
+    "awareness": 468,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-06"
+  },
+  {
+    "id": 3997,
+    "acc_id": 2,
+    "awareness": 1,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-06"
+  },
+  {
+    "id": 11531,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-06"
+  },
+  {
+    "id": 3951,
+    "acc_id": 1,
+    "awareness": 2398,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-05"
+  },
+  {
+    "id": 3965,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 1,
+    "period": "2013-01-05"
+  },
+  {
+    "id": 11530,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-05"
+  },
+  {
+    "id": 3918,
+    "acc_id": 1,
+    "awareness": 336,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 0,
+    "period": "2013-01-04"
+  },
+  {
+    "id": 3924,
+    "acc_id": 2,
+    "awareness": 6,
+    "appreciation": 1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-04"
+  },
+  {
+    "id": 11529,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-04"
+  },
+  {
+    "id": 3897,
+    "acc_id": 1,
+    "awareness": 399,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-03"
+  },
+  {
+    "id": 3903,
+    "acc_id": 2,
+    "awareness": 18,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-03"
+  },
+  {
+    "id": 11528,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-03"
+  },
+  {
+    "id": 3876,
+    "acc_id": 1,
+    "awareness": 370,
+    "appreciation": 0,
+    "action": 1,
+    "advocacy": 0,
+    "period": "2013-01-02"
+  },
+  {
+    "id": 3882,
+    "acc_id": 2,
+    "awareness": 2,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-02"
+  },
+  {
+    "id": 11527,
+    "acc_id": 3,
+    "awareness": 2539,
+    "appreciation": 16,
+    "action": 0,
+    "advocacy": 2,
+    "period": "2013-01-02"
+  },
+  {
+    "id": 3855,
+    "acc_id": 1,
+    "awareness": 223,
+    "appreciation": 0,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-01"
+  },
+  {
+    "id": 3861,
+    "acc_id": 2,
+    "awareness": 0,
+    "appreciation": -1,
+    "action": 0,
+    "advocacy": 0,
+    "period": "2013-01-01"
+  }
+]

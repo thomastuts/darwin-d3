@@ -7,7 +7,7 @@
 <div class="row">
   <div class="large-6 columns" ng-controller="NetworkPerDayCtrl">
     <select name="date" id="network-selector" ng-model="selectedNetwork" ng-options="network for network in availableNetworks"></select>
-    <h2>{{ selectedNetwork | capitalize }} stats per day</h2>
+    <h2>{{ selectedNetwork }} stats per day</h2>
     <h3>Stats for {{ selectedDay.date | date:'d MMMM yyyy' }}</h3>
     <div id="network-per-day"></div>
     <select name="date" id="network-per-day-date" ng-model="selectedDay" ng-options="datapoint.date for datapoint in fixtureData"></select>
