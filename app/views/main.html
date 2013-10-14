@@ -4,7 +4,29 @@
   </div>
 </div>
 
-<div class="row">
+<div id="graph-timeline"></div>
+
+<div class="row" ng-controller="TimelineCtrl">
+  <div class="large-6 columns">
+  </div>
+  <div class="large-6 columns">
+    <pre>
+Start date: {{ startDate }}
+End date: {{ endDate }}
+</pre>
+
+    <div><input type="checkbox" ng-model="visibleNetworks.facebook"/>Facebook</div>
+    <div><input type="checkbox" ng-model="visibleNetworks.twitter"/>Twitter</div>
+
+    <select name="startDate" id="startDate" ng-options="date for date in uniqueDates" ng-model="startDate" ng-change="getPeriodData()"></select>
+    <select name="endDate" id="endDate" ng-options="date for date in uniqueDates" ng-model="endDate" ng-change="getPeriodData()"></select>
+
+    <pre>{{ periodData | json }}</pre>
+  </div>
+</div>
+
+
+<!--<div class="row">
   <div class="large-6 columns" ng-controller="NetworkPerDayCtrl">
     <select name="date" id="network-selector" ng-model="selectedNetwork" ng-options="network for network in availableNetworks"></select>
     <h2>{{ selectedNetwork }} stats per day</h2>
@@ -47,4 +69,4 @@
     <h3>End date</h3>
     <pre>{{ endDate }}</pre>
   </div>
-</div>
+</div>-->
