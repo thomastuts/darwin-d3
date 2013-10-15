@@ -8,8 +8,8 @@ angular.module('darwinD3App')
         return $http.get('data/full-data.json');
       },
       sourceKeys: {
-        facebook: 1,
-        twitter: 2,
+        twitter: 1,
+        facebook: 2,
         website: 3
       },
       getPeriodData: function (data, start, end, networks, metric) {
