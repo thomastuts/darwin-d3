@@ -19,6 +19,10 @@ svg {
     &.facebook {
       stroke: $yellow;
     }
+
+    &.twitter {
+      stroke: $blue;
+    }
   }
 
   .datapoint {
@@ -33,6 +37,10 @@ svg {
 
     &.facebook {
       stroke: $yellow;
+    }
+
+    &.twitter {
+      stroke: $blue;
     }
   }
 }

@@ -15,8 +15,10 @@ Start date: {{ startDate }}
 End date: {{ endDate }}
 </pre>
 
-    <div><input type="checkbox" ng-model="visibleNetworks.facebook"/>Facebook</div>
-    <div><input type="checkbox" ng-model="visibleNetworks.twitter"/>Twitter</div>
+    <div>
+      <p ng-click="toggleNetwork('facebook')">Facebook</p>
+      <p ng-click="toggleNetwork('twitter')">Twitter</p>
+    </div>
 
     <select name="startDate" id="startDate" ng-options="date for date in uniqueDates" ng-model="startDate" ng-change="updateGraph()"></select>
     <select name="endDate" id="endDate" ng-options="date for date in uniqueDates" ng-model="endDate" ng-change="updateGraph()"></select>

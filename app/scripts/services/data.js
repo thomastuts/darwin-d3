@@ -4,13 +4,72 @@ angular.module('darwinD3App')
   .service('Data', function Data($http) {
     return {
       parseDate: d3.time.format('%Y-%m-%d').parse,
-      fullData: function () {
+      getData: function () {
         return $http.get('data/full-data.json');
       },
       sourceKeys: {
         facebook: 1,
         twitter: 2,
         website: 3
+      },
+      getPeriodData: function (data, start, end, networks, metric) {
+        console.time('Data parsing');
+        // select the period we need
+        var periodData = this.filterByPeriod(data, start, end);
+        var dataBuffer = [];
+
+        // loop this array and add data to a new object of the structure:
+//        {
+//          period: '2013-10-10',
+//          facebook: 50,
+//          twitter: 20
+//        }
+
+        var groupedByDate = _.groupBy(periodData, function (d) {
+          return d.period;
+        });
+
+        console.log(groupedByDate);
+
+        for (var datum in groupedByDate) {
+          var dataForDay = groupedByDate[datum];
+
+          var tempObj = {};
+          for (var i = 0; i < dataForDay.length; i++) {
+            var entry = dataForDay[i];
+            tempObj.period = entry.period;
+
+            for (var j = 0; j < networks.length; j++) {
+              var network = networks[j];
+              if (entry.acc_id === this.sourceKeys[network]) {
+                tempObj[network] = entry[metric];
+              }
+            }
+          }
+          dataBuffer.push(tempObj);
+        }
+
+        console.timeEnd('Data parsing');
+        console.log(dataBuffer);
+
+//        for (var i = 0; i < groupedByDate.length; i++) {
+//          var dataForDay = groupedByDate[i];
+//
+//          entry = {};
+//          entry.period = dataForDay.period;
+//
+//          for (var j = 0; j < networks.length; j++) {
+//            var network = networks[j];
+//            if (dataForDay.acc_id = this.sourceKeys[network]) {
+//              entry[network] = dataForDay[metric];
+//            }
+//          }
+//
+//          dataBuffer.push(entry);
+//        }
+//
+//        console.log(dataBuffer);
+
       },
       getTotalValue: function (data) {
         for (var i = 0; i < data.length; i++) {
@@ -40,13 +99,10 @@ angular.module('darwinD3App')
 
         for (var i = 0; i < data.length; i++) {
           var datum = data[i];
-          var isSameDay = moment(datum.period).isSame(moment(start)) || moment(datum.period).isSame(moment(end));
-          var isInsidePeriod = moment(datum.period).isAfter(moment(start)) && moment(datum.period).isBefore(moment(end));
 
-          // Parse date if not parsed already
-          if (datum.period.length >= 10) {
-            datum.period = this.parseDate(datum.period);
-          }
+          var isSameDay = moment(datum.period).isSame(moment(start)) || moment(datum.period).isSame(moment(end));
+
+          var isInsidePeriod = moment(datum.period).isAfter(moment(start)) && moment(datum.period).isBefore(moment(end));
 
           if (isSameDay || isInsidePeriod) {
             dataBuffer.push(datum);
