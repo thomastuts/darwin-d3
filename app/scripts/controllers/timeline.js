@@ -20,11 +20,10 @@ angular.module('darwinD3App')
       $scope.getPeriodData();
 
       var margin = {top: 20, right: 20, bottom: 30, left: 50},
-        width = 960 - margin.left - margin.right,
+        width = 800 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom;
 
-      var parseDate = d3.time.format('%Y-%m-%d').parse;
-
+      // Render initial chart
       var x = d3.time.scale()
         .range([0, width]);
 
@@ -57,59 +56,99 @@ angular.module('darwinD3App')
             transform: 'translate(' + margin.left + ',' + margin.top + ')'
           });
 
+      $scope.renderInitialGraph = function () {
+        x.domain(d3.extent($scope.periodData, function (d) {
+          return d.period;
+        }));
+        y.domain(d3.extent($scope.periodData, function (d) {
+          return d.awareness;
+        }));
 
-      $scope.periodData.forEach(function(d) {
-        d.period = parseDate(d.period);
-      });
-
-      x.domain(d3.extent($scope.periodData, function (d) {
-        return d.period;
-      }));
-
-      y.domain(d3.extent($scope.periodData, function (d) {
-        return d.awareness;
-      }));
+        svg.append('g')
+          .attr({
+            'class': 'x axis',
+            transform: 'translate(0,' + height + ')'
+          })
+          .call(xAxis);
 
 
-      svg.append('g')
-        .attr({
-          'class': 'x axis',
-          transform: 'translate(0,' + height + ')'
-        })
-        .call(xAxis);
-      svg.append('g')
-        .attr({
-          'class': 'y axis'
-        })
-        .call(yAxis)
-      .append('text')
-        .attr({
-          transform: 'rotate(-90)',
-          y: 6,
-          dy: '.71em'
-        })
-        .style('text-anchor', 'end')
-        .text('Awareness');
+        svg.append('g')
+          .attr({
+            'class': 'y axis'
+          })
+          .call(yAxis)
+          .append('text')
+          .attr({
+            transform: 'rotate(-90)',
+            y: 6,
+            dy: '.71em'
+          })
+          .style('text-anchor', 'end')
+          .text('Awareness');
+        svg.append('path')
+          .datum($scope.periodData)
+          .attr("class", "line " + 'facebook')
+          .attr("d", line);
 
-      svg.append('path')
-        .datum($scope.periodData)
-        .attr("class", "line " + 'facebook')
-        .attr("d", line);
+        svg.selectAll('circle')
+          .data($scope.periodData)
+          .enter()
+          .append('circle')
+          .attr({
+            cx: function (d) {
+              return x(d.period);
+            },
+            cy: function (d) {
+              return y(d.awareness);
+            },
+            r: 7,
+            'class': 'datapoint ' + 'facebook'
+          });
+      };
 
-      svg.selectAll('circle')
-        .data($scope.periodData)
-        .enter()
-        .append('circle')
-        .attr({
-          cx: function (d) {
-            return x(d.period);
-          },
-          cy: function (d) {
-            return y(d.awareness);
-          },
-          r: 7,
-          'class': 'datapoint ' + 'facebook'
-        });
+      $scope.updateGraph = function () {
+        $scope.getPeriodData();
+
+        x.domain(d3.extent($scope.periodData, function (d) {
+          return d.period;
+        }));
+        y.domain(d3.extent($scope.periodData, function (d) {
+          return d.awareness;
+        }));
+
+        console.log('Rebuilding graph');
+
+        // update scales
+
+        // update line graph
+        svg.selectAll('path')
+          .datum($scope.periodData)
+          .attr('d', line)
+          .transition()
+          .duration(500);
+
+        svg.selectAll('circle').remove();
+
+        // update circles
+        var circles = svg.selectAll('circle')
+          .data($scope.periodData);
+
+        circles.enter()
+          .append('circle')
+          .attr({
+            cx: function (d) {
+              return x(d.period);
+            },
+            cy: function (d) {
+              return y(d.awareness);
+            },
+            r: 7,
+            'class': 'datapoint ' + 'facebook'
+          });
+
+      };
+
+      $scope.renderInitialGraph();
 
     });
   });

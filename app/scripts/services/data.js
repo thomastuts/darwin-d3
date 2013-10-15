@@ -3,6 +3,7 @@
 angular.module('darwinD3App')
   .service('Data', function Data($http) {
     return {
+      parseDate: d3.time.format('%Y-%m-%d').parse,
       fullData: function () {
         return $http.get('data/full-data.json');
       },
@@ -10,6 +11,13 @@ angular.module('darwinD3App')
         facebook: 1,
         twitter: 2,
         website: 3
+      },
+      getTotalValue: function (data) {
+        for (var i = 0; i < data.length; i++) {
+          var datum = data[i];
+          data[i].total = datum.appreciation + datum.advocacy + datum.action + datum.awareness;
+        }
+        return data;
       },
       parseData: function (data) {
         for (var i = 0; i < data.length; i++) {
@@ -34,6 +42,11 @@ angular.module('darwinD3App')
           var datum = data[i];
           var isSameDay = moment(datum.period).isSame(moment(start)) || moment(datum.period).isSame(moment(end));
           var isInsidePeriod = moment(datum.period).isAfter(moment(start)) && moment(datum.period).isBefore(moment(end));
+
+          // Parse date if not parsed already
+          if (datum.period.length >= 10) {
+            datum.period = this.parseDate(datum.period);
+          }
 
           if (isSameDay || isInsidePeriod) {
             dataBuffer.push(datum);

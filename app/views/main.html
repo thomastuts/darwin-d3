@@ -18,8 +18,8 @@ End date: {{ endDate }}
     <div><input type="checkbox" ng-model="visibleNetworks.facebook"/>Facebook</div>
     <div><input type="checkbox" ng-model="visibleNetworks.twitter"/>Twitter</div>
 
-    <select name="startDate" id="startDate" ng-options="date for date in uniqueDates" ng-model="startDate" ng-change="getPeriodData()"></select>
-    <select name="endDate" id="endDate" ng-options="date for date in uniqueDates" ng-model="endDate" ng-change="getPeriodData()"></select>
+    <select name="startDate" id="startDate" ng-options="date for date in uniqueDates" ng-model="startDate" ng-change="updateGraph()"></select>
+    <select name="endDate" id="endDate" ng-options="date for date in uniqueDates" ng-model="endDate" ng-change="updateGraph()"></select>
 
     <pre>{{ periodData | json }}</pre>
   </div>
