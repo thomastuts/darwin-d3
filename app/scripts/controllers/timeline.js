@@ -26,8 +26,6 @@ angular.module('darwinD3App')
       var y = d3.scale.linear()
         .range([height, 0]);
 
-      var color = d3.scale.category10();
-
       var xAxis = d3.svg.axis()
         .scale(x)
         .orient('bottom');
@@ -54,21 +52,22 @@ angular.module('darwinD3App')
           transform: 'translate(' + margin.left + ',' + margin.top + ')'
         });
 
-      color.domain(d3.keys($scope.dataset[0]).filter(function (key) {
-        return key !== 'period';
-      }));
+      var seriesNames = d3.keys($scope.dataset[0])
+        .filter(function (d) {
+          return d!== 'period';
+        });
 
       $scope.dataset.forEach(function (d) {
         d.period = parseDate(d.period);
       });
 
-      var sources = color.domain().map(function (name) {
+      var sources = seriesNames.map(function (source) {
         return {
-          name: name,
+          name: source,
           values: $scope.dataset.map(function (d) {
             return {
               period: d.period,
-              amount: d[name]
+              amount: d[source]
             };
           })
         };
@@ -113,7 +112,11 @@ angular.module('darwinD3App')
       var source = svg.selectAll('.source')
         .data(sources)
         .enter().append('g')
-        .attr('class', 'source');
+        .attr('class', function (d, i) {
+          return 'series ' + seriesNames[i];
+        });
+
+      console.log(sources);
 
       source.append('path')
         .attr({
