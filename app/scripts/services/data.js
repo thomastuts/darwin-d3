@@ -7,10 +7,15 @@ angular.module('darwinD3App')
       getData: function () {
         return $http.get('data/full-data.json');
       },
-      sourceKeys: {
+      sourceToKey: {
         twitter: 1,
         facebook: 2,
         website: 3
+      },
+      keyToSource: {
+        1: 'twitter',
+        2: 'facebook',
+        3: 'website'
       },
       getPeriodData: function (data, start, end, networks, metric) {
         console.time('Data parsing');
@@ -29,8 +34,6 @@ angular.module('darwinD3App')
           return d.period;
         });
 
-        console.log(groupedByDate);
-
         for (var datum in groupedByDate) {
           var dataForDay = groupedByDate[datum];
 
@@ -41,7 +44,7 @@ angular.module('darwinD3App')
 
             for (var j = 0; j < networks.length; j++) {
               var network = networks[j];
-              if (entry.acc_id === this.sourceKeys[network]) {
+              if (entry.acc_id === this.sourceToKey[network]) {
                 tempObj[network] = entry[metric];
               }
             }
@@ -49,8 +52,7 @@ angular.module('darwinD3App')
           dataBuffer.push(tempObj);
         }
 
-        console.timeEnd('Data parsing');
-        console.log(dataBuffer);
+        return dataBuffer;
 
 //        for (var i = 0; i < groupedByDate.length; i++) {
 //          var dataForDay = groupedByDate[i];
@@ -117,7 +119,7 @@ angular.module('darwinD3App')
 
         for (var i = 0; i < data.length; i++) {
           var datum = data[i];
-          if (datum.acc_id === this.sourceKeys[source]) {
+          if (datum.acc_id === this.sourceToKey[source]) {
             dataBuffer.push(datum);
           }
         }
