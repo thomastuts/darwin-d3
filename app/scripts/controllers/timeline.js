@@ -10,6 +10,10 @@ angular.module('darwinD3App')
 
       var parseDate = d3.time.format("%Y-%m-%d").parse;
 
+      var tip = d3.tip().attr('class', 'd3-tip').html(function (d) {
+        return moment(d.period).format('MMM Do YYYY') + ': ' + d.amount;
+      });
+
       var margin = {top: 20, right: 20, bottom: 30, left: 50},
         width = 800 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom;
@@ -45,6 +49,8 @@ angular.module('darwinD3App')
         .attr({
           transform: 'translate(' + margin.left + ',' + margin.top + ')'
         });
+
+      svg.call(tip);
 
       $scope.getSeriesNames = function () {
         return d3.keys($scope.dataset[0])
@@ -149,7 +155,9 @@ angular.module('darwinD3App')
             cy: function (d) {
               return y(d.amount);
             }
-          });
+          })
+          .on('mouseover', tip.show)
+          .on('mouseout', tip.hide);
       };
 
       $scope.renderInitialGraph();
@@ -210,11 +218,20 @@ angular.module('darwinD3App')
             cy: function (d) {
               return y(d.amount);
             }
-          });
+          })
+          .on('mouseover', tip.show)
+          .on('mouseout', tip.hide);
 
         circles
           .exit()
           .remove();
+
+        if (sources[0].values.length > 25) {
+          circles
+            .attr({
+              r: 3
+            });
+        }
       };
 
       $scope.$watch('params', function () {

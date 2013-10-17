@@ -1566,15 +1566,6 @@
     "period": "2013-07-06"
   },
   {
-    "id": 14726,
-    "acc_id": 1,
-    "awareness": 1118,
-    "appreciation": 0,
-    "action": 0,
-    "advocacy": 0,
-    "period": "2013-07-05"
-  },
-  {
     "id": 14681,
     "acc_id": 1,
     "awareness": 2094,
@@ -3894,24 +3885,6 @@
     "appreciation": 3,
     "action": 0,
     "advocacy": 144,
-    "period": ""
-  },
-  {
-    "id": 7060,
-    "acc_id": 2,
-    "awareness": 4,
-    "appreciation": 0,
-    "action": 0,
-    "advocacy": 0,
-    "period": "2013-03-29"
-  },
-  {
-    "id": 11582,
-    "acc_id": 3,
-    "awareness": 3841,
-    "appreciation": 15,
-    "action": 0,
-    "advocacy": 4,
     "period": "2013-03-29"
   },
   {
@@ -4489,24 +4462,6 @@
     "action": 144,
     "advocacy": null,
     "period": ""
-  },
-  {
-    "id": 6239,
-    "acc_id": 2,
-    "awareness": 5,
-    "appreciation": 0,
-    "action": 0,
-    "advocacy": 0,
-    "period": "2013-03-07"
-  },
-  {
-    "id": 11565,
-    "acc_id": 3,
-    "awareness": 3841,
-    "appreciation": 15,
-    "action": 0,
-    "advocacy": 4,
-    "period": "2013-03-07"
   },
   {
     "id": 6194,
