@@ -1,15 +1,11 @@
 'use strict';
 
 angular.module('darwinD3App')
-  .controller('ComparisonPerPeriodCtrl', function ($scope, Fixtures, Layout, Dazzle) {
-    $scope.fixtureData = Fixtures.dummyData.periodConversions;
+  .controller('ComparisonPerPeriodCtrl', function ($scope, Fixtures, Parameters) {
+    $scope.params = Parameters.params;
 
-    // get start date and end date
-
-    // perform mock API call
-
-    // draw facebook
-
-    // draw twitter
+    $scope.$watch('params', function (newVal, oldVal) {
+      console.log('updated params from other controller!');
+    }, true);
 
   });

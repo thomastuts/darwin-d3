@@ -15,10 +15,6 @@ svg {
   .line {
     fill: none;
     stroke-width: 3px;
-
-    &.facebook {
-      stroke: $yellow;
-    }
   }
 
   .datapoint {
@@ -30,9 +26,19 @@ svg {
       cursor: pointer;
       transition: all .2s ease-in-out;
     }
+  }
 
-    &.facebook {
+  .twitter {
+    .line,
+    .datapoint {
       stroke: $yellow;
+    }
+  }
+
+  .facebook {
+    .line,
+    .datapoint {
+      stroke: $blue;
     }
   }
 }
