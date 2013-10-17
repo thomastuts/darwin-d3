@@ -6,14 +6,7 @@ angular.module('darwinD3App')
       $scope.uniqueDates = _.uniq(_.pluck(result.data, 'period')).reverse();
       $scope.params = Parameters.params;
 
-      $scope.startDate = '2013-09-08';
-      $scope.endDate = '2013-09-30';
-
-      $scope.visibleNetworks = ['facebook', 'twitter'];
-
-      $scope.dataset = Data.getPeriodData(result.data, $scope.startDate, $scope.endDate, ['facebook', 'twitter'], 'advocacy');
-
-      $scope.selectedMetric = 'advocacy';
+      $scope.dataset = Data.getPeriodData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.selectedNetworks, $scope.params.selectedMetric);
 
       var parseDate = d3.time.format("%Y-%m-%d").parse;
 
@@ -162,10 +155,8 @@ angular.module('darwinD3App')
       $scope.renderInitialGraph();
 
       $scope.updateGraph = function () {
-        console.log('updating graph');
-        $scope.params.startDate = $scope.startDate;
         // update data
-        $scope.dataset = Data.getPeriodData(result.data, $scope.startDate, $scope.endDate, ['facebook', 'twitter'], 'advocacy');
+        $scope.dataset = Data.getPeriodData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.selectedNetworks, $scope.params.selectedMetric);
 
         $scope.parseDatasetDates();
 
@@ -174,10 +165,10 @@ angular.module('darwinD3App')
         // update domains
         $scope.setDomains();
 
-        // update lines
         var sel = svg.selectAll('.series')
           .data(sources);
 
+        // update path
         sel
           .select('path')
           .transition()
@@ -187,11 +178,14 @@ angular.module('darwinD3App')
             return line(d.values);
           });
 
-        sel
+        // update circles
+        var circles = sel
           .selectAll('.datapoint')
           .data(function (d) {
             return d.values;
-          })
+          });
+
+        circles
           .transition()
           .ease(Layout.easeMethod)
           .duration(Layout.dataUpdateDuration)
@@ -204,13 +198,28 @@ angular.module('darwinD3App')
             }
           });
 
+        circles
+          .enter()
+          .append('circle')
+          .attr({
+            'class': 'datapoint',
+            r: Layout.circleRadius,
+            cx: function (d) {
+              return x(d.period);
+            },
+            cy: function (d) {
+              return y(d.amount);
+            }
+          });
 
-        console.log(Parameters);
+        circles
+          .exit()
+          .remove();
       };
 
-      $scope.$watch('Parameters.StartDate', function () {
-        console.log('updated parameters!');
-      });
+      $scope.$watch('params', function () {
+        $scope.updateGraph();
+      }, true);
 
     });
   });

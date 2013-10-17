@@ -1,5 +1,9 @@
 @import "variables";
 
+.graph {
+  margin: 20px 0;
+}
+
 svg {
   .axis path,
   .axis line {
@@ -31,14 +35,14 @@ svg {
   .twitter {
     .line,
     .datapoint {
-      stroke: $yellow;
+      stroke: $twitter;
     }
   }
 
   .facebook {
     .line,
     .datapoint {
-      stroke: $blue;
+      stroke: $facebook;
     }
   }
 }
