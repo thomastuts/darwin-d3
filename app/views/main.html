@@ -4,26 +4,34 @@
   </div>
 </div>
 
-<div id="graph-timeline"></div>
-
-<div class="row" ng-controller="TimelineCtrl">
-  <div class="large-6 columns">
+  <div ng-controller="ComparisonPerPeriodCtrl">
+    Other controller
+    <p ng-click="showParameters()">Show params</p>
   </div>
-  <div class="large-6 columns">
+
+<div ng-controller="TimelineCtrl">
+  <div class="row">
+    <div class="large-12 columns">
+      <div id="graph-timeline"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
     <pre>
 Start date: {{ startDate }}
 End date: {{ endDate }}
 </pre>
 
-    <div>
-      <p ng-click="toggleNetwork('facebook')">Facebook</p>
-      <p ng-click="toggleNetwork('twitter')">Twitter</p>
+      <div>
+        <p ng-click="toggleNetwork('facebook')">Facebook</p>
+        <p ng-click="toggleNetwork('twitter')">Twitter</p>
+      </div>
+
+      <select name="startDate" id="startDate" ng-options="date for date in uniqueDates" ng-model="startDate" ng-change="updateGraph()"></select>
+      <select name="endDate" id="endDate" ng-options="date for date in uniqueDates" ng-model="endDate" ng-change="updateGraph()"></select>
+
+      <pre>{{ dataset | json }}</pre>
     </div>
-
-    <select name="startDate" id="startDate" ng-options="date for date in uniqueDates" ng-model="startDate" ng-change="updateGraph()"></select>
-    <select name="endDate" id="endDate" ng-options="date for date in uniqueDates" ng-model="endDate" ng-change="updateGraph()"></select>
-
-    <pre>{{ periodData | json }}</pre>
   </div>
 </div>
 

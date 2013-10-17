@@ -29,13 +29,15 @@ svg {
   }
 
   .twitter {
-    .line {
+    .line,
+    .datapoint {
       stroke: $yellow;
     }
   }
 
   .facebook {
-    .line {
+    .line,
+    .datapoint {
       stroke: $blue;
     }
   }
