@@ -5,14 +5,14 @@ angular.module('darwinD3App')
     var params = {};
 
     // set default parameters
-    params.startDate = '2013-09-08';
-    params.endDate = '2013-09-30';
+    params.startDate = '2013-05-01';
+    params.endDate = '2013-05-31';
 
     params.availableNetworks = ['facebook', 'twitter', 'website'];
-    params.selectedNetworks = ['facebook', 'twitter'];
+    params.selectedNetworks = ['facebook', 'twitter', 'website'];
 
     params.availableMetrics = ['action', 'advocacy', 'awareness', 'appreciation'];
-    params.selectedMetric = 'advocacy';
+    params.selectedMetric = 'appreciation';
 
     return {
       params: params

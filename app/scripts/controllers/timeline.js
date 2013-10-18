@@ -68,6 +68,7 @@ angular.module('darwinD3App')
       $scope.parseDatasetDates();
 
       $scope.getSources = function () {
+        seriesNames = $scope.getSeriesNames();
         return seriesNames.map(function (source) {
           return {
             name: source,
@@ -85,6 +86,24 @@ angular.module('darwinD3App')
       var sources = $scope.getSources();
       var source;
 
+      var circleAttributes = {
+        'class': 'datapoint',
+        r: Layout.circleRadius,
+        cx: function (d) {
+          return x(d.period);
+        },
+        cy: function (d) {
+          return y(d.amount);
+        }
+      };
+
+      var pathAttributes = {
+        'class': 'line',
+        d: function (d) {
+          return line(d.values);
+        }
+      };
+
       $scope.setDomains = function () {
         x.domain(d3.extent($scope.dataset, function (d) {
           return d.period;
@@ -101,6 +120,13 @@ angular.module('darwinD3App')
             });
           })
         ]).nice();
+      };
+
+      $scope.updateAxes = function () {
+        svg.selectAll('.x.axis')
+          .call(xAxis);
+        svg.selectAll('.y.axis')
+          .call(yAxis);
       };
 
       $scope.renderInitialGraph = function () {
@@ -129,16 +155,11 @@ angular.module('darwinD3App')
           .data(sources)
           .enter().append('g')
           .attr('class', function (d, i) {
-            return 'series ' + seriesNames[i];
+            return 'series ' + d.name;
           });
 
         source.append('path')
-          .attr({
-            'class': 'line',
-            d: function (d) {
-              return line(d.values);
-            }
-          });
+          .attr(pathAttributes);
 
         source.append('g').selectAll('circle')
           .data(function (d) {
@@ -146,16 +167,7 @@ angular.module('darwinD3App')
           })
           .enter()
           .append('circle')
-          .attr({
-            'class': 'datapoint',
-            r: Layout.circleRadius,
-            cx: function (d) {
-              return x(d.period);
-            },
-            cy: function (d) {
-              return y(d.amount);
-            }
-          })
+          .attr(circleAttributes)
           .on('mouseover', tip.show)
           .on('mouseout', tip.hide);
       };
@@ -163,77 +175,72 @@ angular.module('darwinD3App')
       $scope.renderInitialGraph();
 
       $scope.updateGraph = function () {
-        // update data
+        // Update data
         $scope.dataset = Data.getPeriodData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.selectedNetworks, $scope.params.selectedMetric);
 
         $scope.parseDatasetDates();
 
         sources = $scope.getSources();
 
-        // update domains
+        // Update domains and scales
         $scope.setDomains();
+        $scope.updateAxes();
 
         var sel = svg.selectAll('.series')
-          .data(sources);
+          .data(sources, function (d) {
+            // Return the name as the unique key for this collection so that it knows which series to add/remove
+            return d.name;
+          });
 
-        // update path
+        // Add new series if any
+        var newSources = sel.enter().append('g')
+          .attr('class', function (d, i) {
+            return 'series ' + d.name;
+          });
+
+        // Remove series that no longer exist
+        sel.exit().remove();
+
+        // Update path
         sel
           .select('path')
           .transition()
           .ease(Layout.easeMethod)
           .duration(Layout.dataUpdateDuration)
-          .attr('d', function (d) {
-            return line(d.values);
-          });
+          .attr(pathAttributes);
 
-        // update circles
+        // Re-add path to newly created series
+        newSources.append('path')
+          .attr(pathAttributes);
+
         var circles = sel
           .selectAll('.datapoint')
           .data(function (d) {
             return d.values;
           });
 
+        // Update datapoints
         circles
           .transition()
           .ease(Layout.easeMethod)
           .duration(Layout.dataUpdateDuration)
-          .attr({
-            cx: function (d) {
-              return x(d.period);
-            },
-            cy: function (d) {
-              return y(d.amount);
-            }
-          });
+          .attr(circleAttributes);
 
+        // Add new datapoints
         circles
           .enter()
           .append('circle')
-          .attr({
-            'class': 'datapoint',
-            r: Layout.circleRadius,
-            cx: function (d) {
-              return x(d.period);
-            },
-            cy: function (d) {
-              return y(d.amount);
-            }
-          })
+          .attr(circleAttributes)
           .on('mouseover', tip.show)
           .on('mouseout', tip.hide);
 
+        // Remove old datapoints
         circles
           .exit()
           .remove();
-
-        if (sources[0].values.length > 25) {
-          circles
-            .attr({
-              r: 3
-            });
-        }
       };
 
+      // Third (optional) parameter initiates a deep watch to watch for *any* changes in the watched object
       $scope.$watch('params', function () {
         $scope.updateGraph();
       }, true);

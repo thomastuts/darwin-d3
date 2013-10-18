@@ -1,0 +1,14 @@
+@import "variables";
+
+.button {
+  padding: 10px;
+  background-color: $darwin;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px 0;
+
+  &:hover {
+    background-color: lighten($darwin, 10%);
+  }
+}

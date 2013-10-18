@@ -21,4 +21,8 @@ angular.module('darwinD3App')
       return _.contains($scope.params.selectedNetworks, network);
     };
 
+    $scope.toggleDatapoints = function () {
+      $('.datapoint').fadeToggle();
+    };
+
   });
