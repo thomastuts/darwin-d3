@@ -97,6 +97,13 @@ angular.module('darwinD3App')
         }
       };
 
+      var pathAttributes = {
+        'class': 'line',
+        d: function (d) {
+          return line(d.values);
+        }
+      };
+
       $scope.setDomains = function () {
         x.domain(d3.extent($scope.dataset, function (d) {
           return d.period;
@@ -152,12 +159,7 @@ angular.module('darwinD3App')
           });
 
         source.append('path')
-          .attr({
-            'class': 'line',
-            d: function (d) {
-              return line(d.values);
-            }
-          });
+          .attr(pathAttributes);
 
         source.append('g').selectAll('circle')
           .data(function (d) {
@@ -173,14 +175,14 @@ angular.module('darwinD3App')
       $scope.renderInitialGraph();
 
       $scope.updateGraph = function () {
-        // update data
+        // Update data
         $scope.dataset = Data.getPeriodData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.selectedNetworks, $scope.params.selectedMetric);
 
         $scope.parseDatasetDates();
 
         sources = $scope.getSources();
 
-        // update domains and scales
+        // Update domains and scales
         $scope.setDomains();
         $scope.updateAxes();
 
@@ -190,48 +192,41 @@ angular.module('darwinD3App')
             return d.name;
           });
 
-        // add new series if any
+        // Add new series if any
         var newSources = sel.enter().append('g')
           .attr('class', function (d, i) {
             return 'series ' + d.name;
           });
 
-        // remove series that no longer exist
+        // Remove series that no longer exist
         sel.exit().remove();
 
-        // update path
+        // Update path
         sel
           .select('path')
           .transition()
           .ease(Layout.easeMethod)
           .duration(Layout.dataUpdateDuration)
-          .attr('d', function (d) {
-            return line(d.values);
-          });
+          .attr(pathAttributes);
 
-        // re-add path to newly created series
+        // Re-add path to newly created series
         newSources.append('path')
-          .attr({
-            'class': 'line',
-            d: function (d) {
-              return line(d.values);
-            }
-          });
+          .attr(pathAttributes);
 
-        // update circles
         var circles = sel
           .selectAll('.datapoint')
           .data(function (d) {
             return d.values;
           });
 
+        // Update datapoints
         circles
           .transition()
           .ease(Layout.easeMethod)
           .duration(Layout.dataUpdateDuration)
           .attr(circleAttributes);
 
-        // add new datapoints
+        // Add new datapoints
         circles
           .enter()
           .append('circle')
@@ -239,12 +234,13 @@ angular.module('darwinD3App')
           .on('mouseover', tip.show)
           .on('mouseout', tip.hide);
 
-        // remove old datapoints
+        // Remove old datapoints
         circles
           .exit()
           .remove();
       };
 
+      // Third (optional) parameter initiates a deep watch to watch for *any* changes in the watched object
       $scope.$watch('params', function () {
         $scope.updateGraph();
       }, true);
