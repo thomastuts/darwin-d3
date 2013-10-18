@@ -68,6 +68,7 @@ angular.module('darwinD3App')
       $scope.parseDatasetDates();
 
       $scope.getSources = function () {
+        seriesNames = $scope.getSeriesNames();
         return seriesNames.map(function (source) {
           return {
             name: source,
@@ -85,6 +86,17 @@ angular.module('darwinD3App')
       var sources = $scope.getSources();
       var source;
 
+      var circleAttributes = {
+        'class': 'datapoint',
+        r: Layout.circleRadius,
+        cx: function (d) {
+          return x(d.period);
+        },
+        cy: function (d) {
+          return y(d.amount);
+        }
+      };
+
       $scope.setDomains = function () {
         x.domain(d3.extent($scope.dataset, function (d) {
           return d.period;
@@ -101,6 +113,13 @@ angular.module('darwinD3App')
             });
           })
         ]).nice();
+      };
+
+      $scope.updateAxes = function () {
+        svg.selectAll('.x.axis')
+          .call(xAxis);
+        svg.selectAll('.y.axis')
+          .call(yAxis);
       };
 
       $scope.renderInitialGraph = function () {
@@ -129,7 +148,7 @@ angular.module('darwinD3App')
           .data(sources)
           .enter().append('g')
           .attr('class', function (d, i) {
-            return 'series ' + seriesNames[i];
+            return 'series ' + d.name;
           });
 
         source.append('path')
@@ -146,16 +165,7 @@ angular.module('darwinD3App')
           })
           .enter()
           .append('circle')
-          .attr({
-            'class': 'datapoint',
-            r: Layout.circleRadius,
-            cx: function (d) {
-              return x(d.period);
-            },
-            cy: function (d) {
-              return y(d.amount);
-            }
-          })
+          .attr(circleAttributes)
           .on('mouseover', tip.show)
           .on('mouseout', tip.hide);
       };
@@ -170,11 +180,24 @@ angular.module('darwinD3App')
 
         sources = $scope.getSources();
 
-        // update domains
+        // update domains and scales
         $scope.setDomains();
+        $scope.updateAxes();
 
         var sel = svg.selectAll('.series')
-          .data(sources);
+          .data(sources, function (d) {
+            // Return the name as the unique key for this collection so that it knows which series to add/remove
+            return d.name;
+          });
+
+        // add new series if any
+        var newSources = sel.enter().append('g')
+          .attr('class', function (d, i) {
+            return 'series ' + d.name;
+          });
+
+        // remove series that no longer exist
+        sel.exit().remove();
 
         // update path
         sel
@@ -184,6 +207,15 @@ angular.module('darwinD3App')
           .duration(Layout.dataUpdateDuration)
           .attr('d', function (d) {
             return line(d.values);
+          });
+
+        // re-add path to newly created series
+        newSources.append('path')
+          .attr({
+            'class': 'line',
+            d: function (d) {
+              return line(d.values);
+            }
           });
 
         // update circles
@@ -197,41 +229,20 @@ angular.module('darwinD3App')
           .transition()
           .ease(Layout.easeMethod)
           .duration(Layout.dataUpdateDuration)
-          .attr({
-            cx: function (d) {
-              return x(d.period);
-            },
-            cy: function (d) {
-              return y(d.amount);
-            }
-          });
+          .attr(circleAttributes);
 
+        // add new datapoints
         circles
           .enter()
           .append('circle')
-          .attr({
-            'class': 'datapoint',
-            r: Layout.circleRadius,
-            cx: function (d) {
-              return x(d.period);
-            },
-            cy: function (d) {
-              return y(d.amount);
-            }
-          })
+          .attr(circleAttributes)
           .on('mouseover', tip.show)
           .on('mouseout', tip.hide);
 
+        // remove old datapoints
         circles
           .exit()
           .remove();
-
-        if (sources[0].values.length > 25) {
-          circles
-            .attr({
-              r: 3
-            });
-        }
       };
 
       $scope.$watch('params', function () {

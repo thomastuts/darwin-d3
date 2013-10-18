@@ -8,6 +8,10 @@
         <div ng-repeat="network in params.availableNetworks">
           <input type="checkbox" ng-click="toggleNetwork(network)" ng-checked="isSelectedNetwork(network)"/>{{ network }}
         </div>
+        <a href="" class="button" ng-click="toggleDatapoints()"><i class="icon-bullseye icon-large"></i> Toggle datapoints</a>
+
+        <h3>Selected networks</h3>
+        <pre>{{ params.selectedNetworks | json }}</pre>
       </div>
 
       <div class="large-6 columns">

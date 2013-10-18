@@ -5,15 +5,18 @@
 }
 
 svg {
-  .axis path,
-  .axis line {
-    fill: none;
-    stroke: #000;
-    shape-rendering: crispEdges;
+  .axis,
+  text {
+    fill: #fff;
   }
 
-  .x.axis path {
-    display: none;
+  .axis {
+    path,
+    line {
+      fill: none;
+      stroke: #fff;
+      shape-rendering: crispEdges;
+    }
   }
 
   .line {
@@ -43,6 +46,13 @@ svg {
     .line,
     .datapoint {
       stroke: $facebook;
+    }
+  }
+
+  .website {
+    .line,
+    .datapoint {
+      stroke: $yellow;
     }
   }
 }
