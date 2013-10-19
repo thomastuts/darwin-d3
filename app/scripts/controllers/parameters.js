@@ -1,8 +1,9 @@
 'use strict';
 
 angular.module('darwinD3App')
-  .controller('ParametersCtrl', function ($scope, Data, Parameters) {
+  .controller('ParametersCtrl', function ($scope, Data, Parameters, Layout) {
     $scope.params = Parameters.params;
+    var datapointsVisible = true;
 
     Data.getData().then(function (result) {
       $scope.availableDates = _.uniq(_.pluck(result.data, 'period')).reverse();
@@ -22,7 +23,14 @@ angular.module('darwinD3App')
     };
 
     $scope.toggleDatapoints = function () {
-      $('.datapoint').fadeToggle();
+      d3.selectAll('.datapoint')
+        .transition()
+        .duration(500)
+        .attr({
+          r: datapointsVisible ? 0 : Layout.circleRadius
+        });
+
+      datapointsVisible = !datapointsVisible;
     };
 
   });
