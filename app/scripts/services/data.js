@@ -28,23 +28,28 @@ angular.module('darwinD3App')
 
         for (var datum in groupedByDate) {
           var dataForDay = groupedByDate[datum];
-
           var tempObj = {};
+
           for (var i = 0; i < dataForDay.length; i++) {
             var entry = dataForDay[i];
-            tempObj.period = entry.period;
+            if (entry.acc_id === this.sourceToKey[network]) {
+              tempObj.period = entry.period;
 
-            for (var j = 0; j < networks.length; j++) {
-              var network = networks[j];
-              if (entry.acc_id === this.sourceToKey[network]) {
-                tempObj[network] = entry[metric];
+              for (var j = 0; j < metrics.length; j++) {
+                var metric = metrics[j];
+                tempObj[metric] = entry[metric];
               }
+              dataBuffer.push(tempObj);
             }
           }
-          dataBuffer.push(tempObj);
+
+
+
         }
 
-        return dataBuffer;
+        console.log(dataBuffer);
+
+//        return dataBuffer;
       },
       getPeriodData: function (data, start, end, networks, metric) {
         console.time('Data parsing');
