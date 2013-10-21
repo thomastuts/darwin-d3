@@ -42,14 +42,8 @@ angular.module('darwinD3App')
               dataBuffer.push(tempObj);
             }
           }
-
-
-
         }
-
-        console.log(dataBuffer);
-
-//        return dataBuffer;
+        return dataBuffer;
       },
       getPeriodData: function (data, start, end, networks, metric) {
         console.time('Data parsing');

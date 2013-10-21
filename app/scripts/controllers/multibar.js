@@ -5,6 +5,176 @@ angular.module('darwinD3App')
     $scope.params = Parameters.params;
 
     Data.getData().then(function (result) {
-      $scope.dataset = Data.getMultibarData(result.data, '2013-09-15', '2013-09-30', 'facebook', ['advocacy', 'action', 'awareness']);
+      $scope.dataset = Data.getMultibarData(result.data, '2013-09-01', '2013-09-30', 'facebook', ['advocacy', 'appreciation', 'awareness']);
+
+      console.log(JSON.stringify($scope.dataset));
+
+      var parseDate = d3.time.format("%Y-%m-%d").parse;
+
+      var tip = d3.tip().attr('class', 'd3-tip').html(function (d) {
+        return moment(d.period).format('MMM Do YYYY') + ': ' + d.amount;
+      });
+
+      var margin = {top: 20, right: 20, bottom: 30, left: 50},
+        width = 800 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
+
+      var x = d3.time.scale()
+        .range([0, width]);
+
+      var y = d3.scale.linear()
+        .range([height, 0]);
+
+      var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient('bottom');
+
+      var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient('left');
+
+      var svg = d3.select('#graph-multibar').append('svg')
+        .attr({
+          width: width + margin.left + margin.right,
+          height: height + margin.top + margin.right
+        })
+        .append('g')
+        .attr({
+          transform: 'translate(' + margin.left + ',' + margin.top + ')'
+        });
+
+      svg.call(tip);
+
+      $scope.getSeriesNames = function () {
+        return d3.keys($scope.dataset[0])
+          .filter(function (d) {
+            return d !== 'period';
+          });
+      };
+
+      $scope.parseDatasetDates = function () {
+        $scope.dataset.forEach(function (d) {
+          d.period = parseDate(d.period);
+        });
+      };
+
+      $scope.parseDatasetDates();
+
+      $scope.getSources = function () {
+        seriesNames = $scope.getSeriesNames();
+        return seriesNames.map(function (source) {
+          return {
+            name: source,
+            values: $scope.dataset.map(function (d) {
+              return {
+                period: d.period,
+                amount: d[source]
+              };
+            })
+          };
+        });
+      };
+
+      var seriesNames = $scope.getSeriesNames();
+      var sources = $scope.getSources();
+      var source;
+
+      console.log(sources);
+
+      $scope.setDomains = function () {
+        x.domain(d3.extent($scope.dataset, function (d) {
+          return d.period;
+        }));
+        y.domain([
+          d3.min(sources, function (s) {
+            return d3.min(s.values, function (v) {
+              return v.amount;
+            });
+          }),
+          d3.max(sources, function (s) {
+            return d3.max(s.values, function (v) {
+              return v.amount;
+            });
+          })
+        ]).nice();
+      };
+
+      $scope.updateAxes = function () {
+        xAxis.ticks(sources[0].values.length);
+
+        svg.selectAll('.x.axis')
+          .call(xAxis);
+        svg.selectAll('.y.axis')
+          .call(yAxis);
+      };
+
+      $scope.renderInitialGraph = function () {
+        $scope.setDomains();
+
+        console.log(sources);
+
+        xAxis.ticks(sources[0].values.length);
+
+        svg.append('g')
+          .attr({
+            'class': 'x axis',
+            transform: 'translate(0,' + height + ')'
+          })
+          .call(xAxis);
+
+        svg.append('g')
+          .attr('class', 'y axis')
+          .call(yAxis)
+          .append('text')
+          .attr({
+            transform: 'rotate(-90)',
+            y: 6,
+            dy: '.71em'
+          })
+          .style('text-anchor', 'end')
+          .text($scope.selectedMetric);
+
+        source = svg.selectAll('.source')
+          .data(sources)
+          .enter().append('g')
+          .attr({
+            'class': function (d, i) {
+              return 'series ' + d.name;
+            },
+            transform: function (d, i) {
+              return 'translate(' + ((width - 200) / sources[0].values.length / sources.length) * i + ',0)';
+            }
+          });
+
+        source.selectAll('rect')
+          .data(function (d) {
+            return d.values;
+          })
+          .enter()
+          .append('rect')
+          .attr({
+            x: function (d) {
+              return x(d.period);
+            },
+            y: function (d) {
+              return y(d.amount);
+            },
+            width: function () {
+              return (width - 200) / sources[0].values.length / sources.length;
+            },
+            height: function (d) {
+              return height - y(d.amount);
+            }
+          })
+          .on('mouseover', tip.show)
+          .on('mouseout', tip.hide);
+      };
+
+      $scope.renderInitialGraph();
+
+
+
+
     });
+
   });

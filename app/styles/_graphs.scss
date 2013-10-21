@@ -38,6 +38,7 @@ svg {
     }
   }
 
+  // Sources
   .twitter {
     .line,
     .datapoint {
@@ -56,6 +57,31 @@ svg {
     .line,
     .datapoint {
       stroke: $yellow;
+    }
+  }
+
+  // Metrics
+  .advocacy {
+    rect {
+      fill: $belize;
+    }
+  }
+
+  .action {
+    rect {
+      fill: $emerald;
+    }
+  }
+
+  .awareness {
+    rect {
+      fill: $carrot;
+    }
+  }
+
+  .appreciation {
+    rect {
+      fill: $sunflower;
     }
   }
 }
