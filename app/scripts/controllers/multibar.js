@@ -5,9 +5,7 @@ angular.module('darwinD3App')
     $scope.params = Parameters.params;
 
     Data.getData().then(function (result) {
-      $scope.dataset = Data.getMultibarData(result.data, '2013-09-01', '2013-09-30', 'facebook', ['advocacy', 'appreciation', 'awareness']);
-
-      console.log(JSON.stringify($scope.dataset));
+      $scope.dataset = Data.getMultibarData(result.data, $scope.params.startDate, $scope.params.endDate, 'facebook', ['advocacy', 'appreciation', 'awareness']);
 
       var parseDate = d3.time.format("%Y-%m-%d").parse;
 
@@ -79,8 +77,6 @@ angular.module('darwinD3App')
       var sources = $scope.getSources();
       var source;
 
-      console.log(sources);
-
       $scope.setDomains = function () {
         x.domain(d3.extent($scope.dataset, function (d) {
           return d.period;
@@ -100,6 +96,7 @@ angular.module('darwinD3App')
       };
 
       $scope.updateAxes = function () {
+        console.log(sources);
         xAxis.ticks(sources[0].values.length);
 
         svg.selectAll('.x.axis')
@@ -110,8 +107,6 @@ angular.module('darwinD3App')
 
       $scope.renderInitialGraph = function () {
         $scope.setDomains();
-
-        console.log(sources);
 
         xAxis.ticks(sources[0].values.length);
 
@@ -172,9 +167,53 @@ angular.module('darwinD3App')
 
       $scope.renderInitialGraph();
 
+      $scope.updateGraph = function () {
+        $scope.dataset = Data.getMultibarData(result.data, $scope.params.startDate, $scope.params.endDate, 'facebook', ['advocacy', 'appreciation', 'awareness']);
+        $scope.parseDatasetDates();
+        sources = $scope.getSources();
 
+        $scope.setDomains();
+        $scope.updateAxes();
 
+        var sel = svg.selectAll('.series')
+          .data(sources, function (d) {
+            return d.name;
+          })
+          .attr({
+            transform: function (d, i) {
+              return 'translate(' + ((width - 200) / sources[0].values.length / sources.length) * i + ',0)';
+            }
+          });
 
+        var rects = sel.selectAll('rect')
+          .data(function (d) {
+            return d.values;
+          });
+
+        rects.exit().remove();
+
+        rects
+          .transition()
+          .attr({
+            x: function (d) {
+              return x(d.period);
+            },
+            y: function (d) {
+              return y(d.amount);
+            },
+            width: function () {
+              return (width - 200) / sources[0].values.length / sources.length;
+            },
+            height: function (d) {
+              return height - y(d.amount);
+            }
+          });
+
+      };
+
+      $scope.$watch('params', function () {
+        $scope.updateGraph();
+      }, true);
     });
 
   });
