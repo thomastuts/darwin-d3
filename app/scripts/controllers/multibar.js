@@ -190,10 +190,32 @@ angular.module('darwinD3App')
             return d.values;
           });
 
+        rects
+          .enter()
+          .append('rect')
+          .attr({
+            x: function (d) {
+              return x(d.period);
+            },
+            y: function (d) {
+              return y(d.amount);
+            },
+            width: function () {
+              return (width - 200) / sources[0].values.length / sources.length;
+            },
+            height: function (d) {
+              return height - y(d.amount);
+            }
+          })
+          .on('mouseover', tip.show)
+          .on('mouseout', tip.hide);
+
         rects.exit().remove();
 
         rects
           .transition()
+          .duration(Layout.dataUpdateDuration)
+          .ease(Layout.easeMethod)
           .attr({
             x: function (d) {
               return x(d.period);
