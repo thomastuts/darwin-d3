@@ -5,9 +5,7 @@ angular.module('darwinD3App')
     $scope.params = Parameters.params;
 
     Data.getData().then(function (result) {
-      $scope.dataset = Data.getMultibarData(result.data, '2013-09-01', '2013-09-30', 'facebook', ['advocacy', 'appreciation', 'awareness']);
-
-      console.log(JSON.stringify($scope.dataset));
+      $scope.dataset = Data.getMultibarData(result.data, $scope.params.startDate, $scope.params.endDate, 'facebook', ['advocacy', 'appreciation', 'awareness']);
 
       var parseDate = d3.time.format("%Y-%m-%d").parse;
 
@@ -79,8 +77,6 @@ angular.module('darwinD3App')
       var sources = $scope.getSources();
       var source;
 
-      console.log(sources);
-
       $scope.setDomains = function () {
         x.domain(d3.extent($scope.dataset, function (d) {
           return d.period;
@@ -100,7 +96,8 @@ angular.module('darwinD3App')
       };
 
       $scope.updateAxes = function () {
-        xAxis.ticks(sources[0].values.length);
+        console.log(sources);
+        xAxis.ticks(5);
 
         svg.selectAll('.x.axis')
           .call(xAxis);
@@ -110,8 +107,6 @@ angular.module('darwinD3App')
 
       $scope.renderInitialGraph = function () {
         $scope.setDomains();
-
-        console.log(sources);
 
         xAxis.ticks(sources[0].values.length);
 
@@ -172,7 +167,29 @@ angular.module('darwinD3App')
 
       $scope.renderInitialGraph();
 
+      $scope.updateGraph = function () {
+        $scope.dataset = Data.getMultibarData(result.data, '2013-05-15', $scope.params.endDate, 'facebook', ['advocacy', 'appreciation', 'awareness']);
 
+        $scope.setDomains();
+        $scope.updateAxes();
+
+        sources = $scope.getSources();
+
+        var sel = svg.selectAll('.source').data(sources);
+        console.log(sel);
+
+        var rects = sel.selectAll('rect')
+          .data(function (d) {
+            console.log(d.values);
+            return d.values;
+          });
+
+        rects.exit().remove();
+      };
+
+//      $scope.$watch('params', function () {
+//        $scope.updateGraph();
+//      }, true);
 
 
     });
