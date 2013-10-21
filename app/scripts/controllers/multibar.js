@@ -168,7 +168,7 @@ angular.module('darwinD3App')
       $scope.renderInitialGraph();
 
       $scope.updateGraph = function () {
-        $scope.dataset = Data.getMultibarData(result.data, '2013-05-15', $scope.params.endDate, 'facebook', ['advocacy', 'appreciation', 'awareness']);
+        $scope.dataset = Data.getMultibarData(result.data, $scope.params.startDate, $scope.params.endDate, 'facebook', ['advocacy', 'appreciation', 'awareness']);
         $scope.parseDatasetDates();
         sources = $scope.getSources();
 
@@ -188,7 +188,12 @@ angular.module('darwinD3App')
         var rects = sel.selectAll('rect')
           .data(function (d) {
             return d.values;
-          })
+          });
+
+        rects.exit().remove();
+
+        rects
+          .transition()
           .attr({
             x: function (d) {
               return x(d.period);
@@ -204,14 +209,11 @@ angular.module('darwinD3App')
             }
           });
 
-        rects.exit().remove();
       };
 
-//      $scope.$watch('params', function () {
-//        $scope.updateGraph();
-//      }, true);
-
-
+      $scope.$watch('params', function () {
+        $scope.updateGraph();
+      }, true);
     });
 
   });
