@@ -7,8 +7,6 @@ angular.module('darwinD3App')
     Data.getData().then(function (result) {
       $scope.dataset = Data.getMultibarData(result.data, '2013-09-01', '2013-09-30', 'facebook', ['advocacy', 'appreciation', 'awareness']);
 
-      console.log(JSON.stringify($scope.dataset));
-
       var parseDate = d3.time.format("%Y-%m-%d").parse;
 
       var tip = d3.tip().attr('class', 'd3-tip').html(function (d) {
@@ -79,8 +77,6 @@ angular.module('darwinD3App')
       var sources = $scope.getSources();
       var source;
 
-      console.log(sources);
-
       $scope.setDomains = function () {
         x.domain(d3.extent($scope.dataset, function (d) {
           return d.period;
@@ -110,8 +106,6 @@ angular.module('darwinD3App')
 
       $scope.renderInitialGraph = function () {
         $scope.setDomains();
-
-        console.log(sources);
 
         xAxis.ticks(sources[0].values.length);
 
