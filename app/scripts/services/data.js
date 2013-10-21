@@ -17,6 +17,40 @@ angular.module('darwinD3App')
         2: 'facebook',
         3: 'website'
       },
+      getDonutData: function (data, start, end, network, metrics) {
+        var periodData = this.getMultibarData(data, start, end, network, metrics);
+        var dataBuffer = [];
+
+        var tempObj = {};
+        // Loop metrics and set initial value for adding values later
+        for (var k = 0; k < metrics.length; k++) {
+          var metric = metrics[k];
+          tempObj[metric] = 0;
+        }
+
+        // Loop all entries, adding the values to each selected metric
+        for (var i = 0; i < periodData.length; i++) {
+          var entry = periodData[i];
+          for (var j = 0; j < metrics.length; j++) {
+            var metric = metrics[j];
+            tempObj[metric] += entry[metric];
+          }
+        }
+
+        var keys = _.keys(tempObj);
+        var values = _.values(tempObj);
+
+        for (var l = 0; l < keys.length; l++) {
+          var entryKey = keys[l];
+          var value = values[l];
+          dataBuffer.push({
+            metric: entryKey,
+            amount: value
+          });
+        }
+
+        return dataBuffer;
+      },
       // A multibar chart contains a single network that have all metrics grouped next to each other for a visual comparison
       getMultibarData: function (data, start, end, network, metrics) {
         // select the period we need
