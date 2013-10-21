@@ -17,18 +17,39 @@ angular.module('darwinD3App')
         2: 'facebook',
         3: 'website'
       },
+      // A multibar chart contains a single network that have all metrics grouped next to each other for a visual comparison
+      getMultibarData: function (data, start, end, network, metrics) {
+        // select the period we need
+        var periodData = this.filterByPeriod(data, start, end);
+        var dataBuffer = [];
+        var groupedByDate = _.groupBy(periodData, function (d) {
+          return d.period;
+        });
+
+        for (var datum in groupedByDate) {
+          var dataForDay = groupedByDate[datum];
+          var tempObj = {};
+
+          for (var i = 0; i < dataForDay.length; i++) {
+            var entry = dataForDay[i];
+            if (entry.acc_id === this.sourceToKey[network]) {
+              tempObj.period = entry.period;
+
+              for (var j = 0; j < metrics.length; j++) {
+                var metric = metrics[j];
+                tempObj[metric] = entry[metric];
+              }
+              dataBuffer.push(tempObj);
+            }
+          }
+        }
+        return dataBuffer;
+      },
       getPeriodData: function (data, start, end, networks, metric) {
         console.time('Data parsing');
         // select the period we need
         var periodData = this.filterByPeriod(data, start, end);
         var dataBuffer = [];
-
-        // loop this array and add data to a new object of the structure:
-//        {
-//          period: '2013-10-10',
-//          facebook: 50,
-//          twitter: 20
-//        }
 
         var groupedByDate = _.groupBy(periodData, function (d) {
           return d.period;
@@ -53,25 +74,6 @@ angular.module('darwinD3App')
         }
 
         return dataBuffer;
-
-//        for (var i = 0; i < groupedByDate.length; i++) {
-//          var dataForDay = groupedByDate[i];
-//
-//          entry = {};
-//          entry.period = dataForDay.period;
-//
-//          for (var j = 0; j < networks.length; j++) {
-//            var network = networks[j];
-//            if (dataForDay.acc_id = this.sourceKeys[network]) {
-//              entry[network] = dataForDay[metric];
-//            }
-//          }
-//
-//          dataBuffer.push(entry);
-//        }
-//
-//        console.log(dataBuffer);
-
       },
       getTotalValue: function (data) {
         for (var i = 0; i < data.length; i++) {

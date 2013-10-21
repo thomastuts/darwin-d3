@@ -8,6 +8,9 @@ svg {
   .axis,
   text {
     fill: #fff;
+    font-family: sans-serif;
+    font-size: 9px;
+    text-transform: uppercase;
   }
 
   .axis {
@@ -35,6 +38,7 @@ svg {
     }
   }
 
+  // Sources
   .twitter {
     .line,
     .datapoint {
@@ -53,6 +57,31 @@ svg {
     .line,
     .datapoint {
       stroke: $yellow;
+    }
+  }
+
+  // Metrics
+  .advocacy {
+    rect {
+      fill: $belize;
+    }
+  }
+
+  .action {
+    rect {
+      fill: $emerald;
+    }
+  }
+
+  .awareness {
+    rect {
+      fill: $carrot;
+    }
+  }
+
+  .appreciation {
+    rect {
+      fill: $sunflower;
     }
   }
 }
