@@ -97,7 +97,7 @@ angular.module('darwinD3App')
 
       $scope.updateAxes = function () {
         console.log(sources);
-        xAxis.ticks(5);
+        xAxis.ticks(sources[0].values.length);
 
         svg.selectAll('.x.axis')
           .call(xAxis);
@@ -169,19 +169,39 @@ angular.module('darwinD3App')
 
       $scope.updateGraph = function () {
         $scope.dataset = Data.getMultibarData(result.data, '2013-05-15', $scope.params.endDate, 'facebook', ['advocacy', 'appreciation', 'awareness']);
+        $scope.parseDatasetDates();
+        sources = $scope.getSources();
 
         $scope.setDomains();
         $scope.updateAxes();
 
-        sources = $scope.getSources();
-
-        var sel = svg.selectAll('.source').data(sources);
-        console.log(sel);
+        var sel = svg.selectAll('.series')
+          .data(sources, function (d) {
+            return d.name;
+          })
+          .attr({
+            transform: function (d, i) {
+              return 'translate(' + ((width - 200) / sources[0].values.length / sources.length) * i + ',0)';
+            }
+          });
 
         var rects = sel.selectAll('rect')
           .data(function (d) {
-            console.log(d.values);
             return d.values;
+          })
+          .attr({
+            x: function (d) {
+              return x(d.period);
+            },
+            y: function (d) {
+              return y(d.amount);
+            },
+            width: function () {
+              return (width - 200) / sources[0].values.length / sources.length;
+            },
+            height: function (d) {
+              return height - y(d.amount);
+            }
           });
 
         rects.exit().remove();
