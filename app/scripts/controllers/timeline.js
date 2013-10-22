@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('darwinD3App')
-  .controller('TimelineCtrl', function ($scope, Fixtures, Layout, Data, Parameters) {
+  .controller('TimelineCtrl', function ($scope, Layout, Data, Parameters) {
     Data.getData().then(function (result) {
       $scope.uniqueDates = _.uniq(_.pluck(result.data, 'period')).reverse();
       $scope.params = Parameters.params;

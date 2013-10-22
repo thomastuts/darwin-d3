@@ -32,6 +32,13 @@ angular.module('darwinD3App')
 
       var arcs;
 
+      var arcAttributes = {
+        d: arc,
+        'class': function (d) {
+          return d.data.metric;
+        }
+      };
+
       $scope.renderInitialGraph = function () {
         arcs = svg.selectAll('path')
           .data(pie($scope.dataset), function (d) {
@@ -39,12 +46,7 @@ angular.module('darwinD3App')
           })
           .enter()
           .append('path')
-          .attr({
-            d: arc,
-            'class': function (d) {
-              return d.data.metric;
-            }
-          }).each(function (d) {
+          .attr(arcAttributes).each(function (d) {
             this._current = d;
           });
 
