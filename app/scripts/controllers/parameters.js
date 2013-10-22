@@ -7,6 +7,8 @@ angular.module('darwinD3App')
 
     Data.getData().then(function (result) {
       $scope.availableDates = _.uniq(_.pluck(result.data, 'period')).reverse();
+      $scope.minDate = $scope.availableDates[0];
+      $scope.maxDate = $scope.availableDates[$scope.availableDates.length - 1];
     });
 
     $scope.toggleNetwork = function (network) {

@@ -5,7 +5,7 @@ angular.module('darwinD3App')
     var params = {};
 
     // set default parameters
-    params.startDate = '2013-05-01';
+    params.startDate = '2013-05-25';
     params.endDate = '2013-05-31';
 
     params.availableNetworks = ['facebook', 'twitter', 'website'];
