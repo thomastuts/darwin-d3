@@ -32,10 +32,8 @@ angular.module('darwinD3App')
       var arcs;
 
       $scope.renderInitialGraph = function () {
-        console.log($scope.dataset);
         arcs = svg.selectAll('path')
           .data(pie($scope.dataset), function (d) {
-            console.log(d);
             return d.data.metric;
           })
           .enter()
@@ -54,7 +52,6 @@ angular.module('darwinD3App')
 
       $scope.updateGraph = function () {
         $scope.dataset = Data.getDonutData(result.data, $scope.params.startDate, $scope.params.endDate, 'facebook', ['advocacy', 'appreciation', 'awareness']);
-        console.log($scope.dataset);
 
         arcs = arcs.data(pie($scope.dataset));
         arcs.transition().duration(1000).attrTween("d", arcTween);
