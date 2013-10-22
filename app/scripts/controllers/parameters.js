@@ -6,6 +6,8 @@ angular.module('darwinD3App')
     var datapointsVisible = true;
     $scope.startDateCalendar = {};
     $scope.endDateCalendar = {};
+    $scope.startingDay = 1;
+    $scope.showWeeks = 'false';
 
     Data.getData().then(function (result) {
       $scope.availableDates = _.uniq(_.pluck(result.data, 'period')).reverse();
