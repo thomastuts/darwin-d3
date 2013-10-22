@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('darwinD3App', [])
+angular.module('darwinD3App', ['ui.bootstrap'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

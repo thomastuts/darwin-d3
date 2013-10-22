@@ -130,7 +130,7 @@ angular.module('darwinD3App')
           throw new Error('Filter needs at least one date');
         }
 
-        if (this.periodDataCache.start === start && this.periodDataCache.end) {
+        if (this.periodDataCache.start === start && this.periodDataCache.end === end) {
           return this.periodDataCache.data;
         }
 
