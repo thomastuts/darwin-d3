@@ -51,10 +51,20 @@
 
   <!--  METRIC COMPARISON  -->
   <h2>Metric comparison</h2>
-  <h3>Start</h3>
-  <p class="date">{{ params.startDate | date:'fullDate' }}</p>
-  <h3>End</h3>
-  <p class="date">{{ params.endDate | date:'fullDate' }}</p>
+  <h3>Metrics</h3>
+  <ul class="button-list">
+    <li ng-repeat="metric in params.availableMetrics">
+      <i ng-class="isSelectedMetric(metric.name, 'metric')" class="icon-button {{ metric.name }} icon-{{ metric.icon }}" ng-click="toggleMetric(metric.name)"></i>
+    </li>
+  </ul>
+  <br/><br/><br/>
+  <h3>Network</h3>
+  <ul class="button-list">
+    <li ng-repeat="network in params.availableNetworks" ng-click="setNetwork(network.name)">
+      <i ng-class="isSelectedNetwork(network.name, 'metric')" class="icon-button {{ network.name }} icon-{{ network.icon }}" ng-click="setNetwork(network.name)"></i>
+    </li>
+  </ul>
+
 </div>
 
 <div class="wrapper">

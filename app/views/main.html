@@ -25,24 +25,6 @@
   </div>
 </div>
 
-<div ng-controller="ParametersCtrl" class="row">
-  <div class="large-4 columns">
-    <h2>Parameters</h2>
-
-    <h3>Metrics</h3>
-    <div ng-repeat="metric in params.availableMetrics">
-      <input type="checkbox" ng-click="toggleMetric(metric)" ng-checked="isSelectedMetric(metric)"/>{{ metric }}
-    </div>
-  </div>
-
-  <div class="large-4 columns">
-    <h3>Network</h3>
-    <select name="selectedNetwork" id="selectedNetwork" ng-options="network for network in params.availableNetworks"
-            ng-model="params.metricComparison.selectedNetwork"></select>
-  </div>
-
-</div>
-
 <div ng-controller="TimelineCtrl" class="row">
   <div class="large-12 columns">
     <div class="graph" id="graph-timeline"></div>
