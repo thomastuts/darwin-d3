@@ -106,6 +106,22 @@ angular.module('darwinD3App')
           .call(yAxis);
       };
 
+      var rectAttributes = {
+        x: function (d) {
+          return x(d.period);
+        },
+        y: function (d) {
+          return y(d.amount);
+        },
+        width: function () {
+          return (width - 200) / sources[0].values.length / sources.length;
+        },
+        height: function (d) {
+          return height - y(d.amount);
+        }
+      };
+
+
       $scope.renderInitialGraph = function () {
         $scope.setDomains();
 
@@ -148,20 +164,7 @@ angular.module('darwinD3App')
           })
           .enter()
           .append('rect')
-          .attr({
-            x: function (d) {
-              return x(d.period);
-            },
-            y: function (d) {
-              return y(d.amount);
-            },
-            width: function () {
-              return (width - 200) / sources[0].values.length / sources.length;
-            },
-            height: function (d) {
-              return height - y(d.amount);
-            }
-          })
+          .attr(rectAttributes)
           .on('mouseover', tip.show)
           .on('mouseout', tip.hide);
 
@@ -196,20 +199,7 @@ angular.module('darwinD3App')
         rects
           .enter()
           .append('rect')
-          .attr({
-            x: function (d) {
-              return x(d.period);
-            },
-            y: function (d) {
-              return y(d.amount);
-            },
-            width: function () {
-              return (width - 200) / sources[0].values.length / sources.length;
-            },
-            height: function (d) {
-              return height - y(d.amount);
-            }
-          })
+          .attr(rectAttributes)
           .on('mouseover', tip.show)
           .on('mouseout', tip.hide);
 
@@ -219,21 +209,7 @@ angular.module('darwinD3App')
           .transition()
           .duration(Layout.dataUpdateDuration)
           .ease(Layout.easeMethod)
-          .attr({
-            x: function (d) {
-              return x(d.period);
-            },
-            y: function (d) {
-              return y(d.amount);
-            },
-            width: function () {
-              return (width - 200) / sources[0].values.length / sources.length;
-            },
-            height: function (d) {
-              return height - y(d.amount);
-            }
-          });
-
+          .attr(rectAttributes);
       };
 
       $scope.$watch('params', function (newValue, oldValue) {
