@@ -25,8 +25,13 @@ angular.module('darwinD3App')
       }
     };
 
-    $scope.isSelectedNetwork = function (network) {
-      return _.contains($scope.params.networkComparison.selectedNetworks, network);
+    $scope.isSelectedNetwork = function (network, comparison) {
+      if (comparison === 'network') {
+        return _.contains($scope.params.networkComparison.selectedNetworks, network) ? 'active' : '';
+      }
+      else if (comparison === 'metric') {
+        return $scope.params.metricComparison.selectedNetwork === network ? 'active' : '';
+      }
     };
 
     $scope.setMetric = function (metric) {

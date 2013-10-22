@@ -38,7 +38,7 @@
   <h3>Networks</h3>
   <ul class="button-list">
     <li ng-repeat="network in params.availableNetworks">
-      <i class="icon-button {{ network.name }} icon-{{ network.icon }}" ng-click="toggleNetwork(network.name)"></i>
+      <i ng-class="isSelectedNetwork(network.name, 'network')" class="icon-button {{ network.name }} icon-{{ network.icon }}" ng-click="toggleNetwork(network.name)"></i>
     </li>
   </ul>
   <br/><br/><br/>
