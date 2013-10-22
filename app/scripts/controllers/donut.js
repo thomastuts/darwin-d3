@@ -3,6 +3,7 @@
 angular.module('darwinD3App')
   .controller('DonutCtrl', function ($scope, Data, Layout, Parameters) {
     $scope.params = Parameters.params;
+    var isGraphRendered = false;
     Data.getData().then(function (result) {
       $scope.dataset = Data.getDonutData(result.data, $scope.params.startDate, $scope.params.endDate, 'facebook', ['advocacy', 'appreciation', 'awareness']);
       d3.select('#update').on('click', function () {
@@ -32,10 +33,8 @@ angular.module('darwinD3App')
       var arcs;
 
       $scope.renderInitialGraph = function () {
-        console.log($scope.dataset);
         arcs = svg.selectAll('path')
           .data(pie($scope.dataset), function (d) {
-            console.log(d);
             return d.data.metric;
           })
           .enter()
@@ -48,13 +47,14 @@ angular.module('darwinD3App')
           }).each(function (d) {
             this._current = d;
           });
+
+        isGraphRendered = true;
       };
 
       $scope.renderInitialGraph();
 
       $scope.updateGraph = function () {
         $scope.dataset = Data.getDonutData(result.data, $scope.params.startDate, $scope.params.endDate, 'facebook', ['advocacy', 'appreciation', 'awareness']);
-        console.log($scope.dataset);
 
         arcs = arcs.data(pie($scope.dataset));
         arcs.transition().duration(1000).attrTween("d", arcTween);
@@ -69,7 +69,9 @@ angular.module('darwinD3App')
       }
 
       $scope.$watch('params', function (newValue, oldValue) {
-        $scope.updateGraph();
+        if (isGraphRendered) {
+          $scope.updateGraph();
+        }
       }, true);
 
     });

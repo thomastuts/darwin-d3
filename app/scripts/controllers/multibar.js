@@ -3,6 +3,7 @@
 angular.module('darwinD3App')
   .controller('MultibarCtrl', function ($scope, Data, Layout, Parameters) {
     $scope.params = Parameters.params;
+    var isGraphRendered = false;
 
     Data.getData().then(function (result) {
       $scope.dataset = Data.getMultibarData(result.data, $scope.params.startDate, $scope.params.endDate, 'facebook', ['advocacy', 'appreciation', 'awareness']);
@@ -163,6 +164,8 @@ angular.module('darwinD3App')
           })
           .on('mouseover', tip.show)
           .on('mouseout', tip.hide);
+
+        isGraphRendered = true;
       };
 
       $scope.renderInitialGraph();
@@ -233,8 +236,10 @@ angular.module('darwinD3App')
 
       };
 
-      $scope.$watch('params', function () {
-        $scope.updateGraph();
+      $scope.$watch('params', function (newValue, oldValue) {
+        if (isGraphRendered) {
+          $scope.updateGraph();
+        }
       }, true);
     });
 

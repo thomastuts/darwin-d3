@@ -5,8 +5,9 @@ angular.module('darwinD3App')
     return {
       parseDate: d3.time.format('%Y-%m-%d').parse,
       getData: function () {
-        return $http.get('data/full-data.json');
+        return $http({method: 'GET', url: 'data/full-data.json', cache: true});
       },
+      periodDataCache: {},
       sourceToKey: {
         twitter: 1,
         facebook: 2,
@@ -80,8 +81,6 @@ angular.module('darwinD3App')
         return dataBuffer;
       },
       getPeriodData: function (data, start, end, networks, metric) {
-        console.time('Data parsing');
-        // select the period we need
         var periodData = this.filterByPeriod(data, start, end);
         var dataBuffer = [];
 
@@ -131,6 +130,10 @@ angular.module('darwinD3App')
           throw new Error('Filter needs at least one date');
         }
 
+        if (this.periodDataCache.start === start && this.periodDataCache.end) {
+          return this.periodDataCache.data;
+        }
+
         end = end ? end : start;
 
         var dataBuffer = [];
@@ -146,6 +149,12 @@ angular.module('darwinD3App')
             dataBuffer.push(datum);
           }
         }
+
+        this.periodDataCache = {
+          start: start,
+          end: end,
+          data: dataBuffer.reverse()
+        };
 
         // sort by ascending date since the data is sorted by most recent date
         return dataBuffer.reverse();
