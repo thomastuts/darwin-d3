@@ -149,7 +149,7 @@ angular.module('darwinD3App')
           .data(sources)
           .enter().append('g')
           .attr({
-            'class': function (d, i) {
+            'class': function (d) {
               return 'series ' + d.name;
             },
             transform: function (d, i) {
@@ -190,6 +190,21 @@ angular.module('darwinD3App')
             }
           });
 
+        // Remove any unneeded series
+        sel.exit().remove();
+
+        // Add new series if any
+        sel.enter()
+          .append('g')
+          .attr({
+            'class': function (d) {
+              return 'series ' + d.name;
+            },
+            transform: function (d, i) {
+              return 'translate(' + ((width - 200) / sources[0].values.length / sources.length) * i + ',0)';
+            }
+          });
+
         var rects = sel.selectAll('rect')
           .data(function (d) {
             return d.values;
@@ -202,8 +217,6 @@ angular.module('darwinD3App')
           .on('mouseover', tip.show)
           .on('mouseout', tip.hide);
 
-        rects.exit().remove();
-
         rects
           .transition()
           .duration(Layout.dataUpdateDuration)
@@ -211,7 +224,7 @@ angular.module('darwinD3App')
           .attr(rectAttributes);
       };
 
-      $scope.$watch('params', function (newValue, oldValue) {
+      $scope.$watch('params', function () {
         if (isGraphRendered) {
           $scope.updateGraph();
         }
