@@ -59,7 +59,25 @@ angular.module('darwinD3App')
         $scope.dataset = Data.getDonutData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.metricComparison.selectedNetwork, $scope.params.metricComparison.selectedMetrics);
 
         arcs = arcs.data(pie($scope.dataset));
-        arcs.transition().duration(1000).attrTween("d", arcTween);
+
+        // Remove unused arcs
+        arcs
+          .exit()
+          .remove();
+
+        // Add new arcs
+        arcs
+          .enter()
+          .append('path')
+          .attr(arcAttributes).each(function (d) {
+            this._current = d;
+          });
+
+        // Transition new arcs
+        arcs
+          .transition()
+          .duration(1000)
+          .attrTween("d", arcTween);
       };
 
       function arcTween(a) {
