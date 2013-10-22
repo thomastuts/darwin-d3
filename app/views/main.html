@@ -25,20 +25,17 @@
   </div>
 </div>
 
-<div ng-controller="DonutCtrl" class="row">
-  <div class="large-12 columns">
-    <div class="graph" id="graph-donut"></div>
+<div class="row">
+  <div class="large-8 columns">
+    <div ng-controller="MultibarCtrl" class="graph" id="graph-multibar"></div>
+  </div>
+  <div class="large-4 columns">
+    <div ng-controller="DonutCtrl" class="graph" id="graph-donut"></div>
   </div>
 </div>
 
-<div ng-controller="MultibarCtrl" class="row">
+<div class="row">
   <div class="large-12 columns">
-    <div class="graph" id="graph-multibar"></div>
-  </div>
-</div>
-
-<div ng-controller="TimelineCtrl" class="row">
-  <div class="large-12 columns">
-    <div class="graph" id="graph-timeline"></div>
+    <div ng-controller="TimelineCtrl" class="graph" id="graph-timeline"></div>
   </div>
 </div>

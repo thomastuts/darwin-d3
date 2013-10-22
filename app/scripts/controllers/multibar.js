@@ -15,8 +15,8 @@ angular.module('darwinD3App')
       });
 
       var margin = {top: 20, right: 20, bottom: 30, left: 50},
-        width = 800 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
+        width = 400 - margin.left - margin.right,
+        height = 300 - margin.top - margin.bottom;
 
       var x = d3.time.scale()
         .range([0, width]);
