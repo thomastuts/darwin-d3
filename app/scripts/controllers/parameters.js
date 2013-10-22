@@ -10,16 +10,29 @@ angular.module('darwinD3App')
     });
 
     $scope.toggleNetwork = function (network) {
-      if (_.contains($scope.params.selectedNetworks, network)) {
-        $scope.params.selectedNetworks = _.without($scope.params.selectedNetworks, network);
+      if (_.contains($scope.params.networkComparison.selectedNetworks, network)) {
+        $scope.params.networkComparison.selectedNetworks = _.without($scope.params.networkComparison.selectedNetworks, network);
       }
       else {
-        $scope.params.selectedNetworks.push(network);
+        $scope.params.networkComparison.selectedNetworks.push(network);
       }
     };
 
     $scope.isSelectedNetwork = function (network) {
-      return _.contains($scope.params.selectedNetworks, network);
+      return _.contains($scope.params.networkComparison.selectedNetworks, network);
+    };
+
+    $scope.toggleMetric = function (metric) {
+      if (_.contains($scope.params.metricComparison.selectedMetrics, metric)) {
+        $scope.params.metricComparison.selectedMetrics = _.without($scope.params.metricComparison.selectedMetrics, metric);
+      }
+      else {
+        $scope.params.metricComparison.selectedMetrics.push(metric);
+      }
+    };
+
+    $scope.isSelectedMetric = function (metric) {
+      return _.contains($scope.params.metricComparison.selectedMetrics, metric);
     };
 
     $scope.toggleDatapoints = function () {
@@ -32,5 +45,4 @@ angular.module('darwinD3App')
 
       datapointsVisible = !datapointsVisible;
     };
-
   });

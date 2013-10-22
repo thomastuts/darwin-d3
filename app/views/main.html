@@ -4,41 +4,62 @@
     <div ng-controller="ParametersCtrl" class="row">
 
       <div class="large-6 columns">
-        <h2>Networks</h2>
-        <div ng-repeat="network in params.availableNetworks">
-          <input type="checkbox" ng-click="toggleNetwork(network)" ng-checked="isSelectedNetwork(network)"/>{{ network }}
-        </div>
-        <a href="" class="button" ng-click="toggleDatapoints()"><i class="icon-bullseye icon-large"></i> Toggle datapoints</a>
-      </div>
-
-      <div class="large-6 columns">
         <h2>Date range</h2>
         <select name="startDate" id="startDate" ng-options="date for date in availableDates" ng-model="params.startDate"
                 ng-change="updateGraph()"></select>
         <select name="endDate" id="endDate" ng-options="date for date in availableDates" ng-model="params.endDate"
                 ng-change="updateGraph()"></select>
-
-        <h2>Metric</h2>
-        <select name="selectedMetric" id="selectedMetric" ng-options="metric for metric in params.availableMetrics" ng-model="params.selectedMetric"></select>
       </div>
     </div>
   </div>
 </div>
 
-<div ng-controller="DonutCtrl" class="row">
-  <div class="large-12 columns">
-    <div class="graph" id="graph-donut"></div>
+<div class="row">
+  <div class="large-8 columns">
+    <div ng-controller="MultibarCtrl" class="graph" id="graph-multibar"></div>
+  </div>
+  <div class="large-4 columns">
+    <div ng-controller="DonutCtrl" class="graph" id="graph-donut"></div>
   </div>
 </div>
 
-<div ng-controller="MultibarCtrl" class="row">
-  <div class="large-12 columns">
-    <div class="graph" id="graph-multibar"></div>
+<div ng-controller="ParametersCtrl" class="row">
+  <div class="large-4 columns">
+    <h2>Parameters</h2>
+
+    <h3>Metrics</h3>
+    <div ng-repeat="metric in params.availableMetrics">
+      <input type="checkbox" ng-click="toggleMetric(metric)" ng-checked="isSelectedMetric(metric)"/>{{ metric }}
+    </div>
   </div>
+
+  <div class="large-4 columns">
+    <h3>Network</h3>
+    <select name="selectedNetwork" id="selectedNetwork" ng-options="network for network in params.availableNetworks" ng-model="params.metricComparison.selectedNetwork"></select>
+  </div>
+
 </div>
 
 <div ng-controller="TimelineCtrl" class="row">
   <div class="large-12 columns">
     <div class="graph" id="graph-timeline"></div>
   </div>
+</div>
+
+<div ng-controller="ParametersCtrl" class="row">
+  <div class="large-4 columns">
+    <h2>Parameters</h2>
+
+    <h3>Networks</h3>
+    <div ng-repeat="network in params.availableNetworks">
+      <input type="checkbox" ng-click="toggleNetwork(network)" ng-checked="isSelectedNetwork(network)"/>{{ network }}
+    </div>
+    <a href="" class="button" ng-click="toggleDatapoints()"><i class="icon-bullseye icon-large"></i> Toggle datapoints</a>
+  </div>
+
+  <div class="large-4 columns">
+    <h3>Metric</h3>
+    <select name="selectedMetric" id="selectedMetric" ng-options="metric for metric in params.availableMetrics" ng-model="params.networkComparison.selectedMetric"></select>
+  </div>
+
 </div>
