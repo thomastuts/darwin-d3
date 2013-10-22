@@ -6,6 +6,7 @@ angular.module('darwinD3App')
       $scope.uniqueDates = _.uniq(_.pluck(result.data, 'period')).reverse();
       $scope.params = Parameters.params;
       var isGraphRendered = false;
+      var datapointsVisible = true;
 
       $scope.dataset = Data.getPeriodData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.networkComparison.selectedNetworks, $scope.params.networkComparison.selectedMetric);
 
@@ -241,6 +242,30 @@ angular.module('darwinD3App')
         circles
           .exit()
           .remove();
+      };
+
+      $scope.toggleNetwork = function (network) {
+        if (_.contains($scope.params.networkComparison.selectedNetworks, network)) {
+          $scope.params.networkComparison.selectedNetworks = _.without($scope.params.networkComparison.selectedNetworks, network);
+        }
+        else {
+          $scope.params.networkComparison.selectedNetworks.push(network);
+        }
+      };
+
+      $scope.isSelectedNetwork = function (network) {
+        return _.contains($scope.params.networkComparison.selectedNetworks, network);
+      };
+
+      $scope.toggleDatapoints = function () {
+        d3.selectAll('.datapoint')
+          .transition()
+          .duration(500)
+          .attr({
+            r: datapointsVisible ? 0 : Layout.circleRadius
+          });
+
+        datapointsVisible = !datapointsVisible;
       };
 
       $scope.$watch('params', function (newValue, oldValue) {
