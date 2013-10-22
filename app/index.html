@@ -26,12 +26,16 @@
 <body ng-app="darwinD3App">
 
 <div class="sidebar" ng-controller="ParametersCtrl">
-  <!-- PERIOD -->
-  <h2>Period <i class="icon-edit"></i></h2>
-  <h3>Start</h3>
-  <p class="date">{{ params.startDate | date:'fullDate' }}</p>
-  <h3>End</h3>
-  <p class="date">{{ params.endDate | date:'fullDate' }}</p>
+  <!-- START/END DATE -->
+  <h2>Start date</h2>
+  <div class="well well-small pull-left" ng-model="params.startDate">
+    <datepicker min="startDateCalendar.minDate" max="startDateCalendar.maxDate" show-weeks="showWeeks"></datepicker>
+  </div>
+
+  <h2>End date</h2>
+  <div class="well well-small pull-left" ng-model="params.endDate">
+    <datepicker min="endDateCalendar.minDate" max="endDateCalendar.maxDate" show-weeks="showWeeks"></datepicker>
+  </div>
 
   <!-- NETWORK COMPARISON -->
   <h2>Network comparison</h2>
@@ -64,18 +68,6 @@
       <i ng-class="isSelectedNetwork(network.name, 'metric')" class="icon-button {{ network.name }} icon-{{ network.icon }}" ng-click="setNetwork(network.name)"></i>
     </li>
   </ul>
-
-  <!-- START/END DATE TEMP -->
-  <h2>Start date</h2>
-  <div class="well well-small pull-left" ng-model="params.startDate">
-    <datepicker min="startDateCalendar.minDate" max="startDateCalendar.maxDate" show-weeks="showWeeks"></datepicker>
-  </div>
-
-  <h2>End date</h2>
-  <div class="well well-small pull-left" ng-model="params.endDate">
-    <datepicker min="endDateCalendar.minDate" max="endDateCalendar.maxDate" show-weeks="showWeeks"></datepicker>
-  </div>
-
 </div>
 
 <div class="wrapper">

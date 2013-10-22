@@ -8,7 +8,7 @@ angular.module('darwinD3App')
     var $menuActivator = $('.menu-activator');
 
     // get sidebar width & hide it off-screen
-    var sidebarWidth = $sidebar.width() + (parseInt($sidebar.css('padding-left')) * 2);
+    var sidebarWidth = $sidebar.width() + 120;
     $sidebar.css('margin-left', -sidebarWidth);
 
     $(document).on('keyup', function (e) {
