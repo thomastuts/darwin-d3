@@ -58,7 +58,9 @@ angular.module('darwinD3App')
       $scope.updateGraph = function () {
         $scope.dataset = Data.getDonutData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.metricComparison.selectedNetwork, $scope.params.metricComparison.selectedMetrics);
 
-        arcs = arcs.data(pie($scope.dataset));
+        arcs = arcs.data(pie($scope.dataset), function (d) {
+          return d.data.metric;
+        });
 
         // Remove unused arcs
         arcs
