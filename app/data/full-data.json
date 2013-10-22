@@ -3879,15 +3879,6 @@
     "period": "2013-03-30"
   },
   {
-    "id": 7050,
-    "acc_id": 1,
-    "awareness": 13913,
-    "appreciation": 3,
-    "action": 0,
-    "advocacy": 144,
-    "period": "2013-03-29"
-  },
-  {
     "id": 7009,
     "acc_id": 1,
     "awareness": 5340,
@@ -6190,23 +6181,5 @@
     "action": 0,
     "advocacy": 2,
     "period": "2013-01-02"
-  },
-  {
-    "id": 3855,
-    "acc_id": 1,
-    "awareness": 223,
-    "appreciation": 0,
-    "action": 0,
-    "advocacy": 0,
-    "period": "2013-01-01"
-  },
-  {
-    "id": 3861,
-    "acc_id": 2,
-    "awareness": 0,
-    "appreciation": -1,
-    "action": 0,
-    "advocacy": 0,
-    "period": "2013-01-01"
   }
 ]
