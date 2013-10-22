@@ -214,8 +214,16 @@ angular.module('darwinD3App')
           .enter()
           .append('rect')
           .attr(rectAttributes)
+          .attr('x', 0) // set x to 0 to animate new bars coming in from the left
           .on('mouseover', tip.show)
           .on('mouseout', tip.hide);
+
+        rects.exit()
+          .transition()
+          .duration(Layout.dataUpdateDuration)
+          .ease(Layout.easeMethod)
+          .attr('x', -100)
+          .remove();
 
         rects
           .transition()
