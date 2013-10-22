@@ -5,6 +5,7 @@ angular.module('darwinD3App')
     Data.getData().then(function (result) {
       $scope.uniqueDates = _.uniq(_.pluck(result.data, 'period')).reverse();
       $scope.params = Parameters.params;
+      var isGraphRendered = false;
 
       $scope.dataset = Data.getPeriodData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.selectedNetworks, $scope.params.selectedMetric);
 
@@ -170,6 +171,8 @@ angular.module('darwinD3App')
           .attr(circleAttributes)
           .on('mouseover', tip.show)
           .on('mouseout', tip.hide);
+
+        isGraphRendered = true;
       };
 
       $scope.renderInitialGraph();
@@ -240,9 +243,10 @@ angular.module('darwinD3App')
           .remove();
       };
 
-      // Third (optional) parameter initiates a deep watch to watch for *any* changes in the watched object
-      $scope.$watch('params', function () {
-        $scope.updateGraph();
+      $scope.$watch('params', function (newValue, oldValue) {
+        if (isGraphRendered) {
+          $scope.updateGraph();
+        }
       }, true);
 
     });
