@@ -4,11 +4,16 @@ angular.module('darwinD3App')
   .controller('ParametersCtrl', function ($scope, Data, Parameters, Layout) {
     $scope.params = Parameters.params;
     var datapointsVisible = true;
+    $scope.startDateCalendar = {};
+    $scope.endDateCalendar = {};
 
     Data.getData().then(function (result) {
       $scope.availableDates = _.uniq(_.pluck(result.data, 'period')).reverse();
-      $scope.minDate = $scope.availableDates[0];
-      $scope.maxDate = $scope.availableDates[$scope.availableDates.length - 1];
+      $scope.startDateCalendar.minDate = $scope.availableDates[0];
+      $scope.startDateCalendar.maxDate = $scope.availableDates[$scope.availableDates.length - 1];
+
+      $scope.endDateCalendar.minDate = $scope.availableDates[0];
+      $scope.endDateCalendar.maxDate = $scope.availableDates[$scope.availableDates.length - 1];
     });
 
     $scope.setNetwork = function (network) {
@@ -66,4 +71,14 @@ angular.module('darwinD3App')
 
       datapointsVisible = !datapointsVisible;
     };
+
+    $scope.$watch('params.startDate + params.endDate', function () {
+      console.log('Changing');
+      $scope.endDateCalendar.minDate = $scope.params.startDate;
+      $scope.startDateCalendar.maxDate = $scope.params.endDate;
+    });
+
+    $scope.$watch('endDateCalendar', function () {
+
+    });
   });

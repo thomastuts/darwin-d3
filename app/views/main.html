@@ -5,12 +5,12 @@
     <div ng-controller="ParametersCtrl" class="row">
       <h2>Start date</h2>
       <div class="well well-small pull-left" ng-model="params.startDate">
-        <datepicker min="minDate" max="maxDate" show-weeks="showWeeks"></datepicker>
+        <datepicker min="startDateCalendar.minDate" max="startDateCalendar.maxDate" show-weeks="showWeeks"></datepicker>
       </div>
 
       <h2>End date</h2>
       <div class="well well-small pull-left" ng-model="params.endDate">
-        <datepicker min="minDate" max="maxDate" show-weeks="showWeeks"></datepicker>
+        <datepicker min="endDateCalendar.minDate" max="endDateCalendar.maxDate" show-weeks="showWeeks"></datepicker>
       </div>
     </div>
   </div>
