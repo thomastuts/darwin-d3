@@ -1,22 +1,4 @@
 <div class="row">
-  <div class="large-12 columns">
-    <h1>Stats for Foobar Analytics</h1>
-
-    <div ng-controller="ParametersCtrl" class="row">
-      <h2>Start date</h2>
-      <div class="well well-small pull-left" ng-model="params.startDate">
-        <datepicker min="startDateCalendar.minDate" max="startDateCalendar.maxDate" show-weeks="showWeeks"></datepicker>
-      </div>
-
-      <h2>End date</h2>
-      <div class="well well-small pull-left" ng-model="params.endDate">
-        <datepicker min="endDateCalendar.minDate" max="endDateCalendar.maxDate" show-weeks="showWeeks"></datepicker>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row">
   <div class="large-8 columns">
     <div ng-controller="MultibarCtrl" class="graph" id="graph-multibar"></div>
   </div>

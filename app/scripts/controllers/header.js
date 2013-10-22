@@ -9,7 +9,7 @@ angular.module('darwinD3App')
 
     // get sidebar width & hide it off-screen
     var sidebarWidth = $sidebar.width() + (parseInt($sidebar.css('padding-left')) * 2);
-//    $sidebar.css('margin-left', -sidebarWidth);
+    $sidebar.css('margin-left', -sidebarWidth);
 
     $scope.toggleSidebar = function () {
       $sidebar.stop();
@@ -23,7 +23,7 @@ angular.module('darwinD3App')
         }
       );
 
-      $menuActivator.fadeToggle();
+//      $menuActivator.fadeToggle();
 
       // Move body along with menu
 //      $wrapper.transition(
