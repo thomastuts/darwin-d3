@@ -11,7 +11,12 @@ angular.module('darwinD3App')
       $scope.maxDate = $scope.availableDates[$scope.availableDates.length - 1];
     });
 
+    $scope.setNetwork = function (network) {
+      $scope.params.metricComparison.selectedNetwork = network;
+    };
+
     $scope.toggleNetwork = function (network) {
+      console.log('Toggling network ' + network);
       if (_.contains($scope.params.networkComparison.selectedNetworks, network)) {
         $scope.params.networkComparison.selectedNetworks = _.without($scope.params.networkComparison.selectedNetworks, network);
       }
@@ -22,6 +27,10 @@ angular.module('darwinD3App')
 
     $scope.isSelectedNetwork = function (network) {
       return _.contains($scope.params.networkComparison.selectedNetworks, network);
+    };
+
+    $scope.setMetric = function (metric) {
+      $scope.params.networkComparison.selectedMetric = metric;
     };
 
     $scope.toggleMetric = function (metric) {

@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/bootstrap.css">
 
   <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
@@ -24,19 +24,47 @@
 
 </head>
 <body ng-app="darwinD3App">
-<!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-  your browser</a> to improve your experience.</p>
-<![endif]-->
 
-<!--[if lt IE 9]>
-<script src="bower_components/es5-shim/es5-shim.js"></script>
-<script src="bower_components/json3/lib/json3.min.js"></script>
-<![endif]-->
+<div class="sidebar" ng-controller="ParametersCtrl">
+  <!-- PERIOD -->
+  <h2>Period <i class="icon-edit"></i></h2>
+  <h3>Start</h3>
+  <p class="date">{{ params.startDate | date:'fullDate' }}</p>
+  <h3>End</h3>
+  <p class="date">{{ params.endDate | date:'fullDate' }}</p>
 
-<!-- Add your site or application content here -->
-<div class="row">
-  <div class="large-12 columns" ng-view=""></div>
+  <!-- NETWORK COMPARISON -->
+  <h2>Network comparison</h2>
+  <h3>Networks</h3>
+  <ul class="button-list">
+    <li ng-repeat="network in params.availableNetworks">
+      <i class="icon-button {{ network.name }} icon-{{ network.icon }}" ng-click="toggleNetwork(network.name)"></i>
+    </li>
+  </ul>
+  <br/><br/><br/>
+  <h3>Metric</h3>
+  <ul class="button-list">
+    <li ng-repeat="metric in params.availableMetrics" ng-click="setMetric(metric.name)">
+      <i class="icon-button {{ metric.name }} icon-{{ metric.icon }}" ng-click="setMetric(metric.name)"></i>
+    </li>
+  </ul>
+
+  <!--  METRIC COMPARISON  -->
+  <h2>Metric comparison</h2>
+  <h3>Start</h3>
+  <p class="date">{{ params.startDate | date:'fullDate' }}</p>
+  <h3>End</h3>
+  <p class="date">{{ params.endDate | date:'fullDate' }}</p>
+</div>
+
+<div class="wrapper">
+  <div class="row">
+    <header ng-controller="HeaderCtrl">
+      <i ng-click="toggleSidebar()" class="menu-activator icon-reorder icon-2x"></i>
+      <img src="images/logo.png" alt=""/>
+    </header>
+  </div>
+  <div ng-view=""></div>
 </div>
 
 <script src="bower_components/jquery/jquery.js"></script>
@@ -48,6 +76,7 @@
 <script src="bower_components/crossfilter/crossfilter.js"></script>
 <script src="bower_components/underscore/underscore.js"></script>
 <script src="bower_components/d3-tip/index.js"></script>
+<script src="bower_components/jquery.transit/jquery.transit.js"></script>
 <!--<script src="bower_components/angular-ui-bootstrap/src/datepicker/datepicker.js"></script>-->
 <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"></script>
 <!-- endbuild -->
@@ -62,6 +91,7 @@
 <script src="scripts/controllers/timeline.js"></script>
 <script src="scripts/controllers/multibar.js"></script>
 <script src="scripts/controllers/donut.js"></script>
+<script src="scripts/controllers/header.js"></script>
 <!-- endbuild -->
 </body>
 </html>
