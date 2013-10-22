@@ -45,7 +45,7 @@
   <h3>Metric</h3>
   <ul class="button-list">
     <li ng-repeat="metric in params.availableMetrics" ng-click="setMetric(metric.name)">
-      <i class="icon-button {{ metric.name }} icon-{{ metric.icon }}" ng-click="setMetric(metric.name)"></i>
+      <i ng-class="isSelectedMetric(metric.name, 'network')" class="icon-button {{ metric.name }} icon-{{ metric.icon }}" ng-click="setMetric(metric.name)"></i>
     </li>
   </ul>
 

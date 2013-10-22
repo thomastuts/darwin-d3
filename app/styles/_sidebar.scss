@@ -81,6 +81,22 @@ $icon-button-size: 28px;
       &.website.active {
         border-bottom: 2px solid $website;
       }
+
+      &.advocacy.active {
+        border-bottom: 2px solid $belize;
+      }
+
+      &.action.active {
+        border-bottom: 2px solid $emerald;
+      }
+
+      &.awareness.active {
+        border-bottom: 2px solid $carrot;
+      }
+
+      &.appreciation.active {
+        border-bottom: 2px solid $sunflower;
+      }
     }
   }
 }

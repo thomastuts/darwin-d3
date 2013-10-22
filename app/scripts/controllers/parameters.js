@@ -47,8 +47,13 @@ angular.module('darwinD3App')
       }
     };
 
-    $scope.isSelectedMetric = function (metric) {
-      return _.contains($scope.params.metricComparison.selectedMetrics, metric);
+    $scope.isSelectedMetric = function (metric, comparison) {
+      if (comparison === 'network') {
+        return $scope.params.networkComparison.selectedMetric === metric ? 'active' : '';
+      }
+      else if (comparison === 'metric') {
+        return _.contains($scope.params.metricComparison.selectedMetrics, metric) ? 'active' : '';
+      }
     };
 
     $scope.toggleDatapoints = function () {

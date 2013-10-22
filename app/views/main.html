@@ -48,23 +48,3 @@
     <div class="graph" id="graph-timeline"></div>
   </div>
 </div>
-
-<div ng-controller="ParametersCtrl" class="row">
-  <div class="large-4 columns">
-    <h2>Parameters</h2>
-
-    <h3>Networks</h3>
-    <div ng-repeat="network in params.availableNetworks">
-      <input type="checkbox" ng-click="toggleNetwork(network)" ng-checked="isSelectedNetwork(network)"/>{{ network }}
-    </div>
-    <a href="" class="button" ng-click="toggleDatapoints()"><i class="icon-bullseye icon-large"></i> Toggle
-      datapoints</a>
-  </div>
-
-  <div class="large-4 columns">
-    <h3>Metric</h3>
-    <select name="selectedMetric" id="selectedMetric" ng-options="metric for metric in params.availableMetrics"
-            ng-model="params.networkComparison.selectedMetric"></select>
-  </div>
-
-</div>
