@@ -11,6 +11,20 @@ angular.module('darwinD3App')
     var sidebarWidth = $sidebar.width() + (parseInt($sidebar.css('padding-left')) * 2);
     $sidebar.css('margin-left', -sidebarWidth);
 
+    $(document).on('keyup', function (e) {
+      if (e.keyCode === 27) {
+        $sidebar.transition(
+          {
+            x: -sidebarWidth,
+            duration: 500,
+            easing: 'ease'
+          }
+        );
+
+        $scope.isSidebarOpen = false;
+      }
+    });
+
     $scope.toggleSidebar = function () {
       $sidebar.stop();
       var xValue = $scope.isSidebarOpen ? -sidebarWidth : sidebarWidth;
