@@ -5,7 +5,7 @@ angular.module('darwinD3App')
     return {
       parseDate: d3.time.format('%Y-%m-%d').parse,
       getData: function () {
-        return $http.get('data/full-data.json');
+        return $http({method: 'GET', url: 'data/full-data.json', cache: true});
       },
       sourceToKey: {
         twitter: 1,
