@@ -5,9 +5,12 @@ angular.module('darwinD3App')
     $scope.params = Parameters.params;
     Data.getData().then(function (result) {
       $scope.dataset = Data.getDonutData(result.data, $scope.params.startDate, $scope.params.endDate, 'facebook', ['advocacy', 'appreciation', 'awareness']);
+      d3.select('#update').on('click', function () {
+        $scope.updateGraph();
+      });
 
-      var width = 960,
-        height = 500,
+      var width = 300,
+        height = 300,
         radius = Math.min(width, height) / 2;
 
       var arc = d3.svg.arc()
@@ -16,7 +19,9 @@ angular.module('darwinD3App')
 
       var pie = d3.layout.pie()
         .sort(null)
-        .value(function(d) { return d.amount; });
+        .value(function (d) {
+          return d.amount;
+        });
 
       var svg = d3.select("#graph-donut").append("svg")
         .attr("width", width)
@@ -24,37 +29,44 @@ angular.module('darwinD3App')
         .append("g")
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-      var g = svg.selectAll(".arc")
-        .data(pie($scope.dataset))
-        .enter().append("g")
-        .attr("class", "arc");
+      var arcs;
 
       $scope.renderInitialGraph = function () {
-        g.append("path")
+        console.log($scope.dataset);
+        arcs = svg.selectAll('path')
+          .data(pie($scope.dataset), function (d) {
+            console.log(d);
+            return d.data.metric;
+          })
+          .enter()
+          .append('path')
           .attr({
             d: arc,
             'class': function (d) {
               return d.data.metric;
             }
+          }).each(function (d) {
+            this._current = d;
           });
-
-        g.append("text")
-          .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
-          .attr("dy", ".35em")
-          .style("text-anchor", "middle")
-          .text(function(d) { return d.data.metric; });
       };
 
       $scope.renderInitialGraph();
 
       $scope.updateGraph = function () {
         $scope.dataset = Data.getDonutData(result.data, $scope.params.startDate, $scope.params.endDate, 'facebook', ['advocacy', 'appreciation', 'awareness']);
+        console.log($scope.dataset);
 
-        var sel = svg.selectAll(".arc")
-          .data(pie($scope.dataset));
-
-        var arcs = sel.selectAll('path');
+        arcs = arcs.data(pie($scope.dataset));
+        arcs.transition().duration(1000).attrTween("d", arcTween);
       };
+
+      function arcTween(a) {
+        var i = d3.interpolate(this._current, a);
+        this._current = i(0);
+        return function (t) {
+          return arc(i(t));
+        };
+      }
 
       $scope.$watch('params', function (newValue, oldValue) {
         $scope.updateGraph();
