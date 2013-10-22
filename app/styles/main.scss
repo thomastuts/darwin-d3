@@ -8,8 +8,10 @@ body {
   font-family: sans-serif;
   font-size: 12px;
   color: #fff;
-  background: #222;
   padding: 50px;
+  background-image: url('../images/background.png');
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .container {
