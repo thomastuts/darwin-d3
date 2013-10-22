@@ -7,7 +7,7 @@ angular.module('darwinD3App')
       $scope.params = Parameters.params;
       var isGraphRendered = false;
 
-      $scope.dataset = Data.getPeriodData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.selectedNetworks, $scope.params.selectedMetric);
+      $scope.dataset = Data.getPeriodData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.networkComparison.selectedNetworks, $scope.params.networkComparison.selectedMetric);
 
       var parseDate = d3.time.format("%Y-%m-%d").parse;
 
@@ -179,7 +179,7 @@ angular.module('darwinD3App')
 
       $scope.updateGraph = function () {
         // Update data
-        $scope.dataset = Data.getPeriodData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.selectedNetworks, $scope.params.selectedMetric);
+        $scope.dataset = Data.getPeriodData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.networkComparison.selectedNetworks, $scope.params.networkComparison.selectedMetric);
 
         $scope.parseDatasetDates();
 

@@ -6,7 +6,7 @@ angular.module('darwinD3App')
     var isGraphRendered = false;
 
     Data.getData().then(function (result) {
-      $scope.dataset = Data.getMultibarData(result.data, $scope.params.startDate, $scope.params.endDate, 'facebook', ['advocacy', 'appreciation', 'awareness']);
+      $scope.dataset = Data.getMultibarData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.metricComparison.selectedNetwork, $scope.params.metricComparison.selectedMetrics);
 
       var parseDate = d3.time.format("%Y-%m-%d").parse;
 
@@ -173,7 +173,7 @@ angular.module('darwinD3App')
       $scope.renderInitialGraph();
 
       $scope.updateGraph = function () {
-        $scope.dataset = Data.getMultibarData(result.data, $scope.params.startDate, $scope.params.endDate, 'facebook', ['advocacy', 'appreciation', 'awareness']);
+        $scope.dataset = Data.getMultibarData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.metricComparison.selectedNetwork, $scope.params.metricComparison.selectedMetrics);
         $scope.parseDatasetDates();
         sources = $scope.getSources();
 

@@ -5,7 +5,7 @@ angular.module('darwinD3App')
     $scope.params = Parameters.params;
     var isGraphRendered = false;
     Data.getData().then(function (result) {
-      $scope.dataset = Data.getDonutData(result.data, $scope.params.startDate, $scope.params.endDate, 'facebook', ['advocacy', 'appreciation', 'awareness']);
+      $scope.dataset = Data.getDonutData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.metricComparison.selectedNetwork, $scope.params.metricComparison.selectedMetrics);
       d3.select('#update').on('click', function () {
         $scope.updateGraph();
       });
@@ -56,7 +56,7 @@ angular.module('darwinD3App')
       $scope.renderInitialGraph();
 
       $scope.updateGraph = function () {
-        $scope.dataset = Data.getDonutData(result.data, $scope.params.startDate, $scope.params.endDate, 'facebook', ['advocacy', 'appreciation', 'awareness']);
+        $scope.dataset = Data.getDonutData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.metricComparison.selectedNetwork, $scope.params.metricComparison.selectedMetrics);
 
         arcs = arcs.data(pie($scope.dataset));
         arcs.transition().duration(1000).attrTween("d", arcTween);
