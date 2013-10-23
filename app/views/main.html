@@ -1,9 +1,23 @@
+<div class="row" ng-controller="ParametersCtrl">
+  <div class="large-12 columns label-header">
+    <h2>{{ params.networkComparison.selectedMetric }} <span class="muted">from</span> {{ params.startDate | date:'dd/MM/yyyy' }} <span class="muted">to</span> {{ params.endDate | date:'dd/MM/yyyy' }}</h2>
+  </div>
+</div>
 <div ng-controller="TimelineCtrl" class="row">
   <div class="large-12 columns">
     <div class="graph" id="graph-timeline"></div>
   </div>
 </div>
 
+<div class="row">
+  <div class="divider"></div>
+</div>
+
+<div class="row" ng-controller="ParametersCtrl">
+  <div class="large-12 columns label-header">
+    <h2>{{ params.metricComparison.selectedNetwork }} <span class="muted">from</span> {{ params.startDate | date:'dd/MM/yyyy' }} <span class="muted">to</span> {{ params.endDate | date:'dd/MM/yyyy' }}</h2>
+  </div>
+</div>
 <div class="row">
   <div class="large-9 columns">
     <div ng-controller="MultibarCtrl" class="graph" id="graph-multibar"></div>

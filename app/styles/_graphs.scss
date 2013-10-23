@@ -107,3 +107,13 @@ svg {
     shape-rendering: crispEdges;
   }
 }
+
+.label-header {
+  font-family: $osb;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.muted {
+  opacity: 0.3;
+}
