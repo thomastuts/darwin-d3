@@ -5,6 +5,7 @@
 </div>
 <div ng-controller="TimelineCtrl" class="row">
   <div class="large-12 columns">
+    <p ng-click="toggleDatapoints()" class="toggle-datapoints"><i class="icon-bullseye"></i> Toggle datapoints</p>
     <div class="graph" id="graph-timeline"></div>
   </div>
 </div>
@@ -18,9 +19,9 @@
     <h2>{{ params.metricComparison.selectedNetwork }} <span class="muted">from</span> {{ params.startDate | date:'dd/MM/yyyy' }} <span class="muted">to</span> {{ params.endDate | date:'dd/MM/yyyy' }}</h2>
   </div>
 </div>
-<div class="row">
+<div ng-controller="MultibarCtrl" class="row">
   <div class="large-9 columns">
-    <div ng-controller="MultibarCtrl" class="graph" id="graph-multibar"></div>
+    <div class="graph" id="graph-multibar"></div>
   </div>
   <div class="large-3 columns">
     <div ng-controller="DonutCtrl" class="graph" id="graph-donut"></div>
