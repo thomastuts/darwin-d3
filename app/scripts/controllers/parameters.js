@@ -11,11 +11,11 @@ angular.module('darwinD3App')
 
     Data.getData().then(function (result) {
       $scope.availableDates = _.uniq(_.pluck(result.data, 'period')).reverse();
-      $scope.startDateCalendar.minDate = $scope.availableDates[0];
-      $scope.startDateCalendar.maxDate = $scope.availableDates[$scope.availableDates.length - 1];
 
-      $scope.endDateCalendar.minDate = $scope.availableDates[0];
+      $scope.startDateCalendar.minDate = $scope.availableDates[0];
       $scope.endDateCalendar.maxDate = $scope.availableDates[$scope.availableDates.length - 1];
+
+      $scope.adjustCalendar();
     });
 
     $scope.setNetwork = function (network) {
@@ -72,6 +72,11 @@ angular.module('darwinD3App')
         });
 
       datapointsVisible = !datapointsVisible;
+    };
+
+    $scope.adjustCalendar = function () {
+      $scope.endDateCalendar.minDate = $scope.params.startDate;
+      $scope.startDateCalendar.maxDate = $scope.params.endDate;
     };
 
     $scope.$watch('params.startDate + params.endDate', function () {
