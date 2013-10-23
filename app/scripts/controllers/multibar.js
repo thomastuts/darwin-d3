@@ -156,8 +156,6 @@ angular.module('darwinD3App')
       $scope.renderInitialGraph = function () {
         $scope.setDomains();
 
-        xAxis.ticks(sources[0].values.length);
-
         svg.append('g')
           .attr({
             'class': 'x axis',
