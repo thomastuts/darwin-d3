@@ -15,7 +15,7 @@ angular.module('darwinD3App')
         return moment(d.period).format('MMM Do YYYY') + ': ' + d.amount;
       });
 
-      var margin = {top: 20, right: 20, bottom: 20, left: 40},
+      var margin = {top: 20, right: 20, bottom: 0, left: 40},
         width = dimensions.width - margin.left - margin.right,
         height = dimensions.height - margin.top - margin.bottom;
 
