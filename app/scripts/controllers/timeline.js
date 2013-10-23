@@ -133,8 +133,6 @@ angular.module('darwinD3App')
       };
 
       $scope.renderGridlines = function () {
-        console.log(y.ticks());
-
         var gridLines = svg.selectAll("line.horizontalGrid")
           .data(y.ticks());
 

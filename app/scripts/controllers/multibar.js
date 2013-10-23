@@ -106,6 +106,39 @@ angular.module('darwinD3App')
           .call(yAxis);
       };
 
+      $scope.renderGridlines = function () {
+        var gridLines = svg.selectAll("line.horizontalGrid")
+          .data(y.ticks());
+
+        var gridlineAttributes = {
+          "class": "horizontalGrid",
+          "x1": 0,
+          "x2": width,
+          "y1": function (d) {
+            return y(d);
+          },
+          "y2": function (d) {
+            return y(d);
+          }
+        };
+
+        gridLines
+          .exit()
+          .remove();
+
+        gridLines
+          .attr(gridlineAttributes)
+          .transition()
+          .duration(500);
+
+        gridLines
+          .enter()
+          .append("line")
+          .attr(
+            gridlineAttributes);
+
+      };
+
       var rectAttributes = {
         x: function (d) {
           return x(d.period);
@@ -169,6 +202,8 @@ angular.module('darwinD3App')
           .on('mouseout', tip.hide);
 
         isGraphRendered = true;
+
+        $scope.renderGridlines();
       };
 
       $scope.renderInitialGraph();
@@ -231,6 +266,8 @@ angular.module('darwinD3App')
           .duration(Layout.dataUpdateDuration)
           .ease(Layout.easeMethod)
           .attr(rectAttributes);
+
+        $scope.renderGridlines();
       };
 
       $scope.$watch('params', function () {
