@@ -98,8 +98,6 @@ angular.module('darwinD3App')
       };
 
       $scope.updateAxes = function () {
-        xAxis.ticks(sources[0].values.length);
-
         svg.selectAll('.x.axis')
           .call(xAxis);
         svg.selectAll('.y.axis')
