@@ -197,6 +197,8 @@ angular.module('darwinD3App')
         source.append('path')
           .attr(pathAttributes);
 
+        circleAttributes.r = datapointsVisible ? Layout.circleRadius : 0;
+
         source.append('g').selectAll('circle')
           .data(function (d) {
             return d.values;
@@ -215,6 +217,8 @@ angular.module('darwinD3App')
       $scope.renderInitialGraph();
 
       $scope.updateGraph = function () {
+        circleAttributes.r = datapointsVisible ? Layout.circleRadius : 0;
+
         // Update data
         $scope.dataset = Data.getPeriodData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.networkComparison.selectedNetworks, $scope.params.networkComparison.selectedMetric);
 
@@ -280,6 +284,17 @@ angular.module('darwinD3App')
           .remove();
 
         $scope.renderGridlines();
+      };
+
+      $scope.toggleDatapoints = function () {
+        d3.selectAll('.datapoint')
+          .transition()
+          .duration(500)
+          .attr({
+            r: datapointsVisible ? 0 : Layout.circleRadius
+          });
+
+        datapointsVisible = !datapointsVisible;
       };
 
       $scope.$watch('params', function (newValue, oldValue) {

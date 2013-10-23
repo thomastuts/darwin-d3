@@ -3,7 +3,6 @@
 angular.module('darwinD3App')
   .controller('ParametersCtrl', function ($scope, Data, Parameters, Layout) {
     $scope.params = Parameters.params;
-    var datapointsVisible = true;
     $scope.startDateCalendar = {};
     $scope.endDateCalendar = {};
     $scope.startingDay = 1;
@@ -61,17 +60,6 @@ angular.module('darwinD3App')
       else if (comparison === 'metric') {
         return _.contains($scope.params.metricComparison.selectedMetrics, metric) ? 'active' : '';
       }
-    };
-
-    $scope.toggleDatapoints = function () {
-      d3.selectAll('.datapoint')
-        .transition()
-        .duration(500)
-        .attr({
-          r: datapointsVisible ? 0 : Layout.circleRadius
-        });
-
-      datapointsVisible = !datapointsVisible;
     };
 
     $scope.adjustCalendar = function () {
