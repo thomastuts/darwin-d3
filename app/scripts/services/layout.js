@@ -3,8 +3,8 @@
 angular.module('darwinD3App')
   .service('Layout', function Layout() {
     return {
-      easeMethod: 'elastic',
-      dataUpdateDuration: 1500,
+      easeMethod: 'cubic-in-out',
+      dataUpdateDuration: 500,
       circleRadius: 5,
       getDimensions: function () {
         var $12col = $('.large-12.columns');
