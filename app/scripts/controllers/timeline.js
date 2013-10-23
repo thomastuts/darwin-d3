@@ -17,7 +17,7 @@ angular.module('darwinD3App')
         return moment(d.period).format('MMM Do YYYY') + ': ' + d.amount;
       });
 
-      var margin = {top: 20, right: 20, bottom: 20, left: 20},
+      var margin = {top: 20, right: 20, bottom: 20, left: 40},
         width = dimensions.width - margin.left - margin.right,
         height = dimensions.height - margin.top - margin.bottom;
 
@@ -132,6 +132,41 @@ angular.module('darwinD3App')
           .call(yAxis);
       };
 
+      $scope.renderGridlines = function () {
+        console.log(y.ticks());
+
+        var gridLines = svg.selectAll("line.horizontalGrid")
+          .data(y.ticks());
+
+        var gridlineAttributes = {
+          "class": "horizontalGrid",
+          "x1": 0,
+          "x2": width,
+          "y1": function (d) {
+            return y(d);
+          },
+          "y2": function (d) {
+            return y(d);
+          }
+        };
+
+        gridLines
+          .exit()
+          .remove();
+
+        gridLines
+          .attr(gridlineAttributes)
+          .transition()
+          .duration(500);
+
+        gridLines
+          .enter()
+          .append("line")
+          .attr(
+          gridlineAttributes);
+
+      };
+
       $scope.renderInitialGraph = function () {
         $scope.setDomains();
 
@@ -175,6 +210,8 @@ angular.module('darwinD3App')
           .on('mouseout', tip.hide);
 
         isGraphRendered = true;
+
+        $scope.renderGridlines();
       };
 
       $scope.renderInitialGraph();
@@ -243,6 +280,8 @@ angular.module('darwinD3App')
         circles
           .exit()
           .remove();
+
+        $scope.renderGridlines();
       };
 
       $scope.$watch('params', function (newValue, oldValue) {
