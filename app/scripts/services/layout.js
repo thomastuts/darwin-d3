@@ -13,7 +13,7 @@ angular.module('darwinD3App')
         return {
           timeline: {
             width: $12col.width(),
-            height: Math.floor($12col.width() / 1.61)
+            height: Math.floor($12col.width() / 2)
           },
           multibar: {
             width: $9col.width() - 40,
