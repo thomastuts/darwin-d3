@@ -6,6 +6,10 @@ angular.module('darwinD3App')
     var isGraphRendered = false;
     var dimensions = Layout.getDimensions().donut;
 
+    var tip = d3.tip().attr('class', 'd3-tip').html(function (d) {
+      return d.data.metric + ' - ' + d.data.amount;
+    });
+
     Data.getData().then(function (result) {
       $scope.dataset = Data.getDonutData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.metricComparison.selectedNetwork, $scope.params.metricComparison.selectedMetrics);
       d3.select('#update').on('click', function () {
@@ -32,6 +36,8 @@ angular.module('darwinD3App')
         .append("g")
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
+      svg.call(tip);
+
       var arcs;
 
       var arcAttributes = {
@@ -50,7 +56,9 @@ angular.module('darwinD3App')
           .append('path')
           .attr(arcAttributes).each(function (d) {
             this._current = d;
-          });
+          })
+          .on('mouseover', tip.show)
+          .on('mouseout', tip.hide);
 
         isGraphRendered = true;
       };
@@ -78,7 +86,9 @@ angular.module('darwinD3App')
           .append('path')
           .attr(arcAttributes).each(function (d) {
             this._current = d;
-          });
+          })
+          .on('mouseover', tip.show)
+          .on('mouseout', tip.hide);;
 
         // Transition new arcs
         arcs
