@@ -7,6 +7,7 @@ angular.module('darwinD3App')
       $scope.params = Parameters.params;
       var isGraphRendered = false;
       var datapointsVisible = true;
+      var dimensions = Layout.getDimensions().timeline;
 
       $scope.dataset = Data.getPeriodData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.networkComparison.selectedNetworks, $scope.params.networkComparison.selectedMetric);
 
@@ -16,9 +17,9 @@ angular.module('darwinD3App')
         return moment(d.period).format('MMM Do YYYY') + ': ' + d.amount;
       });
 
-      var margin = {top: 20, right: 20, bottom: 30, left: 50},
-        width = 800 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
+      var margin = {top: 20, right: 20, bottom: 20, left: 20},
+        width = dimensions.width - margin.left - margin.right,
+        height = dimensions.height - margin.top - margin.bottom;
 
       var x = d3.time.scale()
         .range([0, width]);

@@ -4,6 +4,7 @@ angular.module('darwinD3App')
   .controller('MultibarCtrl', function ($scope, Data, Layout, Parameters) {
     $scope.params = Parameters.params;
     var isGraphRendered = false;
+    var dimensions = Layout.getDimensions().multibar;
 
     Data.getData().then(function (result) {
       $scope.dataset = Data.getMultibarData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.metricComparison.selectedNetwork, $scope.params.metricComparison.selectedMetrics);
@@ -14,9 +15,9 @@ angular.module('darwinD3App')
         return moment(d.period).format('MMM Do YYYY') + ': ' + d.amount;
       });
 
-      var margin = {top: 20, right: 20, bottom: 30, left: 50},
-        width = 400 - margin.left - margin.right,
-        height = 300 - margin.top - margin.bottom;
+      var margin = {top: 20, right: 20, bottom: 20, left: 20},
+        width = dimensions.width - margin.left - margin.right,
+        height = dimensions.height - margin.top - margin.bottom;
 
       var x = d3.time.scale()
         .range([0, width]);

@@ -4,19 +4,21 @@ angular.module('darwinD3App')
   .controller('DonutCtrl', function ($scope, Data, Layout, Parameters) {
     $scope.params = Parameters.params;
     var isGraphRendered = false;
+    var dimensions = Layout.getDimensions().donut;
+
     Data.getData().then(function (result) {
       $scope.dataset = Data.getDonutData(result.data, $scope.params.startDate, $scope.params.endDate, $scope.params.metricComparison.selectedNetwork, $scope.params.metricComparison.selectedMetrics);
       d3.select('#update').on('click', function () {
         $scope.updateGraph();
       });
 
-      var width = 300,
-        height = 300,
+      var width = dimensions.width,
+        height = dimensions.height,
         radius = Math.min(width, height) / 2;
 
       var arc = d3.svg.arc()
         .outerRadius(radius - 10)
-        .innerRadius(radius - 70);
+        .innerRadius(radius - 40);
 
       var pie = d3.layout.pie()
         .sort(null)
