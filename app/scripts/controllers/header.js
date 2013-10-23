@@ -10,20 +10,25 @@ angular.module('darwinD3App')
     // get sidebar width & hide it off-screen
     var sidebarWidth = $sidebar.width() + 120 + 20;
     $sidebar.css('margin-left', -sidebarWidth);
+    $sidebar.show();
 
     $(document).on('keyup', function (e) {
       if (e.keyCode === 27) {
-        $sidebar.transition(
-          {
-            x: -sidebarWidth,
-            duration: 500,
-            easing: 'ease'
-          }
-        );
-
-        $scope.isSidebarOpen = false;
+        $scope.closeSidebar();
       }
     });
+
+    $scope.closeSidebar = function () {
+      $sidebar.transition(
+        {
+          x: -sidebarWidth,
+          duration: 500,
+          easing: 'ease'
+        }
+      );
+
+      $scope.isSidebarOpen = false;
+    };
 
     $scope.toggleSidebar = function () {
       $sidebar.stop();

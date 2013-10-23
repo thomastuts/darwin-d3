@@ -12,6 +12,7 @@ $icon-button-size: 28px;
   text-transform: uppercase;
   z-index: 10;
   overflow-y: auto;
+  display: none;
 
   h2 {
     font-size: 14px;
@@ -98,6 +99,19 @@ $icon-button-size: 28px;
       &.appreciation.active {
         border-bottom: 2px solid $sunflower;
       }
+    }
+  }
+
+  .sidebar-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    opacity: 0.5;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+      transition: opacity .2s ease-in-out;
     }
   }
 }

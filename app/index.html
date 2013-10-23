@@ -26,6 +26,7 @@
 <body ng-app="darwinD3App">
 
 <div class="sidebar" ng-controller="ParametersCtrl">
+  <i ng-controller="HeaderCtrl" ng-click="closeSidebar()" class="sidebar-close icon-remove icon-large"></i>
   <!-- START/END DATE -->
   <h2>Start date</h2>
   <div class="well well-small pull-left" ng-model="params.startDate">
