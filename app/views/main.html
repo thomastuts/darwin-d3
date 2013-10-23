@@ -1,18 +1,6 @@
-<div class="row">
+<div ng-controller="TimelineCtrl" class="row">
   <div class="large-12 columns">
-    <h1>Stats for Foobar Analytics</h1>
-
-    <div ng-controller="ParametersCtrl" class="row">
-      <h2>Start date</h2>
-      <div class="well well-small pull-left" ng-model="params.startDate">
-        <datepicker min="minDate" max="maxDate" show-weeks="showWeeks"></datepicker>
-      </div>
-
-      <h2>End date</h2>
-      <div class="well well-small pull-left" ng-model="params.endDate">
-        <datepicker min="minDate" max="maxDate" show-weeks="showWeeks"></datepicker>
-      </div>
-    </div>
+    <div class="graph" id="graph-timeline"></div>
   </div>
 </div>
 
@@ -23,48 +11,4 @@
   <div class="large-4 columns">
     <div ng-controller="DonutCtrl" class="graph" id="graph-donut"></div>
   </div>
-</div>
-
-<div ng-controller="ParametersCtrl" class="row">
-  <div class="large-4 columns">
-    <h2>Parameters</h2>
-
-    <h3>Metrics</h3>
-    <div ng-repeat="metric in params.availableMetrics">
-      <input type="checkbox" ng-click="toggleMetric(metric)" ng-checked="isSelectedMetric(metric)"/>{{ metric }}
-    </div>
-  </div>
-
-  <div class="large-4 columns">
-    <h3>Network</h3>
-    <select name="selectedNetwork" id="selectedNetwork" ng-options="network for network in params.availableNetworks"
-            ng-model="params.metricComparison.selectedNetwork"></select>
-  </div>
-
-</div>
-
-<div ng-controller="TimelineCtrl" class="row">
-  <div class="large-12 columns">
-    <div class="graph" id="graph-timeline"></div>
-  </div>
-</div>
-
-<div ng-controller="ParametersCtrl" class="row">
-  <div class="large-4 columns">
-    <h2>Parameters</h2>
-
-    <h3>Networks</h3>
-    <div ng-repeat="network in params.availableNetworks">
-      <input type="checkbox" ng-click="toggleNetwork(network)" ng-checked="isSelectedNetwork(network)"/>{{ network }}
-    </div>
-    <a href="" class="button" ng-click="toggleDatapoints()"><i class="icon-bullseye icon-large"></i> Toggle
-      datapoints</a>
-  </div>
-
-  <div class="large-4 columns">
-    <h3>Metric</h3>
-    <select name="selectedMetric" id="selectedMetric" ng-options="metric for metric in params.availableMetrics"
-            ng-model="params.networkComparison.selectedMetric"></select>
-  </div>
-
 </div>

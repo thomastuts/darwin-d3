@@ -4,14 +4,26 @@ angular.module('darwinD3App')
   .controller('ParametersCtrl', function ($scope, Data, Parameters, Layout) {
     $scope.params = Parameters.params;
     var datapointsVisible = true;
+    $scope.startDateCalendar = {};
+    $scope.endDateCalendar = {};
+    $scope.startingDay = 1;
+    $scope.showWeeks = 'false';
 
     Data.getData().then(function (result) {
       $scope.availableDates = _.uniq(_.pluck(result.data, 'period')).reverse();
-      $scope.minDate = $scope.availableDates[0];
-      $scope.maxDate = $scope.availableDates[$scope.availableDates.length - 1];
+      $scope.startDateCalendar.minDate = $scope.availableDates[0];
+      $scope.startDateCalendar.maxDate = $scope.availableDates[$scope.availableDates.length - 1];
+
+      $scope.endDateCalendar.minDate = $scope.availableDates[0];
+      $scope.endDateCalendar.maxDate = $scope.availableDates[$scope.availableDates.length - 1];
     });
 
+    $scope.setNetwork = function (network) {
+      $scope.params.metricComparison.selectedNetwork = network;
+    };
+
     $scope.toggleNetwork = function (network) {
+      console.log('Toggling network ' + network);
       if (_.contains($scope.params.networkComparison.selectedNetworks, network)) {
         $scope.params.networkComparison.selectedNetworks = _.without($scope.params.networkComparison.selectedNetworks, network);
       }
@@ -20,8 +32,17 @@ angular.module('darwinD3App')
       }
     };
 
-    $scope.isSelectedNetwork = function (network) {
-      return _.contains($scope.params.networkComparison.selectedNetworks, network);
+    $scope.isSelectedNetwork = function (network, comparison) {
+      if (comparison === 'network') {
+        return _.contains($scope.params.networkComparison.selectedNetworks, network) ? 'active' : '';
+      }
+      else if (comparison === 'metric') {
+        return $scope.params.metricComparison.selectedNetwork === network ? 'active' : '';
+      }
+    };
+
+    $scope.setMetric = function (metric) {
+      $scope.params.networkComparison.selectedMetric = metric;
     };
 
     $scope.toggleMetric = function (metric) {
@@ -33,8 +54,13 @@ angular.module('darwinD3App')
       }
     };
 
-    $scope.isSelectedMetric = function (metric) {
-      return _.contains($scope.params.metricComparison.selectedMetrics, metric);
+    $scope.isSelectedMetric = function (metric, comparison) {
+      if (comparison === 'network') {
+        return $scope.params.networkComparison.selectedMetric === metric ? 'active' : '';
+      }
+      else if (comparison === 'metric') {
+        return _.contains($scope.params.metricComparison.selectedMetrics, metric) ? 'active' : '';
+      }
     };
 
     $scope.toggleDatapoints = function () {
@@ -47,4 +73,14 @@ angular.module('darwinD3App')
 
       datapointsVisible = !datapointsVisible;
     };
+
+    $scope.$watch('params.startDate + params.endDate', function () {
+      console.log('Changing');
+      $scope.endDateCalendar.minDate = $scope.params.startDate;
+      $scope.startDateCalendar.maxDate = $scope.params.endDate;
+    });
+
+    $scope.$watch('endDateCalendar', function () {
+
+    });
   });

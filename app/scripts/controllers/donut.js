@@ -65,6 +65,9 @@ angular.module('darwinD3App')
         // Remove unused arcs
         arcs
           .exit()
+          .transition()
+          .duration(1000)
+          .attrTween("d", arcTween)
           .remove();
 
         // Add new arcs

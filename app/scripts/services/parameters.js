@@ -8,8 +8,39 @@ angular.module('darwinD3App')
     params.startDate = '2013-05-25';
     params.endDate = '2013-05-31';
 
-    params.availableNetworks = ['facebook', 'twitter', 'website'];
-    params.availableMetrics = ['action', 'advocacy', 'awareness', 'appreciation'];
+    params.availableNetworks = [
+      {
+        name: 'facebook',
+        icon: 'facebook'
+      },
+      {
+        name: 'twitter',
+        icon: 'twitter'
+      },
+      {
+        name: 'website',
+        icon: 'globe'
+      }
+    ];
+    params.availableMetrics = [
+//      'action', 'advocacy', 'awareness', 'appreciation'
+      {
+        name: 'action',
+        icon: 'ok'
+      },
+      {
+        name: 'advocacy',
+        icon: 'comment'
+      },
+      {
+        name: 'awareness',
+        icon: 'eye-open'
+      },
+      {
+        name: 'appreciation',
+        icon: 'heart'
+      }
+    ];
 
     params.networkComparison = {
       selectedMetric: 'appreciation',
